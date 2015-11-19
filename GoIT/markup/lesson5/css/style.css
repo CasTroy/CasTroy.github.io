@@ -24,18 +24,19 @@ body{
 	.top_line{
 		height: 40px;
 		font-size: 14px;
+		background-image: url(../img/Background.png);
 	}
 	.top_line ul{
 		min-width: 800px;
 		height: 100%;
-		background-color:#074e8c;
 		padding-right: 20px;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 	.top_line li{
 		float: right;
 		height: 100%;
 		padding: 0 15px;
-		//margin:  0 15px;
 	}
 	/*links*/
 		.top_line a{
@@ -67,6 +68,7 @@ body{
 		}
 		.Line{
 			font-size: 26px;
+			font-weight: 100;
 			color: #60b5ed;
 			margin-top: 1px;
 		}
@@ -142,10 +144,8 @@ body{
 				float: left;
 			}
 		/*OU*/
-			.OU{
-				margin-top: 30px;
-			}
-			.OU hr{
+			/*
+			.ou hr{
 				float: left;
 				width: 44%;
 				margin-top: 7px;
@@ -154,25 +154,50 @@ body{
 				border-bottom: 1px solid black;
 				background: #666666;
 			}
-			.OU p{
+			.ou p{
 				float: left;
 				padding: 0 5px;
 				color:#999999;
+			}*/
+			.ou{
+				margin-top: 30px;
+				position:relative;
+				text-align: center;
 			}
+			.ou:after {
+				width: 123px;
+				content:"";
+			 	position: absolute; 
+			 	top: 7px;
+			 	left: 0px;
+			 	border-bottom: 1px solid black;
+			 	border-top: 1px solid #666666;
+			 }
+			.ou:before{
+				width: 123px;
+				content:"";
+			 	position: absolute; 
+			 	top: 7px;
+			 	left:157px;
+			 	border-bottom: 1px solid black;
+			 	border-top: 1px solid #666666;
+			 }
 		/*FORM*/
 			.edit{
-				width: 100%;
+				width: 260px;
 				height: 30px;
 				margin-top: 20px;
 				background-color: #0f0e0e;
 				border: none;
 				border-bottom: 1px solid #494846;
 				color: white;
+				padding-left: 17px;
 				-webkit-transition: background 0.5s ease;
 			}
 			.edit:hover{
 				background-color:#1b5288;
 				box-shadow: 0 0 20px 5px #4680ab;
+				cursor: pointer;
 			}
 			.main_form div {
 				margin-top: 20px;
