@@ -1,0 +1,168 @@
+body{
+	background-color: black;
+}
+h1,h2,p, li{
+	color: gold;
+
+}
+
+h1, h2{
+    font-family: fantasy;
+    font-size: 22px;
+}
+p{
+	margin-left: 2%;
+	font-size: 18px;
+
+}
+ul{
+	margin-left: 20%;
+}
+li{
+	font-size: 16px;
+}
+/*----------2,3,4,5,6 блоки-----------------*/
+#FirstBlock,#TwoBlock,#ThreeBlock,#FourBlock, #FiveBlock, #SixBlock,#footButton
+{
+	 width: 968px;
+}
+#FirstBlock,#TwoBlock,#ThreeBlock,#FourBlock, #FiveBlock, #SixBlock
+{
+	min-height: 528px;
+}
+#TwoBlock,#ThreeBlock,#FourBlock, #FiveBlock, #SixBlock
+{
+	margin: auto;
+	border: 4px solid black;
+
+	opacity: 0;
+	
+	margin-top: -537px;
+
+}
+/*----------1 блок-----------------*/
+#FirstBlock{
+	 border: 4px double black;
+	 margin: auto;
+	 opacity: 0;
+}
+#footButton
+{
+	 width: 968px;
+	 height: 100px;
+	 margin: auto;
+}
+#logo{
+	margin-left: 25%;
+	width: 60%;
+}
+#just_do_it{
+	width: 20%;
+	margin-left: 42%;
+}
+/*-----------2 блок---------------*/
+#homer{
+	width: 30%;
+	margin-left: 36%;
+	margin-top: 5%;
+}
+#TwoBH2{
+	margin-top: 5%;
+	text-align: center;
+}
+#TwoBH1{
+	text-align: center;
+	opacity: 0;
+}
+
+/*-----------3 блок---------------*/
+#kolya{
+	margin-top: 2%;
+	margin-left: 5%;
+	width: 6%;
+}
+#sasha{
+	width: 15%;
+	margin-left: -2%;
+}
+#murat{
+	width: 10%;
+	margin-top: 2%;
+}
+#dima{
+	width: 15%;
+	margin-top: 2%;
+	margin-left: -3%;
+}
+#zheka{
+	width: 8%;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+.TreeBH1{
+	text-align: center;
+	margin-top: -10%;
+}
+.TreeBp{
+	padding-right: 10%;
+	padding-left: 5%;
+	margin-top: -1%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 16px;
+}
+
+/*-----------4 блок------------------*/
+#FourH1{
+	text-align: center;
+	opacity: 0;
+	height: 10px;
+	margin-left: 5%;
+}
+#FourH2{
+	margin-top: 5%;
+	text-align: center;
+}
+#smok{
+	margin-top: 5%;
+	margin-left: 45%;
+	width: 15%;
+}
+/*-----------5 блок------------------*/
+#FiveH1{
+	margin-top: 5%;
+	text-align: center;
+	opacity: 0;
+}
+
+#pFieveBlock{
+	margin-left: 10%;
+}
+#polza{
+	width: 30%;
+	margin-left: 38%;
+}
+/*-----------6 блок--------------------*/
+#SixH1{
+	margin-top: 5%;
+	text-align: center;
+	opacity: 0;
+}
+#homer2{
+	width: 35%;
+	margin-left: 33%;
+}
+/*-------------Стрелки--------------------*/
+#arrowLeft{
+	
+	padding: 1%;
+	margin-top: 1%;
+	margin-left: 37%;
+	width: 10%;
+}
+#arrowRight{
+	width: 10%;
+	margin-left: 5%;
+	transform: scale(-1,-1);
+	padding: 1%;
+}

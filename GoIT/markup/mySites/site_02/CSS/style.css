@@ -1,0 +1,228 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #123859;
+}
+span, ul, li, h2, h3, img, ul{
+	margin: 0;
+}
+#container{
+	background-color: #123757;
+	min-height: 100%; 
+	margin-bottom: -50px;
+
+}
+
+/*-------head--------*/
+#headContainer{
+	width: 100%;
+	background-color: #286bab;
+	height: 30px;
+	border-bottom: 1px solid #3e79b1;
+}
+#headBox{
+	width: 620px;		/* обьеденить Email*/
+	margin: 0 auto;		/* обьеденить Email*/
+	box-shadow: 0px 19px 52px -10px rgba(0,0,0,0.75);
+	font-size: 11px;
+	color:#6a9bc7;
+}
+#headspan{
+	padding-top: 10px;
+	float: left;
+}
+
+.headlink{
+	color: white;
+}
+/*---------Email------------*/
+#Email{
+	color: white;
+	width: 620px;	/*обьеденить headBox*/
+	margin: 0 auto;	/*обьеденить headBox*/
+}
+#ETopH2{
+	margin-top: 30px;
+	float: left;
+}
+#ETopSpanLeft{
+	float: left;
+	margin-top: 55px;
+	margin-left: -163px;
+	font-size: 12px;
+}
+#ETopSpanRight{
+	margin-top: 45px;
+	float: right;
+	font-size: 14px;
+}
+/*---------PHOTO----------------*/
+#Photo{
+	width: 606px;
+	height: 255px;
+	border: 5px solid white;
+	margin: 100px auto 0;
+	border-radius: 5px;
+	background-image: url(../Img/1.png);
+	box-shadow: -1px 29px 77px -28px rgba(0,0,0,0.75);
+}
+#PhotoTextBox{
+	border-radius: 5px;
+	border: 5px solid #4b4849;
+	width: 245px;
+	height: 205px;
+	margin-left: 300px;
+	margin-top: 20px;
+	background-color: white;
+	padding: 0 20px;
+}
+#textBoxP{
+	margin-top: 90px;
+	font-size: 12px;
+	color: #a4a4a4;
+}
+.textBoxButton{
+	width: 120px;
+	height: 35px;
+	border: 1px solid #5b86a7;
+	border-radius: 3px;
+}
+
+/*-----------CHART-----------------*/
+#Chart{
+	width: 620px;
+	height: 250px;
+	margin: 55px auto 0;
+}
+.BorderImg{
+	border: 2px solid #405f79;
+	border-radius: 5px;
+	box-shadow: -1px 29px 55px -28px rgba(0,0,0,0.75);
+}
+#chartImg{
+	float: left;
+}
+#ChartText{
+	width: 320px;
+	height: 200px;
+	margin-left: 285px;
+}
+.Paragraf{
+	margin-top: 82px;
+	float: right;
+	font-size: 12px;
+	color:#8b9caf;
+}
+#ChartButton, #DownloadButton{
+	width: 200px;
+}
+.IMGHR{
+	display: block;
+	margin-top: 50px;
+}
+/*------DOWNLOAD-------*/
+#Download{
+	width: 620px;
+	height: 250px;
+	margin: 0 auto;
+}
+#DownloadText{
+	width: 320px;
+	height: 200px;
+	float: left;
+	margin-top: 52px;
+}
+#DownloadImg{
+ 	float: right;
+ 	margin-top: 53px;
+ 	margin-bottom: 50px;
+
+}
+
+/*--Chart2--*/
+#Chart2{
+	width: 620px;
+	height: 250px;
+	margin: 115px auto 0;
+}
+#chartImg2{
+	float: left;
+}
+#ChartText2{
+	width: 320px;
+	height: 200px;
+	margin-left: 285px;
+}
+#ChartButton2{
+	width: 200px;
+}
+
+
+
+/*-------------footer------------------*/
+
+#footer{
+	margin-top: 55px;
+	width: 100%;
+	height: 85px;
+	background-color: #235b91;
+	border-top: 1px solid #3e79b1;
+	border-bottom: 1px solid #3e79b1;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#fotterTop{
+	margin: 0 auto;
+	width: 620px;
+}
+#footerToph3{
+	margin-top: 30px;
+	float: left;
+	color: white;
+}
+#footerTopList{
+	border: 1px solid #091c2c;
+	float: right;
+	margin-top: 25px;
+	height: 40px;
+	background-color: #102f4a;
+	padding-right: 10px;
+	padding-left: 3px;
+}
+#footerTopUl{
+	margin-left: 0; 
+    padding-left: 0;
+}
+.headlist{
+	list-style-type: none;
+	float: right;
+	padding-top: 7px;
+	padding-left: 7px;
+}
+#footerTopSpan{
+	color: white;
+	font-size: 12px;
+	float: left;
+	margin-top: 55px;
+	margin-left: -127px;
+}
+/*-------FOOTER BOOTOM----------*/
+#footerBottom{
+	margin-top: 85px;
+	height: 100px;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#footerBottomArticle{
+	display: block;
+	width: 580px;
+	margin: 0 auto;
+}
+#footerBottomP{
+	margin: 0;
+}
+#footerBottomLink{
+	color: white;
+	padding: 5px;
+}

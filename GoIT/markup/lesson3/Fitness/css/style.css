@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Arian AMU';
+}
+html,body{
+	background-color:#f9f9f9;
+	height: 100%;
+}
+.All_contant_container{
+	width: 1060px;
+	background-color: white;
+	height: 950px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+/*-------------HEADER BOX----------*/
+.logo_headPanel{
+	height: 120px;
+	padding: 55px 50px 0px 45px;
+}
+.logo_headPanel h1{
+	font-size: 45px;
+	color:#333333;
+}
+.logo_headPanel ul{
+	margin-top: 25px;
+	background-color:#525151;
+}
+.logo_headPanel li{
+	display: inline-block;
+	padding: 10px 35px;
+}
+.logo_headPanel a{
+	color: white;
+}
+.logo_headPanel li:hover{
+	background-color:#444444;
+}
+/*-------------BODY BOX------------*/
+.leftPanel_rightBoxContant{
+	height: 500px;
+	margin-top: 40px; 
+	padding: 0 0 0 45px;
+	padding-bottom: 150px;
+}
+.leftPanel_rightBoxContant ul{
+	width: 240px;
+	float: left;
+}
+.leftPanel_rightBoxContant a{
+	color:#656363;
+	font-size: 13px;
+}
+
+.leftPanel_rightBoxContant a:hover{
+	color:black;
+}
+.leftPanel_rightBoxContant li{
+	border-top: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	padding: 10px 25px;
+}
+.leftPanel_rightBoxContant li:nth-child(6)
+{
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.leftPanel_rightBoxContant li:hover{
+	background-color:#f9f9f9;
+	padding-left: 40px;
+}
+.leftPanel_rightBoxContant article{
+	width: 680px;
+	float: right;
+	text-align: center;
+}
+.leftPanel_rightBoxContant img{
+	margin-top: 55px;
+}
+.leftPanel_rightBoxContant div{
+	border: 1px solid #c8c8c8;
+	width: 628px;
+	height: 400px;
+}
+.leftPanel_rightBoxContant p{
+	margin-top: 40px;
+	padding: 0 45px 0 25px;
+	text-align: left;
+	font-size: 14px;
+}
+/*-------------FOOTER BOX----------*/
+.footerPanel{
+	width: 1060px;
+}
+.footerPanel ul{
+	margin: 0 50px;
+	background-color:#e1e1e1;
+	height: 40px;
+}
+.footerPanel li{
+	float: left;
+	padding: 10px 70px 10px 25px;
+
+}
+.footerPanel li:nth-child(5){
+	float: right;
+	font-size: 13px;
+	padding-right: 25px
+}
+.footerPanel a{
+	font-size: 13px;
+	color:#2c2c2c;
+}
+.footerPanel a:hover{
+	text-decoration: underline;
+}

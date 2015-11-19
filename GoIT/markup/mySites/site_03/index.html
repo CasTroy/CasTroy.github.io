@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://webfonts.ru/import/abeezee.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<!--CONTAINER-->
+		<div class = "container">
+		<!--TOP-->
+			<section class="content" id="top">
+				<article class = "TopContent">
+					<span class = "SpanText" id = "TopSpanText">Clean<strong>less</strong></span>
+					<a href="" class = "TopListA" id = "CONTACT" onmouseover = "BorderShow('CONTACT')"
+					onmouseout = "BorderDontShow('CONTACT')">CONTACT</a>
+					<a href="" class = "TopListA" id = "BLOG" onmouseover = "BorderShow('BLOG')"
+					onmouseout = "BorderDontShow('BLOG')">BLOG</a>
+					<a href="" class = "TopListA" id = "GALLERY"  onmouseover = "BorderShow('GALLERY')"
+					onmouseout = "BorderDontShow('GALLERY')">GALLERY</a>
+					<a href="" class = "TopListA" id = "ABOUT" onmouseover = "BorderShow('ABOUT')"
+					onmouseout = "BorderDontShow('ABOUT')">ABOUT US</a>
+					<a href="" class = "TopListA" id = "HOME" onmouseover = "BorderShow('HOME')"
+					onmouseout = "BorderDontShow('HOME')">HOME</a>
+				</article>
+			</section>
+		<!--TOP LINE-->	
+			<section class="line">
+				<article class="content" id = "lineContent">
+					<img src="img/arrow.png" alt="" class="arrow" id = "leftArrow" 
+					onmouseover = "whiteArrow('leftArrow')"
+					onmouseout = "greenArrow('leftArrow')"
+					onclick="StrongPointLeft()" 
+					>
+					<span class="lineText">Black cat croosed the road in front of me</span>
+					<img src="img/arrow.png" alt="" class="arrow" id = "rightArrow"
+					onmouseover = "whiteArrow('rightArrow')"
+					onmouseout = "greenArrow('rightArrow')"
+					onclick="StrongPointRight()" 
+					>
+					<ul id="points">
+						<li class = "LCList" id = "OnePoint">.</li>
+						<li class = "LCList" id = "TwoPoint">.</li>
+						<li class = "LCList" id = "ThreePoint">.</li>
+					</ul>
+				</article>
+			</section>
+		<!--CENTERSITE-->
+			<section id = "centerSite">
+				<article class = "content">
+					<span class = "SpanText" id ="centerSiteSpantext">Clean<strong>less</strong> allowes you to  share, post and view photos.</span>
+					<div id = "boxInputs">
+						<input type="submit" class="Button" id="leftButton" value="SIGN IN"
+						onmouseup = "YellowButton('leftButton')"
+						onmousedown = "BlueButton('leftButton')">
+						<input type="submit" class="Button" id="rightButton" value="SIGN UP"
+						onmouseup = "YellowButton('rightButton')"
+						onmousedown = "BlueButton('rightButton')">
+					</div>
+					<div id="boxTextandImg">
+						<span class = "SpanText" id ="boxH">Get our App</span>
+						<p id ="boxP">Get our <strong>free app</strong> and share you photos on mobile aswell. Dont miss this amazzing oppertunity, grabit it now!</p>
+						<img src="img/Googleplay.png"  id ="boxImglogo" alt="googlplay">
+						<img src="img/phone.png"  id ="boxImgIPhone" alt="phone">
+					</div>			
+				</article>		
+			</section>
+		<!--FOOT LINE-->
+			<section id = "foot">
+				<article class = "content">
+					<span class = "SpanText" id = "FootSpanText">This website absolutley awescme, download it for free!</span>
+					<input type="submit" class="Button" id="FootButton" value="GET NOW"
+					onmouseup = "YellowButton('FootButton')"
+					onmousedown = "BlueButton('FootButton')">
+				</article>
+			</section>
+			<section id = "footer">
+				<article class = "content">
+					<ul id="footList">
+						<li class="footListLi"><a href=""><img src="img/logo1.png" alt=""></a></li>
+						<li class="footListLi"><a href=""><img src="img/logo2.png" alt=""></a></li>
+						<li class="footListLi"><a href=""><img src="img/logo3.png" alt=""></a></li>
+					</ul>
+					<span class = "SpanText" id = "FooterSpanText">Clean<strong>less</strong> Designed by <strong>Yurchenco Evgeniy</strong>
+					</span>
+				</article>
+			</section>
+		</div>
+</body>
+</html>

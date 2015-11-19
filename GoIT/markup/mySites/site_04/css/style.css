@@ -1,0 +1,311 @@
+html, body{
+	background-color: #ffffff;
+	height: 100%;
+}
+
+*{
+	font-family: 'Aquarion';
+}
+html, body, ul, li, h2, h1,h3, h4, h5, span, p{
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	min-height: 100%;
+	padding-bottom: 500px;
+}
+#footer{
+	margin-top: -500px;
+	height: 500px;
+	background-color:#393939;
+}
+.h3Param{
+	color:#767676;
+	font-size: 25px;
+}
+.pParam{
+	color:#818181;
+	font-size: 18px;
+}
+
+.button{
+	border-radius: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 1px solid #a59477;
+	height: 45px;
+	color: #a59477;
+	width: 150px;}
+.centerContent{
+	max-width: 1200px;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+.Block{
+	display: inline-block;
+}
+.lists{
+	display: inline;
+}
+
+.colorNumber{
+	color:#a59477;
+}
+/*--------ONE LINE----------------*/
+#OneLine{
+	height: 100px;
+}
+#Day{
+	margin-top: 15px;
+	float: left;
+	font-size: 40px;
+	color: #c2c2c2;
+}
+#lite{
+	color:#a89574;
+}
+#OneLul{
+	float: right;
+}
+.listLiImg{
+	margin-top: 35px;
+	padding-right: 5px;
+}
+.listLiA{
+	margin-top: 45px;
+	padding-right: 55px;
+}
+.listLi{
+ 	list-style-type: none;
+ 	float: right;
+}
+.ListA{
+	font-size: 13px;
+	text-decoration: none;
+	color:#a7a7a7;
+}
+/*---------TWO LINE------------*/
+#TwoLine{
+	background-color:#2a2a2a;
+	height: 500px;
+}
+#TwoLineLeftBlock{
+	width: 750px;
+	color:#a59477;
+}
+#TwoLLBh1{
+	font-size: 55px;
+	display: inline-block;
+	margin-top: 70px;
+}
+#TwoLLBp{
+	font-size: 25px;
+	margin-top: 45px;
+	color:#a7a7a7;
+}
+#TwoLLBinput{
+	margin-top: 50px;
+	background-color: #2a2a2a;	
+}
+#TwoLineRightBlock{
+	float: right;
+	margin-top: 60px;
+}
+/*-------THREE LINE--------*/
+#ThreeLine{
+	height: 262px;
+	background-color:#f4f4f4;
+}
+#ThreeLh3{
+	 	margin-top: 60px;
+}
+#ThreeLp{
+	margin-top: 35px;
+}
+#ThreeLLBinputOne{
+	margin-top: 30px;
+}
+#ThreeLLBinputOne, #ThreeLLBinputTwo{
+	background-color:#f4f4f4;
+}
+
+/*--------FOUR Line---------------*/
+.FourLLih4{				
+	font-size: 18px;
+	color:#767676;	
+	margin-top: 30px;
+	text-align: center;	
+}
+.FourLLip{
+	font-size: 14px;
+	color:#818181;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#FourLh3{
+	margin-top: 60px;
+}
+#FourLp{
+	margin-top: 30px;
+}
+#FourLul{
+	margin-top: 50px;
+}
+.FourListLi{
+	width: 205px;
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.FourListLi img{
+	margin-left: 50px;
+}
+/*----------FIVE LINE-----------*/
+#FiveLh3{
+	margin-top: 80px;
+}
+#FiveLp{
+	margin-top: 30px;
+}
+.FiveListLi{
+	width: 277px;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+.FiveLLih5,.FiveLLip{
+	font-size: 16px;	
+	text-align: center;
+}
+.FiveLLih5{
+	color:#767676;
+	margin-top: 23px;
+}
+.FiveLLip{
+	color:#818181;
+	margin-top: 10px;
+}
+/*----------SIX LINE-----------*/
+#SixLine{
+	height: 490px;
+}
+.SixLineBlock{
+	width: 585px;
+	display: inline-block;
+	float: left;
+	margin-top: 80px;
+}
+.SixLineListLi{
+	 list-style-type: none;
+}
+
+.SixLineListImg{
+	float: left;
+	margin-top: 30px;
+}
+.SixLineBoxContent{
+	width: 460px;
+	display: inline-block;
+	margin-left: 20px; 
+}
+.SixLLih4{
+	width: 300px;
+	font-size: 18px;
+	color:#767676;	
+	margin-top: 35px;
+}
+.goldText{
+	font-size: 12px;
+	color:#bcb19e;
+	margin-top: 15px;
+}
+.greyText{
+	font-size: 14px;
+	color:#818181;
+	margin-top: 22px;
+}
+.SixLineListLi2{
+	list-style-type: circle;
+	font-size: 14px;
+	color:#bcb19e;
+}
+.colorText{
+	color:#818181;
+}
+#SixTwoList{
+	margin-left:  20px;
+	margin-top: 40px;
+}
+/*--------SEVEN LINE-------------------*/
+#SevenLine{
+	height: 258px;
+	background-color:#f4f4f4;
+	text-align: center;
+	padding: 0;
+}
+#SevenTwoPoint{
+	font-size: 120px;
+	color: #bbbbbb; 
+	margin-top: 60px;
+	display: inline-block;
+}
+#SevenLineText{
+	margin-top: -50px;
+}
+/*----------FOOTER------------*/
+
+.FooterLi{
+	margin-top: 60px;
+	height: 400px;
+	width: 260px;
+	display: inline-block;
+	float: left;
+	
+}
+.mrRight{
+	margin-right: 40px;
+}
+.colorh4footer{
+	color: white;
+	margin-bottom: 25px;
+}
+#footlist{
+	color:#b4b4b4;
+}
+#GetInTouchList{
+	margin-top: 37px;
+	margin-left: 20px;
+}
+#TwitterList{
+	margin-left: 20px;
+}
+.ListLi{
+	margin-bottom: 40px;
+}
+.popularLi{
+	list-style-type: none;
+}
+.dataListLi{
+	margin-top: 10px;
+	font-size: 12px;
+	color:#6c6c6c;
+}
+.paramForm{
+	width: 220px;
+	margin-bottom: 15px;
+}
+#textWindow{
+	height: 120px;
+}
+.Footbutton{
+	width: 110px;
+	height: 32px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color:#393939;
+	color: white;
+}

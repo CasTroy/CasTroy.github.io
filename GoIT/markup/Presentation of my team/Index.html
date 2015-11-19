@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dream Lab</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="JS/scripts.js"></script>
+</head>
+<body onload="start()">
+	<!-- Первый блок-->
+	<div id = "FirstBlock">
+		<img src="Img/logotip.png" id ="logo" alt="logo">
+		<img src="Img/just_do_it_by3.jpg" id ="just_do_it" alt="logo">
+	</div>
+	<!-- Второй блок-->
+	<div id = "TwoBlock">
+		<h2 id = "TwoBH2">Наш Девиз:</h2>;
+		<h1 id = "TwoBH1">С тем что мы делаем сегодня,обязательно кто-то будет работать завтра.</h1>
+		<img src="Img/homer.png" id ="homer" alt="homer">
+	</div>
+	
+
+	<!-- Третий блок-->
+	
+	<div id = "ThreeBlock">
+		<img src="Img/kolya.png" id ="kolya" alt = "kolya">
+		<h1 class= "TreeBH1">Николай</h1>
+		<p class = "TreeBp">КОЛЯ ставит себя на место заказчика рассматривая в микроскоп все задачи, группируя их в единое целое. Может часами мечтать, придумывая новый функционал или вишенки к заказу.  Делится знаниями по оснвам разработки программных продуктов, UX Design и командоформированию.</p>
+		<img src="Img/sasha.png" id ="sasha" alt = "sasha">
+		<h1 class = "TreeBH1">Александр</h1>
+		<p class = "TreeBp">САША самоорганизованный и целеустремленный ни одна задача не выдержит его усидчивости и трудолюбия.</p>
+		<img src="Img/murat.png" id ="murat" alt="murat">
+		<h1 class = "TreeBH1">Мурат</h1>
+		<p class = "TreeBp">МУРАТ фокусируется на решении применяя разные варианты достижения цели и выбирая наиболее оптимальный путь не зацикливаясь на одном варианте, быстро ищет информацию необходимую для решения задач.</p>
+		<img src="Img/dima.png" id ="dima" alt="dima">
+		<h1 class = "TreeBH1">Дмитрий</h1>
+		<p class = "TreeBp">ДИМА думает наперед, даже самые сложные задачи упорно разбирает по винтикам, пока не доведет дело до завершения. Его ничто не остановит на пути к выбранной цели.</p>
+		<img src="Img/zheka.png" id ="zheka" alt = "zheka">
+		<h1 class = "TreeBH1">Евгений</h1>
+		<p class = "TreeBp">ЖЕНЯ готов делится опытом и знаниями. Следует принципу - пришла идея - реализовывай! Никогда не останавливается в развитии чем мотивирует и других.</p>
+	</div>
+	
+	<!-- Четвёртый блок-->
+	
+	<div id = "FourBlock">
+		<h2 id = "FourH2">Что нас объединяет?</h2>
+		<h1 id = "FourH1">Нас объединяет цель: стать профессиональными FRONT-END разработчиками, которые с лёгкостью смогут продать свои реализованные идеи</h1>
+		<img src="Img/smok.png" id ="smok" alt="smok">
+	</div>
+	
+	<!-- Пятый блок-->
+	<div id = "FiveBlock">
+		<h1 id = "FiveH1">Чем каждый может быть полезен другим, как отдельная личность?</h1>
+		<ul>
+			<li id = "l1">Коля  - может дать в аренду лодку, велосипед. карематы, рюкзаки</li>
+			<li id = "l2">Мурат - если друзья меня попросят научить тому, что я умею — научу</li>
+			<li id = "l3">Женя  - может помочь с решением домашнего задания</li>
+			<li id = "l4">Дима  - может быть полезным в спорте, может написать каждому диету, помочь с тренировками</li>
+			<li id = "l5">Саша  - может шевелить ушами и гонять воздух чтоб команде не было жарко</li>	
+		</ul>
+		<img src="Img/polza.png" id ="polza" alt="polza">
+	</div>
+	<!-- Шестой блок-->
+	<div id = "SixBlock">
+		<h1 id = "SixH1">Дополнить команду можно ментором.</h1>
+		<img src="Img/homer2.png" id ="homer2" alt = "homer2">
+	</div>
+	<!--Стрелки переключения-->
+	<div id = "footButton">
+		<img src="Img/strelka4.png" id ="arrowLeft" onclick="on_click_left_button()"
+				onmouseover = "changeArrowOver('arrowLeft')"
+				onmouseout = "changeArrowOut('arrowLeft')" alt="arrow">
+		<img src="Img/strelka4.png" id ="arrowRight" onclick="on_click_right_button()" 
+				onmouseover = "changeArrowOver('arrowRight')"
+				onmouseout = "changeArrowOut('arrowRight')" alt="arrow">
+	</div>
+</body>
+</html>
