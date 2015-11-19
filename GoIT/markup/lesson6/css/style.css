@@ -65,7 +65,6 @@ html,body{
 					
 				}
 				.form_entrance input {
-<<<<<<< HEAD
 					width: 107px;
 					height: 16px;
 					margin-top: 3px;
@@ -74,13 +73,11 @@ html,body{
 					padding-left: 5px;
 					margin-right: 2px;
 					border: 1px solid #82949c;
-=======
 					width: 113px;
 					height: 13px;
 					margin-top: 4px;
 					border-radius: 2px;	
 					font-size: 12px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.form_entrance span{
 					color: white;
@@ -93,15 +90,9 @@ html,body{
 					font-size: 11px;
 					color: white;
 					margin: 5px 0 0 5px;
-<<<<<<< HEAD
 				}
 				.form_entrance a:nth-child(3){
 					margin-left: 9px;
-
-=======
-
-					
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.form_entrance a:nth-child(5){
 					margin-left: 0px;
@@ -111,11 +102,8 @@ html,body{
 					float: right;
 					font-size: 12px;
 					text-decoration: underline;
-<<<<<<< HEAD
 					margin-right: 12px;
-=======
 					margin-right: 10px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 					margin-top: 6px;
 
 				}
@@ -171,11 +159,8 @@ html,body{
 			background: linear-gradient(to top,#050506,#505860);
 			border-radius: 4px;
 			margin-top: 7px;
-<<<<<<< HEAD
 			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
-=======
 			box-shadow: 3px 3px 20px 0px rgba(0,0,0,0.75);
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 		}
 		.panel ul{
 			display: inline-block;
@@ -243,27 +228,17 @@ html,body{
 			.left_category header>p{
 				float: left;
 				font-size: 10px;
-<<<<<<< HEAD
-				//margin-top: 4px;
-			}
-			.left_category header>p:nth-child(1){
-				margin-left: 19px;
-				margin-top: 2px;
-								
-=======
 				margin-top: 4px;
 			}
 			.left_category header>p:nth-child(1){
 				margin-left: 19px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
+			}
+			.left_category header>p:nth-child(1){
+				margin-left: 19px;
 			}
 			.left_category header>p:nth-child(2){
 				font-size: 12px;
 				margin-left: 70px;
-<<<<<<< HEAD
-
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 			}
 			.left_category header>p:nth-child(3){
 				float: right;
@@ -277,10 +252,7 @@ html,body{
 					margin-top: 5px;
 				}
 				.disc ul{
-<<<<<<< HEAD
-=======
 					clear: both;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 					font-size: 10px;
 				}
 				.disc  li {
@@ -296,11 +268,8 @@ html,body{
 					width: 103px;
 					height: 17px;
 					float: right;
-<<<<<<< HEAD
 					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.yer{
 					width: 60px !important;
@@ -312,10 +281,6 @@ html,body{
 				}
 				.block_left{
 					float: left;
-<<<<<<< HEAD
-=======
-					//clear: both;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.bus select{
 					width: 103px;
@@ -324,22 +289,14 @@ html,body{
 				}
 			/*bus*/
 				.bus{
-<<<<<<< HEAD
-				
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 						width: 180px;
-						float: right;
+						//float: right;
 						margin-top: 5px;
 						padding-right: 17px;
 					}
 				.bus ul{
 					clear: both;
 					font-size: 10px;
-<<<<<<< HEAD
-
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.bus  li {
 					height: 20px;
@@ -371,13 +328,10 @@ html,body{
 				padding-left: 10px;
 			}
 			.center_category header>p{
-<<<<<<< HEAD
 				font-weight: 800;
 				font-size: 10px;
-=======
 				font-size: 10px;
 				margin-top: 4px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 			}
 			.center_category p{
 				float: left;
@@ -396,11 +350,8 @@ html,body{
 					margin-top: 5px;
 					width: 49px;
 					height: 17px;
-<<<<<<< HEAD
 					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.size_bus select:nth-child(2){
 					margin-left: 8px;
@@ -420,11 +371,8 @@ html,body{
 				.radius_bus select{
 					margin-top: 2px;
 					margin-left: 12px;
-<<<<<<< HEAD
 					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.season p{
 					padding-left: 17px;
@@ -436,8 +384,6 @@ html,body{
 					margin-top: 4px;
 					margin-left: 11px;
 				}
-<<<<<<< HEAD
-
 				.season span{
 					position: absolute;
 					width: 100%;
@@ -450,20 +396,16 @@ html,body{
 					clear: both;
 					visibility: hidden;	
 				}
-				
-=======
 				.season input{
 					float: left;
 					clear: both;
 					margin-top: 1px;
 				}
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				.season label{
 					font-size: 10px;
 					font-weight: 600;
 					float: left;
 				}
-<<<<<<< HEAD
 				input[type=checkbox]:checked + label:before{
 					background: url(../img/chekbox_off.png);
 					background-repeat: no-repeat;
@@ -490,12 +432,11 @@ html,body{
 			/*find*/
 				.center_category>p{
 					float: right;
-=======
 			/*find*/
+				}
 				.center_category>p{
 					float: right;
 					margin-top: -5px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 		/*right category*/
 			.right_category{
@@ -508,10 +449,7 @@ html,body{
 			}
 			.right_category header>p{
 					font-size: 10px;
-<<<<<<< HEAD
-=======
 					margin-top: 4px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 			/*left_find_disc*/
 				.left_find_disc{
@@ -522,10 +460,7 @@ html,body{
 				}		
 				.left_find_disc ul{
 					margin-left: 5px;
-<<<<<<< HEAD
 					margin-top: 5px;
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 				.diameter_disc p{
 					font-size: 10px;
@@ -585,11 +520,8 @@ html,body{
 				}
 			/*find*/
 				.right_category>p{
-<<<<<<< HEAD
 					margin-top: -7px;
-=======
 					margin-top: -5px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				}
 	/*Directory*/
 		.directory{
@@ -597,11 +529,8 @@ html,body{
 		}
 		.directory div{
 			border: 1px solid #79878d;
-<<<<<<< HEAD
 			border-radius: 10px;
-=======
 			border-radius: 15px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 		}
 		/*left_directory*/
 			.left_directory{
@@ -638,11 +567,8 @@ html,body{
 			.catalog{
 				width: 183px;
 				height: 25px;
-<<<<<<< HEAD
 				box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
-=======
 				box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.5);
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 				margin-bottom: 15px;
 			}
 			.catalog img{
@@ -698,11 +624,8 @@ html,body{
 			}
 			.right_directory header{
 				border: 1px solid #79878d;
-<<<<<<< HEAD
 				border-radius: 10px;
-=======
 				border-radius: 15px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 			}
 			.right_box{
 				margin-left: 15px;
@@ -718,7 +641,6 @@ html,body{
 			.right_directory_list form>div>label{
 				margin-left: 10px;
 			}
-<<<<<<< HEAD
 			.right_directory_list input {
 				visibility: hidden;
 			}
@@ -744,10 +666,6 @@ html,body{
 					background-repeat: no-repeat;
 					top: 5px;
 				}
-			
-
-=======
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 			.right_directory button{
 				width: 80px;
 				height: 24px;
@@ -755,17 +673,14 @@ html,body{
 				color: white;
 				border-radius: 15px;
 				outline: none;
-<<<<<<< HEAD
 				border: none;
 				margin-top: 14px;
 				margin-left: 22px;
 				box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 				cursor: pointer;
-=======
 				border-color: #8098a3;
 				margin-top: 14px;
 				margin-left: 22px;
->>>>>>> e3b5ef832b1e98e6bfce25f37cc2408c408085b7
 			}
 	/*Brand*/
 		.brand ul{
