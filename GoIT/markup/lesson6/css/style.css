@@ -530,7 +530,6 @@ html,body{
 		.directory div{
 			border: 1px solid #79878d;
 			border-radius: 10px;
-			border-radius: 15px;
 		}
 		/*left_directory*/
 			.left_directory{
@@ -625,7 +624,6 @@ html,body{
 			.right_directory header{
 				border: 1px solid #79878d;
 				border-radius: 10px;
-				border-radius: 15px;
 			}
 			.right_box{
 				margin-left: 15px;
