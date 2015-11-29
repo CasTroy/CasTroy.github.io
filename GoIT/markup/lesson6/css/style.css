@@ -52,7 +52,7 @@ html,body{
 					border-radius: 3px;
 					margin-left: 21px;
 					margin-top: 18px;
-					box-shadow: 4px 2px 22px -4px rgba(0,0,0,0.75);
+					box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 				}
 				.form_entrance img {
 					float: left;
@@ -156,8 +156,7 @@ html,body{
 			background: linear-gradient(to top,#050506,#505860);
 			border-radius: 4px;
 			margin-top: 7px;
-			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.50);
-			box-shadow: 3px 3px 20px 0px rgba(0,0,0,0.75);
+			box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 		}
 		.panel ul{
 			display: inline-block;
@@ -211,7 +210,7 @@ html,body{
 			border-radius: 20px;
 			margin-top: 2px;
 			border: 1px solid #9c9c9d;
-			box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.5);
+			box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 		}
 		/*left category*/
 			.left_category{
@@ -265,12 +264,26 @@ html,body{
 					width: 103px;
 					height: 17px;
 					float: right;
-					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
+					border-left: 2px solid #a8a8a8;
+					border-bottom: none;
+					border-right: none;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 81px -3px;
+					-webkit-appearance: none;
+					cursor: pointer;
+
 				}
-				.yer{
-					width: 60px !important;
+				.disc .yer{
+					width: 60px;
 					margin-right: 43px;
+					background: white;
+					background-image: url(../img/strilka.png);
+					background-position: 38px -3px;
+					background-repeat: no-repeat;
+
 				}
 				.small_text{
 					font-size: 9px;
@@ -287,7 +300,6 @@ html,body{
 			/*bus*/
 				.bus{
 						width: 180px;
-						//float: right;
 						margin-top: 5px;
 						padding-right: 17px;
 					}
@@ -349,6 +361,14 @@ html,body{
 					height: 17px;
 					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 27px -4px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 				.size_bus select:nth-child(2){
 					margin-left: 8px;
@@ -366,10 +386,19 @@ html,body{
 					margin-top: 8px;
 				}
 				.radius_bus select{
-					margin-top: 2px;
-					margin-left: 12px;
+					width: 45px;
+					margin-top: 5px;
+					margin-left: 4px;
 					border-left: 2px solid #a8a8a8;
 					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 23px -3px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 				.season p{
 					padding-left: 17px;
@@ -467,9 +496,23 @@ html,body{
 				.diameter_disc span{
 					margin-left: 5px;
 				}
+				.diameter_disc form{
+					float: right;
+					margin-right: 14px;
+				}
 				.diameter_disc select{
 					width: 56px;
 					height: 17px;
+					border-left: 2px solid #a8a8a8;
+					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 34px -3px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 				.number_of_holes p{
 					font-size: 10px;
@@ -482,6 +525,16 @@ html,body{
 					width: 50px;
 					height: 17px;
 					margin-left: 33px;
+					border-left: 2px solid #a8a8a8;
+					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 28px -3px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 				.diameter_of_holes p{
 					clear: both;
@@ -496,6 +549,16 @@ html,body{
 					width: 56px;
 					height: 17px;
 					margin-left: 18px;
+					border-left: 2px solid #a8a8a8;
+					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 34px -3px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 			/*right_find_disc*/
 				.right_find_disc{
@@ -514,6 +577,16 @@ html,body{
 				.right_find_disc select{
 					width: 56px;
 					height: 17px;
+					border-left: 2px solid #a8a8a8;
+					border-top: 2px solid #a8a8a8;
+					background-color: white;
+					background-image: url(../img/strilka.png); 
+					background-repeat: no-repeat;
+					background-position: 34px -3px;
+					-webkit-appearance: none;
+					border-bottom: none;
+					border-right: none;
+					cursor: pointer;
 				}
 			/*find*/
 				.right_category>p{
@@ -558,7 +631,7 @@ html,body{
 				font-style: italic;
 				color:#0c3256;
 				text-decoration: underline;
-				font-weight: 600;
+				font-weight: 500;
 			}
 			.catalog{
 				width: 183px;
@@ -586,9 +659,12 @@ html,body{
 				background: linear-gradient(to top,#93a7b0,#e5e7e8);
 				margin: 0 auto;
 			}
-			.param_cols{
+			.center_directory .param_cols{
+				border: none;
+				display: inline-block;
+				width: 135px;
 				text-align: center;
-				padding-left: 24px;
+				padding-left: 25px;
 				padding-top: 7px;
 				padding-bottom: 13px;
 			}
