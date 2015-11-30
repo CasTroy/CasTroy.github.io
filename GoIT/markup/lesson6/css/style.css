@@ -114,6 +114,7 @@ html,body{
 					display: inline-block;
 					border: 1px solid #c1c8cb;
 					border-radius: 10px;
+					box-shadow: 2px 2px 5px 0.00px rgba(150, 150, 150, 0.75);
 					margin-top: 19px;
 					margin-left: -12px;
 				}
