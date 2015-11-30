@@ -631,7 +631,8 @@ html,body{
 				font-style: italic;
 				color:#0c3256;
 				text-decoration: underline;
-				font-weight: 500;
+				font-size: 14px;
+				font-weight: 800;
 			}
 			.catalog{
 				width: 183px;

@@ -27,7 +27,7 @@
 
 	}
 	
-	/*top contant*/
+/*top contant*/
 		.top__contant{
 			width: 950px;
 			margin: 0 auto;
@@ -64,7 +64,7 @@
 				text-decoration: none;
 			}
 			.menu__link:hover{
-					border-bottom: 2px solid white;
+				border-bottom: 2px solid white;
 			}
 		/*arrows*/
 			.arrows{
@@ -126,13 +126,14 @@
 				margin-top: 130px;
 				margin-right: 35px;
 				position: relative;
-				float: right
+				float: right;
 			}
 			.button_play{
 				position: absolute;
 				top: 175px;
 				left: 150px;
 				cursor: pointer;
+				z-index: 1;
 			}
 		/*navigation*/
 			.navigation{
@@ -837,23 +838,23 @@
 		}
 /*480px*/	
 	@media (max-width: 480px){
+	/*top contant*/
 		.top{
 				background-position: -970px	-10px;
-				height: 547px;
+				height: 557px;
 			}
-		/*top contant*/
-			.top__contant{
-				width: 480px;
-			}
-			.top__logo{
-				float: left;
-				text-transform: uppercase;
-				margin: 70px 0 0 157px;
-				cursor: pointer;
-			}
-			.top__logo:hover{
-				display: inline;
-			}
+		.top__contant{
+			width: 480px;
+		}
+		.top__logo{
+			float: left;
+			text-transform: uppercase;
+			margin: 70px 0 0 157px;
+			cursor: pointer;
+		}
+		.top__logo:hover{
+			display: inline;
+		}
 		/*menu*/
 			.panel{
 				position: absolute;
@@ -863,7 +864,6 @@
 			}
 			.panel>li{
 				height: 80px;
-				//background: red;
 				list-style: none;
 			}
 			.panel li:nth-child(1):hover ul{ 
@@ -872,7 +872,7 @@
 			.menu{
 				display: none;
 				position: absolute;
-				z-index: 1;
+				z-index: 2;
 				width: 244px;
 				background: rgba(61,49,70, 0.8);
 				transform: rotate(-180deg);
@@ -917,4 +917,198 @@
 				transform: rotate(-180deg);
 				
 			}
+		/*arrows*/
+			.arrows{
+				top: 212px;
+				height: 245px;
+			}
+			.arrow_left, .arrow_right{
+				margin: 98px -7px;
+				width: 25px;
+				height: 50px;
+				background-image: url(../img/arrow.png);
+				cursor: pointer;
+			}
+			.arrow_left{
+				float: left;
+			}
+			.arrow_right{
+				float: right;
+				margin-right: -15px;
+			}	
+		/*Ipsun_Dolor*/
+			.ipsunDolor{
+				width: 390px;
+				float: left;
+				top: 305px;
+				margin-left: 15px;
+				padding-left: 20px;
+			}
+			.ipsunDolor__h1{
+				font-size: 36px;
+			}
+			.ipsunDolor__h3{
+				font-size: 18px;
+				margin-top: 1px;
+			}
+			.ipsunDolor__p{
+				display: none;
+			}
+			.images_phons{
+				margin-top: 55px;
+				margin-right: 23px;	
+			}
+			.phone{
+				width: 215px;
+				height: 303px;
+			}
+			.button_play{
+				width: 55px;
+				height: 55px;
+				top: 125px;
+				left: 105px;
+			}
+		/*navigation*/
+			.navigation{
+				margin-right: 195px;
+			}
+			.navigation__item{
+				margin-top: -10px;
+			}
+	/*about our company*/
+		.about_our_company_bg{
+			height: 597px;
+		}
+		.about_our_company_contant{
+			width: 440px;
+		}
+		/*One block*/
+			.aboutcompany{
+				width: 100%;
+			}
+			.aboutcompany__logo{
+				margin-left: 15px;
+				margin-top: 5px;
+			}
+			.aboutcompany__item{
+				width: 380px;
+			}
+			.aboutcompany__head{
+				font-size: 24px;
+				margin-top: -1px;
+				margin-left: 5px;
+			}
+			.aboutcompany__text{
+				margin-left: 5px;
+			}
+			.aboutcompany__link{
+				margin-top: 35px;
+				margin-right: 2px; 
+			}
+		/*Two block*/
+			.centerblock{
+				margin-top: 20px;
+				margin-left: 3px;
+			}
+			.centerblock .aboutcompany__link{
+				margin-right: 5px;
+			}
+		/*Three block*/
+			.rightblock{
+				margin-top: 22px;
+				margin-right: 3px;
+			}
+			.rightblock .aboutcompany__link{
+				margin-right: 0px;
+				margin-top: 37px;
+			}
+	/*information*/
+		.information_bg{
+			height: 785px;
+		}
+		.information_contant{
+			width: 440px;
+		}
+		/*starts*/
+			.starts{
+				margin-top: 72px;
+				margin-left: 25px;
+				width: 416px;
+				height: 280px;
+			}
+			.starts__header{
+				font-size: 30px;
+				padding-left: 42px;
+			}
+			.starts__text{
+				margin-top: 15px;
+				padding-left: 42px;
+			}
+			.starts_navigation{
+				position: absolute;
+				margin-top: 361px;
+				left: -344px;
+				width: 440px;
+			}
+		/*recent*/
+		.recent{
+			width: 416px;
+			height: 270px;
+			margin-top: 50px;
+			margin-left: 38px;
+		}
+		.recent__h3{
+			font-size: 16px;
+		}
+		.recent__text{
+			margin-top: -2px;
+			font-size: 16px;
+		}
+		.recent__item{
+			list-style: none;
+			width: 100%;
+			height: 50px;
+			margin-bottom: 15px;
+		}
+		.recent__link{
+			font-size: 24px;
+			margin-right: 50px;
+		}
+	/*brend*/
+		.brend{
+			height: 230px;
+		}
+		.brend__container{
+			width: 440px;
+		}
+		.brend__list{
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		.brend__item{
+			width: 65px;
+			margin-top: 40px;
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+		.brend__list li:nth-child(1){
+			margin-left: 70px;
+		}
+		.brend__list li:nth-child(2){
+			margin-left: 60px;
+		}
+		.brend__list li:nth-child(3){
+		}
+		.brend__list li:nth-child(4){
+			margin-top: 30px;
+			margin-left: 40px;
+		}
+		.brend__list li:nth-child(5){
+			margin-top: 30px;
+			margin-left: 57px;
+		}
+		.brend__list li:nth-child(6){
+			margin-top: 30px;
+			margin-left: 45px;
+		}
 	}
