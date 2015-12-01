@@ -530,6 +530,22 @@
 		float: right;
 	}
 
+/*1600px*/
+	@media (max-width: 1550px){
+		/*arrows*/
+			.arrow_left, .arrow_right{
+				display: none;
+			}
+			
+	}
+/*960px*/
+	@media (max-width: 960px){
+		/*arrows*/
+			.arrow_left, .arrow_right{
+				display: none;
+			}
+			
+	}
 /*768px*/	
 	@media (max-width: 768px){
 	/*top*/
@@ -572,6 +588,7 @@
 				top: 252px;
 			}
 			.arrow_left, .arrow_right{
+				display: inline;
 				margin: 175px 3px;
 			}
 			.arrow_right{
@@ -923,6 +940,7 @@
 				height: 245px;
 			}
 			.arrow_left, .arrow_right{
+				display: inline;
 				margin: 98px 0px;
 				width: 25px;
 				height: 50px;
@@ -1263,6 +1281,7 @@
 				background: none;
 			}
 			.arrow_left, .arrow_right{
+				display: inline;
 				margin: 0px 0px;
 			}
 		/*Ipsun_Dolor*/
