@@ -1430,16 +1430,16 @@
 			margin-left: 0px;
 		}
 		.brend__list li:nth-child(1){
-			margin-left: 45px;
+			margin-left: 65px;
 			margin-right: 55px;
 		}
 		.brend__list li:nth-child(2){
 			margin-left: 0px;
 		}
 		.brend__list li:nth-child(3){
-			margin-left: 55px;
+			margin-left: 75px;
 			margin-top: 60px;
-			margin-right: 45px;
+			margin-right: 55px;
 		}
 		.brend__list li:nth-child(4){
 			margin-top: 60px;
@@ -1449,7 +1449,7 @@
 		.brend__list li:nth-child(5){
 			margin-top: 45px;
 			margin-right: 25px;
-			margin-left: 25px;
+			margin-left: 65px;
 		}
 		.brend__list li:nth-child(6){
 			margin-top: 45px;
