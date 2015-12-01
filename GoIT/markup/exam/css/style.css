@@ -1195,6 +1195,7 @@
 
 /*320px*/
 	@media (max-width: 320px){
+	/*top*/
 		.top{	
 				background-position: -1035px	-10px;
 				height: 525px;
@@ -1269,7 +1270,7 @@
 			.ipsunDolor{
 				width: 280px;
 				top: 305px;
-				margin-left: 50px;
+				margin-left: 40px;
 			}
 			.ipsunDolor__h1{
 				font-size: 36px;
@@ -1292,9 +1293,55 @@
 			}
 		/*navigation*/
 			.navigation{
-				margin-right: 105px;
+				margin-right: 125px;
 			}
 			.navigation__item{
 				margin-top: 310px;
 			}
+	/*about our company*/
+		.about_our_company_contant{
+			width: 320px;
+		}
+		.aboutcompany{
+			width: 280px;
+			margin-top: 67px;
+		}
+		/*leftblock*/
+			.aboutcompany__logo{
+				margin-left: 30px;
+			}
+			.aboutcompany__item{
+				width: 200px;
+				margin-left: 20px;
+			}
+			.aboutcompany__text{
+				margin-top: 3px;
+			}
+			.aboutcompany__link{
+				margin-top: 10px;
+				margin-right: -17px; 
+			}
+		/*centerblock*/
+			.centerblock{
+				margin-top: 20px;
+				margin-left: 0px;
+			}
+			.centerblock .aboutcompany__logo{
+				margin-left: 30px;
+			}
+			.centerblock .aboutcompany__link{
+				margin-top: 10px;
+				margin-right: -17px; 
+			}
+		/*rightblock*/
+			.rightblock{
+				float: left;
+				margin-top: 30px;
+				margin-right: 0px;
+			}
+			.rightblock .aboutcompany__link{
+				margin-top: 10px;
+				margin-right: -17px; 
+			}
+
 	}
