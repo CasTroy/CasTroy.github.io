@@ -1195,8 +1195,106 @@
 
 /*320px*/
 	@media (max-width: 320px){
-		.top{
-				background: red;
-				height: 557px;
+		.top{	
+				background-position: -1035px	-10px;
+				height: 525px;
+			}
+		.top__contant{
+			width: 320px;
+		}
+		.top__logo{
+			margin: 70px 0 0 87px;
+		}
+		/*menu*/
+			.panel{
+				margin: 70px 0 0 87px;
+			}
+			.panel li:nth-child(1):hover ul{ 
+				display: block;
+ 			}
+			.menu{
+				/*background: none;/*rgba(61,49,70, 0.8);
+				border: none;/*1px solid #051116;
+				border-radius: none;/* 8px;
+				box-shadow: none; /*0 3px 5px rgba(0, 0, 0, 0.2);
+				box-shadow: none; /*inset 0 -1px 0 rgba(105, 82, 114, 0.59);*/
+			}
+			.menu li:nth-child(6){
+				margin-top: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			.menu li:nth-child(5){
+				padding-bottom: 0px;
+			}
+			.menu li:nth-child(4){
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			.menu li:nth-child(3){
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			.menu li:nth-child(2){
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			.menu li:nth-child(1){
+				margin-top: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				margin-right: 0px;
+			}
+			.menu_item{
+				/*border-bottom: none; /*1px solid #36283e;
+				border-top: none; /*1px solid #37293f;*/
+				height:36px;
+			}
+			.menu_item:hover{
+				background: rgba(61,49,70, 0.9);
+			}
+			.menu__link:hover{
+				border-bottom: 2px solid #edbfff;
+			}
+		/*arrows*/
+			.arrows{
+				top: 310px;
+				height: 245px;
+				background: none;
+			}
+			.arrow_left, .arrow_right{
+				margin: 0px 0px;
+			}
+		/*Ipsun_Dolor*/
+			.ipsunDolor{
+				width: 280px;
+				top: 305px;
+				margin-left: 50px;
+			}
+			.ipsunDolor__h1{
+				font-size: 36px;
+			}
+			.ipsunDolor__h3{
+				font-size: 18px;
+				margin-top: 1px;
+			}
+			.ipsunDolor__p{
+				display: none;
+			}
+			.images_phons{
+				display: none;
+			}
+			.phone{
+				display: none;
+			}
+			.button_play{
+				display: none;
+			}
+		/*navigation*/
+			.navigation{
+				margin-right: 105px;
+			}
+			.navigation__item{
+				margin-top: 310px;
 			}
 	}
