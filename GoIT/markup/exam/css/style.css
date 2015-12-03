@@ -8,7 +8,7 @@
 }
 @font-face{
 	font-family: OpenSans-Regular;
-	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+	src: url(../fonts/open-sans/OpenSans-Regular.ttf);regular.eot
 }
 @font-face{
 	font-family: OpenSans-Bold;
@@ -162,6 +162,11 @@
 		background: linear-gradient(to top, #33263a, #745083);
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
+	}
+	@-moz-document url-prefix() {
+		.about_our_company_bg{
+			background-image: url(../img/ie/960px.jpg);
+		}
 	}
 	.about_our_company_contant{
 		width: 1000px;

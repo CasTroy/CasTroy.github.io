@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: LeagueGothic-Regular;
+	src: url(../fonts/league-gothic/LeagueGothicRegular.eot);
+}
+@font-face{
+	font-family: OpenSans-Regular;
+	src: url(../fonts/open-sans/OpenSansRegular.eot);regular.eot
+}
+@font-face{
+	font-family: OpenSans-Bold;
+	src: url(../fonts/open-sans/OpenSansBold.eot);
+}
+.about_our_company_bg{
+	background-image: url(../img/ie/960px.jpg);
+}	
