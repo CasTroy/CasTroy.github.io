@@ -5,18 +5,14 @@
 			result *= num;
 		return result;
 	}
-	console.log('myFunction - ', pow(7,10));
-	console.log('Math.pow   - ', Math.pow(7,10));
-	console.log('-----------------------');
-	console.log('myFunction - ', pow(3,11));
-	console.log('Math.pow   - ', Math.pow(3,11));
-	console.log('-----------------------');
-	console.log('myFunction - ', pow(8,34));
-	console.log('Math.pow   - ', Math.pow(8,34));
-	console.log('-----------------------');
-	console.log('myFunction - ', pow(74,3));
-	console.log('Math.pow   - ', Math.pow(74,3));
-/*homeWork 02*/
+	function main(){
+		var number = prompt('Введите число');
+		var power = prompt('Введите степень');
+		alert(number+ " в степени "+power+" равно: "+ pow(number, power));
+		
+	}
+	main();
+/*homeWork 02
 	function main(){
 		var numberOfPeople = 5;
 		var arrayHumans = [];
@@ -34,7 +30,8 @@
 		presence ? alert(user + ", вы успешно вошли") : alert("Такого имени нет!");
 		return 0;
 	}
-
-
-
 	main();
+*/
+
+
+
