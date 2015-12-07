@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 @font-face{
 	font-family: LeagueGothic-Regular;
@@ -14,8 +15,9 @@
 	font-family: OpenSans-Bold;
 	src: url(../fonts/open-sans/OpenSans-Bold.ttf);
 }
-
-
+body{
+	min-width: 960px;
+}
 /*top*/
 	.top{
 		width: 100%; 
@@ -29,7 +31,7 @@
 	
 /*top contant*/
 		.top__contant{
-			width: 950px;
+			width: 960px;
 			margin: 0 auto;
 		}
 		.top__logo{
@@ -42,9 +44,14 @@
 			float: left;
 		}
 		.top__logo span{
-			background: -webkit-gradient(linear, left bottom,left top,color-stop(0.1,#34263b ),color-stop(1, #745083));, black;
-			-webkit-background-clip: text;
-			color: transparent;
+			/*background: linear-gradient(#745083,#33263a);  
+  			-webkit-background-clip: text;  
+ 			color: transparent;*/
+ 			width: 28px;
+ 			height: 36px;
+ 			display: inline-block;
+ 			background-image: url(../img/ER.png);
+			margin-left: 2px;
 		}
 		/*menu*/
 			.menu_item{
@@ -64,7 +71,7 @@
 				text-decoration: none;
 			}
 			.menu__link:hover{
-				border-bottom: 2px solid white;
+				border-bottom: 2px solid #edbfff;
 			}
 		/*arrows*/
 			.arrows{
@@ -72,6 +79,7 @@
 				top: 283px;
 				left: 0;
 				width: 100%;
+				min-width: 960px;
 				height: 400px;
 				background: rgba(0,0,0,0.5);
 				z-index: 0;
@@ -105,7 +113,8 @@
 				color: white;
 				font-size: 60px;
 				font-weight: 400;
-				text-transform: capitalize
+				text-transform: capitalize;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 			}
 			.ipsunDolor__h3{
 				text-transform: uppercase;
@@ -113,6 +122,7 @@
 				font-size: 32px;
 				font-weight: 400;
 				line-height: 20px;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 			}
 			.ipsunDolor__p{
 				color: white;
@@ -121,6 +131,7 @@
 				font-weight: 100;
 				line-height: 25px;
 				margin-top: 8px;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 			}
 			.images_phons{
 				margin-top: 130px;
@@ -131,7 +142,7 @@
 			.button_play{
 				position: absolute;
 				top: 175px;
-				left: 150px;
+				left: 155px;
 				cursor: pointer;
 				z-index: 1;
 			}
@@ -152,13 +163,13 @@
 				background-repeat: no-repeat;
 				opacity: 0.5;
 			}
-			.navigation__item:hover{
+			.navigation__item:active{
 				background-position: 0 -2px;
 			}
 /*about our company*/
 	.about_our_company_bg{
 		width: 100%;
-		height: 340px;
+		min-height: 340px;
 		background: linear-gradient(to top, #33263a, #745083);
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
@@ -169,7 +180,7 @@
 		}
 	}
 	.about_our_company_contant{
-		width: 1000px;
+		width: 960px;
 		margin: 0 auto;
 	}
 	/*leftblock*/
@@ -183,15 +194,16 @@
 		.aboutcompany__logo{
 			width: 30px;
 			height: 30px;
-			margin-left: 39px;
+			margin-left: 5px;
 			margin-top: 6px;
 			background-image: url(../img/mini-logo.png);
 			background-position: -6px -5px;
 			float: left;
 		}
 		.aboutcompany__item{
-			width: 210px;
+			width: 220px;
 			float: right;
+			margin-right: 30px; 
 		}
 		.aboutcompany__head{
 			color: white;
@@ -213,7 +225,7 @@
 		}
 		.aboutcompany__link{
 			margin-top: 15px;
-			margin-right: -5px; 
+			margin-right: 15px; 
 			text-transform: uppercase;
 			float: right;
 			font-family: LeagueGothic-Regular;
@@ -240,7 +252,6 @@
 		.rightblock{
 			float: right;
 			margin-top: 75px;
-			margin-right: 20px;
 		}
 		.rightblock__logo{
 			background-position: -65px -5px;
@@ -367,10 +378,12 @@
 			text-shadow: 0.5px 0.9px 0 white;
 			color: #454545;
 			font-family: LeagueGothic-Regular;
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
 			text-decoration: none;
+			margin-right: 30px; 
+			text-transform: uppercase;
 		}
 /*brend*/
 	.brend{
@@ -537,11 +550,11 @@
 
 /*1600px*/
 	@media (max-width: 1550px){
-		/*arrows*/
+		/*arrows
 			.arrow_left, .arrow_right{
 				display: none;
 			}
-			
+			*/
 	}
 /*960px*/
 	@media (max-width: 960px){
@@ -553,52 +566,59 @@
 	}
 /*768px*/	
 	@media (max-width: 768px){
+	body{
+		min-width: 768px;
+	}
 	/*top*/
 		.top{
+				width: 768px;
 				background-position: -810px	-10px;
 				height: 805px;
 			}
 		/*top contant*/
 			.top__contant{
-				width: 728px;
+				width: 768px;
+				margin: 0px;
 			}
 			.top__logo{
 				text-transform: uppercase;
 				margin-top: 70px;
-				margin-left: 13px;
+				margin-left: 20px;
 			}
 		/*menu*/
 			.menu{
 				clear: both;
+				transform: rotate(-180deg);
+				display: block;
+				float: left;
+				margin-top: 25px;
 			}
 			.menu_item{
-				margin: 22px 0 0 52px;
+				margin: 0px;
+				margin-left: 40px;
+				padding-left: 20px;
 				list-style-type: none;
-				float: right;
+				float: left;
 				font-size: 24px;
 				font-weight: 400;
+				transform: rotate(-180deg);
 			}
 			.menu__link{
 				padding-right: 0px;
 				padding-left: 0px;
 			}
-			.menu li:nth-child(1){
-				margin-right: 80px;
-			}
-			.menu li:nth-child(6){
-				margin-left: 0;
-			}
 		/*arrows*/
 			.arrows{
 				top: 252px;
+				min-width: 768px;
 			}
 			.arrow_left, .arrow_right{
 				display: inline;
-				margin: 175px 3px;
+				margin: 175px 0px;
 			}
 			.arrow_right{
 				float: right;
-				margin-right: 0px;
+				margin-right: 15px;
 				background-position: -35px;
 			}
 		/*Ipsun_Dolor*/
@@ -606,7 +626,7 @@
 				width: 280px;
 				float: left;
 				top: 357px;
-				margin-left: 40px;
+				margin-left: 45px;
 			}
 			.ipsunDolor__h1{
 				font-size: 48px;
@@ -626,7 +646,7 @@
 			}
 			.images_phons{
 				margin-top: 25px;
-				margin-right: -8px;
+				margin-right: 50px;
 			}
 			.button_play{
 				position: absolute;
@@ -644,6 +664,10 @@
 	/*about our company*/
 		.about_our_company_contant{
 			width: 768px;
+		}
+		.about_our_company_bg{
+			width: 768px;
+			padding-bottom: 100px;
 		}
 		.aboutcompany{
 			width: 240px;
@@ -678,6 +702,9 @@
 				margin-right: 14px;
 			}
 	/*information*/
+		.information_bg{
+			width: 768px;
+		}
 		.information_contant{
 			width: 728px;
 			margin: 0 auto;
@@ -741,6 +768,9 @@
 				font-size: 24px;
 			}	
 	/*brend*/
+		.brend{
+			width: 768px;
+		}
 		.brend__container{
 			width: 728px;
 			margin: 0 auto;
@@ -774,6 +804,10 @@
 			margin-left: 35px;
 		}
 	/*news*/
+		.news
+		{
+			width: 768px;
+		}
 		.news_container{
 			width: 768px;
 		}
@@ -821,7 +855,7 @@
 			}
 	/*footer*/
 		.foot{
-			width: 100%;
+			width: 768px;
 			height: 200px;
 			background-image: url(../img/foot_bg_768.jpg);
 		}
@@ -860,8 +894,12 @@
 		}
 /*480px*/	
 	@media (max-width: 480px){
+	html,body{
+		min-width: 480px;
+	}
 	/*top contant*/
 		.top{
+				width: 480px;
 				background-position: -970px	-10px;
 				height: 557px;
 			}
@@ -941,6 +979,7 @@
 			}
 		/*arrows*/
 			.arrows{
+				min-width: 480px;
 				top: 212px;
 				height: 245px;
 			}
@@ -957,7 +996,7 @@
 			}
 			.arrow_right{
 				float: right;
-				margin-right: 0px;
+				margin-right:35px;
 			}	
 		/*Ipsun_Dolor*/
 			.ipsunDolor{
@@ -979,17 +1018,17 @@
 			}
 			.images_phons{
 				margin-top: 55px;
-				margin-right: 23px;	
+				margin-right: 50px;	
 			}
 			.phone{
-				width: 215px;
-				height: 303px;
+				width: 200px;
+				height: 300px;
 			}
 			.button_play{
 				width: 55px;
 				height: 55px;
 				top: 125px;
-				left: 105px;
+				left: 100px;
 			}
 		/*navigation*/
 			.navigation{
@@ -1000,6 +1039,7 @@
 			}
 	/*about our company*/
 		.about_our_company_bg{
+			width: 480px;
 			height: 597px;
 		}
 		.about_our_company_contant{
@@ -1010,11 +1050,12 @@
 				width: 100%;
 			}
 			.aboutcompany__logo{
-				margin-left: 15px;
+				margin-left: 0px;
 				margin-top: 5px;
 			}
 			.aboutcompany__item{
-				width: 380px;
+				margin-left: 20px;
+				width: 360px;
 			}
 			.aboutcompany__head{
 				font-size: 24px;
@@ -1047,6 +1088,7 @@
 			}
 	/*information*/
 		.information_bg{
+			width: 480px;
 			height: 785px;
 		}
 		.information_contant{
@@ -1099,6 +1141,7 @@
 		}
 	/*brend*/
 		.brend{
+			width: 480px;
 			height: 230px;
 			background: white;
 		}
@@ -1138,6 +1181,7 @@
 	/*news*/
 		.news
 		{
+			width: 480px;
 			height: 670px;
 		}
 		.news_container{
@@ -1181,6 +1225,7 @@
 			}
 	/*footer*/
 		.foot{
+			width: 480px;
 			height: 193px;
 		}
 		.foot__container{
@@ -1213,12 +1258,15 @@
 			margin-right: 175px;
 			margin-top: 20px;
 		}
-
 	}
 /*320px*/
 	@media (max-width: 320px){
+	body{
+		min-width: 320px;
+	}
 	/*top*/
 		.top{	
+				width: 320px;
 				background-position: -1035px	-10px;
 				height: 525px;
 			}
@@ -1231,6 +1279,7 @@
 		/*menu*/
 			.panel{
 				margin: 70px 0 0 87px;
+
 			}
 			.panel li:nth-child(1):hover ul{ 
 				display: block;
@@ -1281,6 +1330,7 @@
 			}
 		/*arrows*/
 			.arrows{
+				min-width: 320px;
 				top: 310px;
 				height: 245px;
 				background: none;
@@ -1288,6 +1338,9 @@
 			.arrow_left, .arrow_right{
 				display: inline;
 				margin: 0px 0px;
+			}
+			.arrow_right{
+				margin-right: 15px;
 			}
 		/*Ipsun_Dolor*/
 			.ipsunDolor{
@@ -1325,13 +1378,17 @@
 		.about_our_company_contant{
 			width: 320px;
 		}
+		.about_our_company_bg{
+			width: 320px;
+			height: 800px;
+		}
 		.aboutcompany{
-			width: 280px;
+			width: 300px;
 			margin-top: 67px;
 		}
 		/*leftblock*/
 			.aboutcompany__logo{
-				margin-left: 30px;
+				margin-left: 20px;
 			}
 			.aboutcompany__item{
 				width: 200px;
@@ -1368,6 +1425,7 @@
 			}
 	/*information*/
 		.information_bg{
+			width: 320px;
 			height: 785px;
 		}
 		.information_contant{
@@ -1444,6 +1502,7 @@
 			}
 	/*brend*/
 		.brend{
+			width: 320px;
 			height: 420px;
 		}
 		.brend__container{
@@ -1486,6 +1545,7 @@
 		}
 	/*footer*/
 		.foot{
+			width: 320px;
 			height: 200px;
 		}
 		.foot__container{
