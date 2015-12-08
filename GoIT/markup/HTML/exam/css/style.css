@@ -891,7 +891,7 @@ body{
 			text-align: right;
 		}
 /*480px*/
-	@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+	@media only screen and (min-device-width : 480px) and (max-device-width : 800px){
 	html,body{
 		min-width: 480px;
 	}
