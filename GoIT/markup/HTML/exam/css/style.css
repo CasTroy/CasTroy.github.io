@@ -171,14 +171,13 @@ body{
 		width: 100%;
 		min-height: 340px;
 		background: linear-gradient(to top, #33263a, #745083);
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
 	}
-	@-moz-document url-prefix() {
+	/*@-moz-document url-prefix() {
 		.about_our_company_bg{
-			background-image: url(../img/ie/960px.jpg);
+			//background-image: url(../img/ie/960px.jpg);
+			background: linear-gradient(to top, #33263a, #745083);
 		}
-	}
+	}*/
 	.about_our_company_contant{
 		width: 960px;
 		margin: 0 auto;
@@ -548,14 +547,11 @@ body{
 		float: right;
 	}
 
-/*1600px*/
-	@media (max-width: 1550px){
-		/*arrows
-			.arrow_left, .arrow_right{
-				display: none;
-			}
-			*/
-	}
+
+
+
+
+
 /*960px*/
 	@media (max-width: 960px){
 		/*arrows*/
@@ -564,7 +560,7 @@ body{
 			}
 			
 	}
-/*768px*/	
+/*768px*/
 	@media (max-width: 768px){
 	body{
 		min-width: 768px;
@@ -610,6 +606,7 @@ body{
 		/*arrows*/
 			.arrows{
 				top: 252px;
+				width: 768px;
 				min-width: 768px;
 			}
 			.arrow_left, .arrow_right{
@@ -674,12 +671,13 @@ body{
 		}
 		/*leftblock*/
 			.aboutcompany__logo{
-				margin-left: 38px;
+				margin-left: 33px;
 				margin-top: 4px;
 			}
 			.aboutcompany__item{
-				width: 150px;
+				width: 140px;
 				margin-top: 4px;
+				margin-right: 20px;
 			}
 			.aboutcompany__head{
 				font-size: 24px;
@@ -892,8 +890,8 @@ body{
 			display: block;
 			text-align: right;
 		}
-/*480px*/	
-	@media (max-width: 480px){
+/*480px*/
+	@media  only screen and (max-device-width: 480px){
 	html,body{
 		min-width: 480px;
 	}
@@ -979,6 +977,7 @@ body{
 			}
 		/*arrows*/
 			.arrows{
+				width: 480px;
 				min-width: 480px;
 				top: 212px;
 				height: 245px;
@@ -1260,7 +1259,7 @@ body{
 		}
 	}
 /*320px*/
-	@media (max-width: 320px){
+	@media only screen and (max-device-width: 320px){
 	body{
 		min-width: 320px;
 	}
@@ -1330,6 +1329,7 @@ body{
 			}
 		/*arrows*/
 			.arrows{
+				width: 320px;
 				min-width: 320px;
 				top: 310px;
 				height: 245px;
@@ -1560,3 +1560,4 @@ body{
 			margin-right:100px;
 		}
 	}
+
