@@ -85,9 +85,9 @@ body{
 			}
 		/*Ipsun_Dolor*/
 			.ipsunDolor{
-				position: absolute;
+				position: relative;
 				clear: both;
-				width: 500px;
+				width: 70%;
 				float: left;
 				top: 355px;
 				z-index: 1;
