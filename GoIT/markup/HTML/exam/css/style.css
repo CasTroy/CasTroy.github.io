@@ -1101,7 +1101,7 @@
 			}	
 	}
 /*960px*/
-	@media (min-width: 960px),(max-width: 1000px){
+	@media (min-width: 960px){
 		/*top*/
 			.top{
 				height: 849px;
@@ -1114,59 +1114,59 @@
 				margin-left: 0px;
 				display: inline-block;
 			}
-		/*menu*/
-			.panel{
-				clear: none;
-				width: 70%;
-				margin-left: 13.5%;
-				float: left;
-			}
-			.menu_item{
-				margin-top: 55px;
-			}
-			.menu li:nth-child(2){
-				margin-left: 9%;
-			}
-			.menu li:nth-child(3){
-				margin-left: 9%;
-			}
-			.menu li:nth-child(4){
-				margin-left: 9%;
-			}
-			.menu li:nth-child(5){
-				margin-left: 8%;
-			}
-			.menu li:nth-child(6){
-				margin-left: 8%;
-			}
-		/*arrows*/
-			.arrows{
-				margin-top: 35px;
-			}
-			.arrow_left, .arrow_right{
-				display: none;
-			}
-		/*Ipsun_Dolor*/
-				.ipsunDolor{
-					left: 0px;
+			/*menu*/
+				.panel{
+					clear: none;
+					width: 70%;
+					margin-left: 13.5%;
+					float: left;
 				}
-				.ipsunDolor__h1{
-					margin-top: 12px;
-					font-size: 60px;
+				.menu_item{
+					margin-top: 55px;
 				}
-				.ipsunDolor__h3{
-					font-size: 30px;
-					margin-top: 0px;
+				.menu li:nth-child(2){
+					margin-left: 9%;
 				}
-				.ipsunDolor__p{
-					font-size: 20px;
-					margin-top: 12px;
-					
+				.menu li:nth-child(3){
+					margin-left: 9%;
 				}
-				.images_phons{
-					margin-top: 120px;
-					margin-left: 64%;
+				.menu li:nth-child(4){
+					margin-left: 9%;
 				}
+				.menu li:nth-child(5){
+					margin-left: 8%;
+				}
+				.menu li:nth-child(6){
+					margin-left: 8%;
+				}
+			/*arrows*/
+				.arrows{
+					margin-top: 35px;
+				}
+				.arrow_left, .arrow_right{
+					display: none;
+				}
+			/*Ipsun_Dolor*/
+					.ipsunDolor{
+						left: 0px;
+					}
+					.ipsunDolor__h1{
+						font-size: 60px;
+						
+					}
+					.ipsunDolor__h3{
+						font-size: 30px;
+						margin-top: 0px;
+					}
+					.ipsunDolor__p{
+						font-size: 20px;
+						margin-top: 12px;
+					}
+					.images_phons{
+						width: 30%;
+						margin-top: 120px;
+						margin-left: 64%;
+					}
 			/*navigation*/
 				.navigation{
 					margin:0px 15.5% 0px 0px;
@@ -1179,5 +1179,213 @@
 				.navigation__item:active{
 					background-position: 0 -2px;
 				}
-				
-}
+		/*about our company*/
+			.about_our_company_bg{
+				min-height: 343px;
+			}
+			/*leftblock*/
+				.leftblock{
+					float: left;
+					width: 30%;
+					margin-top: 80px;
+					margin-left: 1%;
+				}
+				.aboutcompany__head{
+					font-size: 30px;
+				}
+				.aboutcompany__text{
+					margin-top: 10px;
+				}
+				.aboutcompany__text span{
+					display: inline;
+				}
+				.aboutcompany__item{
+					margin-left: 55px;
+				}
+				.aboutcompany__link{
+					margin-right: 0px;
+					margin-top: 12px;
+				}
+			/*centerblock*/
+				.centerblock{
+					float: left;
+					width: 30%;
+					margin-top: 80px;
+					margin-left: 4%;
+				}
+			/*rightblock*/
+				.rightblock{
+					width: 30%;
+					float: left;
+					margin-top: 80px;
+					margin-left: 4%;
+				}			
+		/*information*/
+			.information_bg{
+				height: 485px;
+			}
+			.information_contant{
+				margin-left: 2.5%;
+			}
+			/*starts*/
+				.starts{
+					width: 46%;
+					min-height: 240px;		
+					padding-bottom: 30px;
+				}
+				.starts__header{
+					font-size: 30px;
+					margin-top: 30px;
+				}
+				.starts__header span{
+					display: inline;
+				}
+				.starts__text{
+					margin-top: 13px;
+					padding-right: 20px;
+				}
+				.starts__text span{
+					display: inline;
+				}
+				.starts__text span>span{
+					display:  inline;
+				}
+				.starts_navigation{
+					float: left;
+					margin-top: -9px;
+					margin-left: 16.1%;
+				}
+			/*recent*/
+				.recent{
+					width: 45%;
+					margin-top: 98px;
+					margin-left: 7%;
+				}
+				.recent__list{
+					margin-top: 19px;
+				}
+				.recent__link{	
+					margin-right: -3%; 
+				}
+		/*brend*/
+			.brend{
+				width: 100%;
+				height: 120px;
+			}
+			.brend__list{
+				margin-left: 10%;
+			}
+
+			
+			.brend__list li:nth-child(1){
+				margin-top: 27px;
+				margin-right: 8.5%;
+			}
+			.brend__list li:nth-child(2){
+				margin-top: 27px;
+				margin-right: 7.5%;
+			}
+			.brend__list li:nth-child(3){
+				margin-top: 29px;
+				margin-right: 9%;
+			}
+			.brend__list li:nth-child(4){
+				margin-top: 29px;
+				margin-right: 2.5%;
+			}
+			.brend__list li:nth-child(5){
+				margin-top: 28px;
+				margin-right: 8%;
+			}
+			.brend__list li:nth-child(6){
+				margin-top: 28px;
+			}	
+		/*news*/
+			.news
+			{
+				width: 100%;
+				height: 395px;
+			}
+			.news__box{
+				margin-left: 0px;
+				width: 29%;
+			}
+			.news__header{
+				margin-top: 90px;
+				font-size: 46px;
+			}
+			.news__p{
+				margin-top: 5px;
+			}
+			.news__p span{
+				display: none;
+			}
+			.news__p_italics{
+				display: block;
+				font-family: OpenSans-Regular;
+				text-shadow: 0.5px 0.9px 0 white;
+				color: #c5c5c5;
+				font-size: 14px;
+				font-style: italic;
+				line-height: 24px;
+				margin-top: 9px;
+			}
+			/*commets*/
+				.comments{
+					width: 30%;
+					margin-left: 5%;
+				}
+				.comments span{
+					display: inline;
+				}
+				.comments>.news__header{
+					font-size: 30px;	
+				}
+			/*categories*/
+				.categories{
+					float: right;
+					width: 30%;
+					margin-left: 5%;
+				}
+				.categories span{
+					display: inline;
+				}
+				.categories>.news__header{
+					font-size: 30px;
+				}
+		/*footer*/
+			.foot{
+				width: 100%;
+				height: 100px;
+				background-image: url(../img/foot_bg.jpg);
+				box-shadow: inset 2px 5px 45px -13px rgba(0,0,0,0.75);
+			}
+			.foot__list li:nth-child(1){
+				margin-left: 0px;
+			}
+			.foot__list li:nth-child(2){
+				margin-left: 4.5%;
+			}
+			.foot__list li:nth-child(3){
+				margin-left: 4.8%;
+			}
+			.foot__list li:nth-child(4){
+				margin-left: 4.5%;
+			}
+			.foot__list li:nth-child(5){
+				margin-left: 4.5%;
+			}
+			.foot__list li:nth-child(6){
+				margin-left: 4.5%;
+			}
+			.foot__list li:nth-child(7){
+				float: right;
+				margin: 12px 0px 0px 0px;
+			}	
+	}	
+/*1000px*/
+	@media (min-width: 1000px){
+		.arrow_left, .arrow_right{
+				display: inline;
+			}
+	}
