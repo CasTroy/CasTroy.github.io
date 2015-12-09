@@ -1104,6 +1104,7 @@
 	@media (min-width: 960px){
 		/*top*/
 			.top{
+				width: 100%;
 				height: 849px;
 				background-position: -720px -15px;
 			}
@@ -1385,6 +1386,9 @@
 	}	
 /*1000px*/
 	@media (min-width: 1000px){
+			.top{
+				background-position: -220px -15px;
+			}
 		.arrow_left, .arrow_right{
 				display: inline;
 			}
