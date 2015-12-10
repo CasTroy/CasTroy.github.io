@@ -127,7 +127,7 @@
 				margin-left: -85px;
 			}
 			.arrow_right{
-				margin-left: 205px;
+				margin-left: 195px;
 				float: right;
 				background-position: -33px;
 			}
@@ -339,6 +339,9 @@
 				margin-left: 6%;
 
 			}
+			.recent__item span{
+				display: none;
+			}
 			.recent__header{
 				text-shadow: 0.5px 0.9px 0 white;
 				font-family: LeagueGothic-Regular;
@@ -394,6 +397,7 @@
 				line-height: 24px;
 				text-decoration: none;
 				text-transform: uppercase;
+				margin-right: 10px;
 			}
 	/*brend*/
 		.brend{
@@ -616,7 +620,7 @@
 				}
 				.recent__link{
 					margin-top: -2px;
-					margin-right: 12%;
+					margin-right: 24%;
 				}
 		/*brend*/
 			.brend{
@@ -994,8 +998,8 @@
 				}
 				.starts_navigation{
 					float: left;
-					margin-top: -335px;
-					margin-left: 16%;
+					margin-top: -7px;
+					margin-left: 16.4%;
 				}
 			/*recent*/
 				.recent{
@@ -1007,7 +1011,7 @@
 					margin-top: 19px;
 				}
 				.recent__link{	
-					margin-right: 1%; 
+					margin-right: 10%; 
 				}
 		/*brend*/
 			.brend{
@@ -1112,14 +1116,14 @@
 				margin-left: 0px;
 			}
 			.top__logo{
-				margin-left: 0px;
+				margin-left: 3%;
 				display: inline-block;
 			}
 			/*menu*/
 				.panel{
 					clear: none;
 					width: 70%;
-					margin-left: 13.5%;
+					margin-left: 10.5%;
 					float: left;
 				}
 				.menu_item{
@@ -1145,14 +1149,16 @@
 					margin-top: 35px;
 				}
 				.arrow_left, .arrow_right{
-					display: none;
+					display: inline;
 				}
 			/*Ipsun_Dolor*/
 					.ipsunDolor{
 						left: 0px;
+						margin-left: 5%;
 					}
 					.ipsunDolor__h1{
 						font-size: 60px;
+
 						
 					}
 					.ipsunDolor__h3{
@@ -1231,8 +1237,12 @@
 			/*starts*/
 				.starts{
 					width: 46%;
-					min-height: 240px;		
-					padding-bottom: 30px;
+					min-height: 340px;		
+					padding-bottom: 0px;
+					background-color: inherit;
+					background-image: url(../img/massege.png);
+					background-size: 100%;
+					background-repeat: no-repeat;
 				}
 				.starts__header{
 					font-size: 30px;
@@ -1253,20 +1263,23 @@
 				}
 				.starts_navigation{
 					float: left;
-					margin-top: -9px;
-					margin-left: 16.1%;
+					margin-top: -50px;
+					margin-left: 18.5%;
 				}
 			/*recent*/
 				.recent{
-					width: 45%;
+					width: 50%;
 					margin-top: 98px;
-					margin-left: 7%;
+					margin-left: 3%;
 				}
 				.recent__list{
 					margin-top: 19px;
 				}
 				.recent__link{	
-					margin-right: -3%; 
+					margin-right: 3%; 
+				}
+				.recent__item span{
+					display: inline;
 				}
 		/*brend*/
 			.brend{
@@ -1308,7 +1321,7 @@
 				height: 395px;
 			}
 			.news__box{
-				margin-left: 0px;
+				margin-left: 3%;
 				width: 29%;
 			}
 			.news__header{
@@ -1329,12 +1342,12 @@
 				font-size: 14px;
 				font-style: italic;
 				line-height: 24px;
-				margin-top: 9px;
+				margin-top: 8px;
 			}
 			/*commets*/
 				.comments{
 					width: 30%;
-					margin-left: 5%;
+					margin-left: 3%;
 				}
 				.comments span{
 					display: inline;
@@ -1346,7 +1359,7 @@
 				.categories{
 					float: right;
 					width: 30%;
-					margin-left: 5%;
+					margin-left: 3%;
 				}
 				.categories span{
 					display: inline;
@@ -1362,7 +1375,7 @@
 				box-shadow: inset 2px 5px 45px -13px rgba(0,0,0,0.75);
 			}
 			.foot__list li:nth-child(1){
-				margin-left: 0px;
+				margin-left: 3%;
 			}
 			.foot__list li:nth-child(2){
 				margin-left: 4.5%;
@@ -1388,8 +1401,5 @@
 	@media (min-width: 1000px){
 			.top{
 				background-position: -220px -15px;
-			}
-		.arrow_left, .arrow_right{
-				display: inline;
 			}
 	}
