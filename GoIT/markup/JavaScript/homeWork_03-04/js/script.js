@@ -2,7 +2,7 @@
 	test = {
 	/*Поля object*/
 		m_body: 0,
-		m_container: 0,
+		//m_container: 0,
 		m_h4: 0,
 		m_ol: 0,
 		m_ol_item: 0,
@@ -10,18 +10,20 @@
 		m_ul_item: 0,
 		m_checkBox: 0, 
 		m_form: 0,
+		m_div: 0,
 		m_span: 0,
 		m_button: 0,
 	/*Создание теста*/
 		createTest: function(){
 			this.m_body = document.body;
-			this.createContainer();
+			this.createForm();
 		},
 	/*Общий контейнер для всего*/
-		createContainer: function(){
-			this.m_container = document.createElement('section');
-			this.m_container.classList.add('container');
-			this.m_body.appendChild(this.m_container);
+		createForm: function(){
+			this.m_form = document.createElement('form');
+			this.m_form.setAttribute('action', '#');
+			this.m_form.classList.add('container');
+			this.m_body.appendChild(this.m_form);
 			this.createH4();
 			this.createOl();
 			this.createButton();
@@ -31,7 +33,7 @@
 			this.m_h4 = document.createElement('h4');
 			this.m_h4.innerHTML = "Тест по программированию";
 			this.m_h4.style.marginLeft = "270px";
-			this.m_container.appendChild(this.m_h4);
+			this.m_form.appendChild(this.m_h4);
 		},
 	/*Создание нумированного списка*/	
 		createOl: function(){
@@ -39,7 +41,7 @@
 			this.m_ol.style.marginLeft = "100px";
 			this.m_ol.style.marginBottom = "60px";
 			this.m_ol.style.marginTop = "40px";
-			this.m_container.appendChild(this.m_ol);
+			this.m_form.appendChild(this.m_ol);
 			for(var i = 0; i < 3; ++i)
 				this.createOlItem(i+1);
 		},
@@ -66,13 +68,12 @@
 			this.m_ul_item.style.marginTop = "5px";
 			this.m_ul_item.style.listStyleType = "none";
 			this.m_ul.appendChild(this.m_ul_item);
-			this.createForm(number);
+			this.createDiv(number);
 		},
-	/*Создание формы не нумерованого списка*/
-		createForm: function(number){
-			this.m_form = document.createElement('form');
-			this.m_form.setAttribute('action', '#');
-			this.m_ul_item.appendChild(this.m_form);
+	/*Создание блока не нумерованого списка*/
+		createDiv: function(number){
+			this.m_div = document.createElement('div');
+			this.m_ul_item.appendChild(this.m_div);
 			this.createCheckBox();
 			this.createSpan(number);
 		},
@@ -80,17 +81,18 @@
 		createCheckBox: function(){
 			this.m_checkBox = document.createElement('input');
 			this.m_checkBox.setAttribute('type', 'checkbox');
-			this.m_form.appendChild(this.m_checkBox); 
+			this.m_div.appendChild(this.m_checkBox); 
 		},
 	/*Создание span в форме не нумерованого списка*/
 		createSpan: function(number){
 			this.m_span = document.createElement('span');
 			this.m_span.innerHTML = "Вариант ответа №"+number;
-			this.m_form.appendChild(this.m_span); 
+			this.m_div.appendChild(this.m_span); 
 		},
 	/*Создание кнопки*/
 		createButton: function(){
-			this.m_button = document.createElement('button')
+			this.m_button = document.createElement('button');
+			this.m_button.setAttribute('onclick', 'submitOn()');
 			this.m_button.style.width = "325px";
 			this.m_button.style.height = "50px";
 			this.m_button.style.fontSize = "20px"
@@ -98,8 +100,10 @@
 			this.m_button.style.borderRadius = "3px";
 			this.m_button.style.marginLeft = "250px";
 			this.m_button.innerHTML = "Проверить мои результаты";
-			this.m_container.appendChild(this.m_button); 
+			this.m_form.appendChild(this.m_button); 
 		},
 	}
-
+function submitOn(){
+	alert("submit");
+}
 test.createTest();
