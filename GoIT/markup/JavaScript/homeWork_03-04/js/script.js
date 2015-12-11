@@ -92,9 +92,7 @@
 	/*Создание кнопки*/
 		createButton: function(){
 			this.m_button = document.createElement('button');
-			this.m_button.addEventListener('click', function(){
-				alert("submit");
-			});
+			this.m_button.addEventListener('click', submitForm);
 			this.m_button.style.width = "325px";
 			this.m_button.style.height = "50px";
 			this.m_button.style.fontSize = "20px"
@@ -106,4 +104,7 @@
 		},
 	}
 
+function submitForm(){
+	alert("submit");
+}
 test.createTest();
