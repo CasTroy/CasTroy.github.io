@@ -524,9 +524,6 @@ function Timer(){
 						this._button.style.marginRight = "5%";
 						this._button.id = name;
 					}
-					
-					
-
 					this._findNumbers = function(){
 						this.num_1 = document.getElementById('_one');
 						this.num_2 = document.getElementById('_two');
@@ -574,7 +571,10 @@ function Timer(){
 						{
 							second_2 = false;
 							number_2 = number;
-							seconds = parseInt(number_1.toString() + number_2.toString());
+							if(!number_1)
+								seconds = number_2*10;
+							else
+								seconds = parseInt(number_1.toString() + number_2.toString());
 							if(seconds > 9)
 								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+seconds; 
 							else
@@ -593,7 +593,10 @@ function Timer(){
 						else if(minute_2){
 							minute_2 = false;
 							number_4 = number;
-							minutes = parseInt(number_3.toString() + number_4.toString());
+							if(!number_3)
+								minutes = number_4*10;
+							else
+								minutes = parseInt(number_3.toString() + number_4.toString());
 							if(minutes > 9){
 								if(seconds > 9)
 									this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds; 
@@ -630,7 +633,10 @@ function Timer(){
 						else if(hour_2){
 							hour_2 = false;
 							number_6 = number;
-							hours = parseInt(number_5.toString() + number_6.toString());
+							if(!number_5)
+								hours = number_6*10;
+							else
+								hours = parseInt(number_5.toString() + number_6.toString());
 							if(hours > 9)
 							{
 								if(minutes > 9){
@@ -662,12 +668,6 @@ function Timer(){
 								}
 							}
 						}
-
-
-
-					//	alert(number_1);
-					//	alert(number_2);
-
 					}
 				//Button text
 					this._CDTButtonText = function(button){
