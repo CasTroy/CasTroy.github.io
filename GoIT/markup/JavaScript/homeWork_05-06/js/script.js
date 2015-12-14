@@ -449,6 +449,7 @@ function Timer(){
 			this._moveLeftToCenterBlock = function(){		
 						if(moveArrow)
 						{
+							clearInterval(interval);
 							_ClearCDTimer();
 							step = 100;
 							interval = setInterval(_moveLefttTo, 10);
