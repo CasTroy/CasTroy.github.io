@@ -843,14 +843,8 @@ function Timer(){
 										_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
 								}
 							}
-
-
-
-
-
-							//_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds; 
 							_CDTTextSmall.innerHTML = step;
-							step -=500;
+							step -=5;
 						}
 					//clear
 						this._CDTButtontClear =  function(){
