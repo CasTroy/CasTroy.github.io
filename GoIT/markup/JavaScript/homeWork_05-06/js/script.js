@@ -788,7 +788,67 @@ function Timer(){
 									}
 								}
 							}
-							_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds; 
+							
+							if(seconds > 9)
+								_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds;
+							else
+								_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+							
+							if(minutes > 9)
+							{
+								if(seconds > 9)
+									_CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds;
+								else
+									_CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+"0"+seconds;
+							}
+							else
+							{
+								if(seconds > 9)
+									_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds;
+								else
+									_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+							}
+
+							if(hours > 9)
+							{
+								if(minutes > 9)
+								{
+									if(seconds > 9)
+										_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds;
+									else
+										_CDTText.innerHTML = hours +" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										_CDTText.innerHTML = hours +" : "+"0"+minutes+" : "+seconds;
+									else
+										_CDTText.innerHTML = +hours +" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+							}
+							else
+							{
+								if(minutes > 9)
+								{
+									if(seconds > 9)
+										_CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds;
+									else
+										_CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds;
+									else
+										_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+							}
+
+
+
+
+
+							//_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds; 
 							_CDTTextSmall.innerHTML = step;
 							step -=500;
 						}
