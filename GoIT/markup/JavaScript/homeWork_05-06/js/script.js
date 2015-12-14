@@ -15,9 +15,6 @@ function Timer(){
 			this._container.style.overflow = "hidden"
 			this._container.style.height = "100%";
 			this._container.style.margin = "0 auto";
-			//delete
-			//this._container.style.background = "green";
-			//this._container.style.margin = "0 auto";
 		}
 	//Create center block
 		this._createCentrBlock = function(){
@@ -25,6 +22,7 @@ function Timer(){
 			this._container.appendChild(this._buttons);
 			this._buttons.style.position = "absolute";
 			this._buttons.style.width = "100%";
+			this._buttons.style.zIndex = "0";
 		}
 		//Create c left block
 			this._createLeftBlock = function(){
@@ -54,6 +52,7 @@ function Timer(){
 					this._leftButton.style.cursor = "pointer";
 					this._leftButton.style.marginLeft = "30%";
 					this._leftButton.style.marginTop = "15%";
+					this._leftButton.style.transform = "rotate(90deg)";
 					this._leftButton.addEventListener('click', _moveLeft);
 					this._leftButton.addEventListener('mouseover', _bgGreen);
 					this._leftButton.addEventListener('mouseout', function(){_bgWhite(leftBlock)});
@@ -108,7 +107,7 @@ function Timer(){
 					this.rightBlock.appendChild(this._rightButton);
 					this._rightButton.style.width = "40%";
 					this._rightButton.style.cursor = "pointer";
-					this._rightButton.style.transform = "scale(-1,-1)";
+					this._rightButton.style.transform = "rotate(-90deg)";
 					this._rightButton.style.marginLeft = "30%";
 					this._rightButton.style.marginTop = "15%";
 					this._rightButton.addEventListener('mouseover', _bgRed);
@@ -124,7 +123,7 @@ function Timer(){
 						move = false;
 						this._buttons.style.marginLeft = step+"%";
 						//this._container.style.marginLeft = step+"%";
-						if(step === 100)
+						if(step === -100)
 						{
 							clearInterval(interval);
 							move = true;
@@ -134,8 +133,7 @@ function Timer(){
 						step -= 5;
 					}
 	/*-------------------------*/
-	
-	//Create timer up
+	//Create Stop Watch(timer up)
 		this._createTimerUp = function(){
 			this._timerUp = document.createElement('div');
 			this._buttons.appendChild(this._timerUp);
@@ -406,6 +404,175 @@ function Timer(){
 						}
 						step -= 5;
 					}
+	/*-------------------------*/
+	//Create Count Down
+		this._createCountDown = function(){
+			this._countDown = document.createElement('div');
+			this._buttons.appendChild(this._countDown);
+		}
+		//Create blue line Count Down 
+			this._createTopBlueLineCountDown = function(){
+				this._blueLineCD = document.createElement('div');
+				this._countDown.appendChild(this._blueLineCD);
+				this._blueLineCD.style.position = "absolute";
+				this._blueLineCD.style.minWidth = "1000px";
+				this._blueLineCD.style.marginLeft = "100%";
+				this._blueLineCD.style.height = "80px";
+				this._blueLineCD.style.backgroundColor = "#003399";
+				this._blueLineCD.style.top = "10%";
+				this._blueLineCD.style.zIndex = "0";
+			}
+			this._createBottomBlueLineCountDown = function(){
+				this._blueLineCD = document.createElement('div');
+				this._countDown.appendChild(this._blueLineCD);
+				this._blueLineCD.style.position = "absolute";
+				this._blueLineCD.style.minWidth = "1000px";
+				this._blueLineCD.style.marginLeft = "100%";
+				this._blueLineCD.style.height = "80px";
+				this._blueLineCD.style.backgroundColor = "#003399";
+				this._blueLineCD.style.top = "60%";
+			}
+		//Create arrow
+			this._createArrowCD = function(){
+				this._arrowCD = document.createElement('img');
+				this._countDown.appendChild(this._arrowCD);
+				this._arrowCD.setAttribute('src', 'img/arrow.png');
+				this._arrowCD.style.position = "absolute";
+				this._arrowCD.style.zIndex = "1";
+				this._arrowCD.style.marginTop = "-38.7%";
+				this._arrowCD.style.marginLeft = "101%";
+				this._arrowCD.style.width = "7%";
+				this._arrowCD.style.cursor = "pointer";
+				this._arrowCD.addEventListener('click', _moveLeftToCenterBlock);	
+			}
+			this._moveLeftToCenterBlock = function(){		
+						if(move)
+						{
+							//_ClearTimer();
+							step = 100;
+							interval = setInterval(_moveLefttTo, 10);
+
+						}
+					}
+					this._moveLefttTo= function(){
+						move = false;
+						this._buttons.style.marginLeft = "-"+step+"%";
+						if(step === 0)
+						{
+							clearInterval(interval);
+							move = true;
+							step = 0;
+							return;
+						}
+						step -= 5;
+					}
+		//Create Count Down timer
+			this._createCDTimer = function(){
+				this._CDTimer = document.createElement('div');
+				this._countDown.appendChild(this._CDTimer);
+				this._CDTimer.style.position = "absolute";
+				this._CDTimer.style.minWidth = "80%";
+				this._CDTimer.style.marginLeft = "110%";
+				this._CDTimer.style.border = "10px solid black";
+				this._CDTimer.style.borderRadius = "50px";
+				this._CDTimer.style.backgroundColor = "#e1e3ff";
+				this._CDTimer.style.top = "20%";		
+			}
+			//Create Count Down timer text
+				this._createCDTText =  function(){
+					this._CDTText = document.createElement('p');
+					this._CDTimer.appendChild(this._CDTText);
+					this._CDTText.style.textAlign = "center";
+					this._CDTText.style.margin = "0 auto";
+					this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+seconds; 
+					this._CDTText.style.fontSize = "120px";
+					this._CDTText.style.color = "black";
+					this._CDTText.style.fontWeight = "900";
+				}
+		//Create Count Down timer buttons
+			this._createCDTimerButtons = function(){
+				this._CDTimerButtons = document.createElement('div');
+				this._countDown.appendChild(this._CDTimerButtons);
+				this._CDTimerButtons.style.top = "40%";
+				this._CDTimerButtons.style.marginLeft = "110%";
+				this._CDTimerButtons.style.minWidth = "80%";
+				this._CDTimerButtons.style.position = "absolute";
+			}
+			//left
+				this._createCDTButtonsLeft = function(){
+					this._CDTButtonsLeft = document.createElement('ul');
+					this._CDTimerButtons.appendChild(this._CDTButtonsLeft);
+					this._CDTButtonsLeft.style.width = "70%";
+					this._CDTButtonsLeft.style.padding = "0";
+					this._CDTButtonsLeft.style.display = "inline-block";
+				}
+				//Button
+					this._CDTButton = function(){
+						this._button = document.createElement('li');
+						this._CDTButtonsLeft.appendChild(this._button);
+						this._button.style.width = "80px";
+						this._button.style.height = "80px";
+						this._button.style.border = "10px solid black";
+						this._button.style.borderRadius = "15px";
+						this._button.style.listStyle = "none";
+						this._button.style.fontWeight = "900";
+						this._button.style.color = "black";
+						this._button.style.background = "#14a714";
+						this._button.style.cursor = "pointer";
+						this._button.style.float = "left";
+						this._button.style.marginTop = "1%";
+						this._button.style.marginRight = "5%";
+					}
+				//Button text
+					this._CDTButtonText = function(button){
+						this._ButtonText = document.createElement('p');
+						this._button.appendChild(this._ButtonText);
+						this._ButtonText.innerHTML = button; 
+						this._ButtonText.style.fontSize = "56px";
+						this._ButtonText.style.margin = "-10px 0 0 12px";
+					}
+			//right
+				this._createCDTButtonsRight = function(){
+					this._CDTButtonsRight = document.createElement('ul');
+					this._CDTimerButtons.appendChild(this._CDTButtonsRight);
+					this._CDTButtonsRight.style.width = "30%";
+					this._CDTButtonsRight.style.float = "right";
+					this._CDTButtonsRight.style.display = "inline-block";
+				}
+				//Button
+					this._CDTButtontSet = function(){
+						this._buttonSet = document.createElement('li');
+						this._CDTButtonsRight.appendChild(this._buttonSet);
+						this._buttonSet.style.border = "10px solid black";
+						this._buttonSet.innerHTML = "Set";
+						this._buttonSet.style.listStyle = "none";
+						this._buttonSet.style.fontSize = "56px";
+						this._buttonSet.style.fontWeight = "900";
+						this._buttonSet.style.color = "black";
+						this._buttonSet.style.textAlign = "center";
+						this._buttonSet.style.borderRadius = "20px";
+						this._buttonSet.style.marginTop = "2%";
+						this._buttonSet.style.background = "#14a714";	
+						this._buttonSet.style.cursor = "pointer";
+					}
+
+					this._CDTButtontClear =  function(){
+						this._buttonClear = document.createElement('li');
+						this._CDTButtonsRight.appendChild(this._buttonClear);
+						this._buttonClear.style.border = "5px solid black";
+						this._buttonClear.innerHTML = "Clear";
+						this._buttonClear.style.textAlign = "center";
+						this._buttonClear.style.listStyle = "none";
+						this._buttonClear.style.fontSize = "36px";
+						this._buttonClear.style.color = "black";
+						this._buttonClear.style.fontWeight = "600";
+						this._buttonClear.style.background = "gray";
+						this._buttonClear.style.borderRadius = "10px";
+						this._buttonClear.style.marginTop = "2%";
+						this._buttonClear.style.cursor = "pointer";
+					}
+
+
 //Исполнениe конструктора обьекта
 	this._createBody();
 	this._createContainer();
@@ -432,6 +599,49 @@ function Timer(){
 			this._createArrow();
 		//------------------------
 		this._createBlueLine();
+	/*Count Down*/
+		this._createCountDown();
+
+		this._createTopBlueLineCountDown();
+		this._createBottomBlueLineCountDown();
+				this._createArrowCD();
+		this._createCDTimer(); 
+		this._createCDTText();
+		this._createCDTimerButtons();
+		this._createCDTButtonsLeft();
+			//button
+				//left
+					this._CDTButton();
+					this._CDTButtonText(0);
+					this._CDTButton();
+					this._CDTButtonText(1); 
+					this._CDTButton();
+					this._CDTButtonText(2);
+					this._CDTButton();
+					this._CDTButtonText(3);
+					this._CDTButton();
+					this._CDTButtonText(4); 
+					this._CDTButton();
+					this._CDTButtonText(5); 
+					this._CDTButton();
+					this._CDTButtonText(6); 
+					this._CDTButton();
+					this._CDTButtonText(7); 
+					this._CDTButton();
+					this._CDTButtonText(8); 
+					this._CDTButton();
+					this._CDTButtonText(9); 
+				//right
+					this._createCDTButtonsRight();
+					this._CDTButtontSet();
+					this._CDTButtontClear();
+				
+				
+				
+
+		
+		//---------------------
+			
 }
 
 //Создаём таймер
