@@ -430,7 +430,7 @@ function Timer(){
 				this._blueLineCD.style.marginLeft = "100%";
 				this._blueLineCD.style.height = "80px";
 				this._blueLineCD.style.backgroundColor = "#003399";
-				this._blueLineCD.style.top = "60%";
+				this._blueLineCD.style.top = "65%";
 			}
 		//Create arrow
 			this._createArrowCD = function(){
@@ -439,7 +439,7 @@ function Timer(){
 				this._arrowCD.setAttribute('src', 'img/arrow.png');
 				this._arrowCD.style.position = "absolute";
 				this._arrowCD.style.zIndex = "1";
-				this._arrowCD.style.marginTop = "-38.7%";
+				this._arrowCD.style.marginTop = "-34%";
 				this._arrowCD.style.marginLeft = "101%";
 				this._arrowCD.style.width = "7%";
 				this._arrowCD.style.cursor = "pointer";
@@ -489,11 +489,23 @@ function Timer(){
 					this._CDTText.style.color = "black";
 					this._CDTText.style.fontWeight = "900";
 				}
+			//Create Count Down timer small text
+				this._createCDTTextSmall = function(){
+					this._CDTTextSmall = document.createElement('p');
+					this._CDTimer.appendChild(this._CDTTextSmall);
+					this._CDTTextSmall.innerHTML = "0";
+					this._CDTTextSmall.style.textAlign = "right";
+					this._CDTTextSmall.style.fontSize = "36px";
+					this._CDTTextSmall.style.marginTop = "-3%";
+					this._CDTTextSmall.style.paddingRight = "5%";
+					this._CDTTextSmall.style.color = "black";
+					this._CDTTextSmall.style.fontWeight = "900";
+				}
 		//Create Count Down timer buttons
 			this._createCDTimerButtons = function(){
 				this._CDTimerButtons = document.createElement('div');
 				this._countDown.appendChild(this._CDTimerButtons);
-				this._CDTimerButtons.style.top = "40%";
+				this._CDTimerButtons.style.top = "45%";
 				this._CDTimerButtons.style.marginLeft = "110%";
 				this._CDTimerButtons.style.minWidth = "80%";
 				this._CDTimerButtons.style.position = "absolute";
@@ -572,7 +584,7 @@ function Timer(){
 							second_2 = false;
 							number_2 = number;
 							if(!number_1)
-								seconds = number_2*10;
+								seconds = number_2;
 							else
 								seconds = parseInt(number_1.toString() + number_2.toString());
 							if(seconds > 9)
@@ -594,7 +606,7 @@ function Timer(){
 							minute_2 = false;
 							number_4 = number;
 							if(!number_3)
-								minutes = number_4*10;
+								minutes = number_4;
 							else
 								minutes = parseInt(number_3.toString() + number_4.toString());
 							if(minutes > 9){
@@ -634,7 +646,7 @@ function Timer(){
 							hour_2 = false;
 							number_6 = number;
 							if(!number_5)
-								hours = number_6*10;
+								hours = number_6;
 							else
 								hours = parseInt(number_5.toString() + number_6.toString());
 							if(hours > 9)
@@ -677,9 +689,6 @@ function Timer(){
 						this._ButtonText.style.fontSize = "56px";
 						this._ButtonText.style.margin = "-10px 0 0 12px";
 					}
-
-
-
 			//right
 				this._createCDTButtonsRight = function(){
 					this._CDTButtonsRight = document.createElement('ul');
@@ -689,37 +698,89 @@ function Timer(){
 					this._CDTButtonsRight.style.display = "inline-block";
 				}
 				//Button
-					this._CDTButtontSet = function(){
-						this._buttonSet = document.createElement('li');
-						this._CDTButtonsRight.appendChild(this._buttonSet);
-						this._buttonSet.style.border = "10px solid black";
-						this._buttonSet.innerHTML = "Set";
-						this._buttonSet.style.listStyle = "none";
-						this._buttonSet.style.fontSize = "56px";
-						this._buttonSet.style.fontWeight = "900";
-						this._buttonSet.style.color = "black";
-						this._buttonSet.style.textAlign = "center";
-						this._buttonSet.style.borderRadius = "20px";
-						this._buttonSet.style.marginTop = "2%";
-						this._buttonSet.style.background = "#14a714";	
-						this._buttonSet.style.cursor = "pointer";
-					}
+					//set
+						this._CDTButtontSet = function(){
+							this._buttonSet = document.createElement('li');
+							this._CDTButtonsRight.appendChild(this._buttonSet);
+							this._buttonSet.style.border = "10px solid black";
+							this._buttonSet.innerHTML = "Set";
+							this._buttonSet.style.listStyle = "none";
+							this._buttonSet.style.fontSize = "56px";
+							this._buttonSet.style.fontWeight = "900";
+							this._buttonSet.style.color = "black";
+							this._buttonSet.style.textAlign = "center";
+							this._buttonSet.style.borderRadius = "20px";
+							this._buttonSet.style.marginTop = "2%";
+							this._buttonSet.style.background = "#14a714";	
+							this._buttonSet.style.cursor = "pointer";
+							this._buttonSet.addEventListener('click', _setCDTimer);
+						}
+						this._setCDTimer = function(){
+							//alert("go");
+							//if(!seconds && !minutes && !hours)
+							//	return;
+							
+							step = 1000;
+							interval = setInterval(_CDTimerGo, 10);
+						}
+						this._CDTimerGo = function(){
+							if(step === 0)
+							{
+								step = 1000;
 
-					this._CDTButtontClear =  function(){
-						this._buttonClear = document.createElement('li');
-						this._CDTButtonsRight.appendChild(this._buttonClear);
-						this._buttonClear.style.border = "5px solid black";
-						this._buttonClear.innerHTML = "Clear";
-						this._buttonClear.style.textAlign = "center";
-						this._buttonClear.style.listStyle = "none";
-						this._buttonClear.style.fontSize = "36px";
-						this._buttonClear.style.color = "black";
-						this._buttonClear.style.fontWeight = "600";
-						this._buttonClear.style.background = "gray";
-						this._buttonClear.style.borderRadius = "10px";
-						this._buttonClear.style.marginTop = "2%";
-						this._buttonClear.style.cursor = "pointer";
-					}
+								if(seconds)
+									seconds--;
+								else
+								{
+									if(minutes === 0 && hours === 0)
+									{
+										clearInterval(interval);
+										step = 0;
+									}
+									else{
+										seconds = 59;
+										if(minutes)
+											minutes--;
+										else
+										{
+											minutes = 59;
+											if(hours)
+												hours--;
+										}
+
+									}
+								}
+
+
+
+								
+							
+
+							}
+							_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds; 
+							_CDTTextSmall.innerHTML = step;
+							step -=500;
+						}
+					//clear
+						this._CDTButtontClear =  function(){
+							this._buttonClear = document.createElement('li');
+							this._CDTButtonsRight.appendChild(this._buttonClear);
+							this._buttonClear.style.border = "5px solid black";
+							this._buttonClear.innerHTML = "Clear";
+							this._buttonClear.style.textAlign = "center";
+							this._buttonClear.style.listStyle = "none";
+							this._buttonClear.style.fontSize = "36px";
+							this._buttonClear.style.color = "black";
+							this._buttonClear.style.fontWeight = "600";
+							this._buttonClear.style.background = "gray";
+							this._buttonClear.style.borderRadius = "10px";
+							this._buttonClear.style.marginTop = "2%";
+							this._buttonClear.style.cursor = "pointer";
+							this._buttonClear.addEventListener('click', _ClearCDTimer);
+						}
+						this._ClearCDTimer = function(){
+
+						}
 
 
 //Исполнениe конструктора обьекта
@@ -753,9 +814,10 @@ function Timer(){
 
 		this._createTopBlueLineCountDown();
 		this._createBottomBlueLineCountDown();
-				this._createArrowCD();
+		this._createArrowCD();
 		this._createCDTimer(); 
 		this._createCDTText();
+		this._createCDTTextSmall();
 		this._createCDTimerButtons();
 		this._createCDTButtonsLeft();
 			//button
