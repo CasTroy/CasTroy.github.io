@@ -507,7 +507,7 @@ function Timer(){
 					this._CDTButtonsLeft.style.display = "inline-block";
 				}
 				//Button
-					this._CDTButton = function(){
+					this._CDTButton = function(name){
 						this._button = document.createElement('li');
 						this._CDTButtonsLeft.appendChild(this._button);
 						this._button.style.width = "80px";
@@ -522,6 +522,152 @@ function Timer(){
 						this._button.style.float = "left";
 						this._button.style.marginTop = "1%";
 						this._button.style.marginRight = "5%";
+						this._button.id = name;
+					}
+					
+					
+
+					this._findNumbers = function(){
+						this.num_1 = document.getElementById('_one');
+						this.num_2 = document.getElementById('_two');
+						this.num_3 = document.getElementById('_three');
+						this.num_4 = document.getElementById('_four');
+						this.num_5 = document.getElementById('_five');
+						this.num_6 = document.getElementById('_six');
+						this.num_7 = document.getElementById('_seven');
+						this.num_8 = document.getElementById('_eight');
+						this.num_9 = document.getElementById('_nine');
+						this.num_0 = document.getElementById('_null');
+
+						num_1.addEventListener('click', function(){_setNumber(1)});
+						num_2.addEventListener('click', function(){_setNumber(2)});
+						num_3.addEventListener('click', function(){_setNumber(3)});
+						num_4.addEventListener('click', function(){_setNumber(4)});
+						num_5.addEventListener('click', function(){_setNumber(5)});
+						num_6.addEventListener('click', function(){_setNumber(6)});
+						num_7.addEventListener('click', function(){_setNumber(7)});
+						num_8.addEventListener('click', function(){_setNumber(8)});
+						num_9.addEventListener('click', function(){_setNumber(9)});
+						num_0.addEventListener('click', function(){_setNumber(0)});	
+					}
+					var second_1 = true;
+					var second_2 = true;
+					var minute_1 = true;
+					var minute_2 = true;
+					var hour_1 = true;
+					var hour_2 = true;
+					var	number_1 = 0;
+					var	number_2 = 0;
+					var number_3 = 0;
+					var	number_4 = 0;
+					var	number_5 = 0;
+					var	number_6 = 0;
+					this._setNumber = function(number){
+						if(second_1)
+						{
+							second_1 = false;
+							number_1 = number;
+							this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+number_1; 
+							seconds = number_1;
+						}
+						else if(second_2)
+						{
+							second_2 = false;
+							number_2 = number;
+							seconds = parseInt(number_1.toString() + number_2.toString());
+							if(seconds > 9)
+								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+seconds; 
+							else
+								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+seconds;
+							
+						}
+						else if(minute_1){
+							minute_1 = false;
+							number_3 = number;
+							if(seconds > 9)
+								this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+seconds; 
+							else
+								this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+"0"+seconds;
+							minutes = number_3;
+						}
+						else if(minute_2){
+							minute_2 = false;
+							number_4 = number;
+							minutes = parseInt(number_3.toString() + number_4.toString());
+							if(minutes > 9){
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+"0"+seconds;
+							}
+							else
+							{
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+							}
+						}
+						else if(hour_1){
+							hour_1 = false;
+							number_5 = number;
+							if(minutes > 9){
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+"0"+seconds;
+							}
+							else
+							{
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+"0"+seconds;
+							}
+							hours = number_5;
+
+						}
+						else if(hour_2){
+							hour_2 = false;
+							number_6 = number;
+							hours = parseInt(number_5.toString() + number_6.toString());
+							if(hours > 9)
+							{
+								if(minutes > 9){
+									if(seconds > 9)
+										this._CDTText.innerHTML = hours+" : "+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = hours+" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+							}else{
+								if(minutes > 9){
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+							}
+						}
+
+
+
+					//	alert(number_1);
+					//	alert(number_2);
+
 					}
 				//Button text
 					this._CDTButtonText = function(button){
@@ -531,6 +677,9 @@ function Timer(){
 						this._ButtonText.style.fontSize = "56px";
 						this._ButtonText.style.margin = "-10px 0 0 12px";
 					}
+
+
+
 			//right
 				this._createCDTButtonsRight = function(){
 					this._CDTButtonsRight = document.createElement('ul');
@@ -611,26 +760,27 @@ function Timer(){
 		this._createCDTButtonsLeft();
 			//button
 				//left
-					this._CDTButton();
+					this._CDTButton('_null');
 					this._CDTButtonText(0);
-					this._CDTButton();
+					this._CDTButton('_one');
 					this._CDTButtonText(1); 
-					this._CDTButton();
+					this._CDTButton('_two');
 					this._CDTButtonText(2);
-					this._CDTButton();
+					this._CDTButton('_three');
 					this._CDTButtonText(3);
-					this._CDTButton();
+					this._CDTButton('_four');
 					this._CDTButtonText(4); 
-					this._CDTButton();
+					this._CDTButton('_five');
 					this._CDTButtonText(5); 
-					this._CDTButton();
+					this._CDTButton('_six');
 					this._CDTButtonText(6); 
-					this._CDTButton();
+					this._CDTButton('_seven');
 					this._CDTButtonText(7); 
-					this._CDTButton();
+					this._CDTButton('_eight');
 					this._CDTButtonText(8); 
-					this._CDTButton();
-					this._CDTButtonText(9); 
+					this._CDTButton('_nine');
+					this._CDTButtonText(9);
+					this._findNumbers(); 
 				//right
 					this._createCDTButtonsRight();
 					this._CDTButtontSet();
