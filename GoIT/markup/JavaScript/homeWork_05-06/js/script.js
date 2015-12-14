@@ -547,7 +547,6 @@ function Timer(){
 						this.num_8 = document.getElementById('_eight');
 						this.num_9 = document.getElementById('_nine');
 						this.num_0 = document.getElementById('_null');
-
 						num_1.addEventListener('click', function(){_setNumber(1)});
 						num_2.addEventListener('click', function(){_setNumber(2)});
 						num_3.addEventListener('click', function(){_setNumber(3)});
@@ -572,111 +571,114 @@ function Timer(){
 					var	number_5 = 0;
 					var	number_6 = 0;
 					this._setNumber = function(number){
-						if(second_1)
+						if(intervalGo)
 						{
-							second_1 = false;
-							number_1 = number;
-							this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+number_1; 
-							seconds = number_1;
-						}
-						else if(second_2)
-						{
-							second_2 = false;
-							number_2 = number;
-							if(!number_1)
-								seconds = number_2;
-							else
-								seconds = parseInt(number_1.toString() + number_2.toString());
-							if(seconds > 9)
-								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+seconds; 
-							else
-								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+seconds;
-							
-						}
-						else if(minute_1){
-							minute_1 = false;
-							number_3 = number;
-							if(seconds > 9)
-								this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+seconds; 
-							else
-								this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+"0"+seconds;
-							minutes = number_3;
-						}
-						else if(minute_2){
-							minute_2 = false;
-							number_4 = number;
-							if(!number_3)
-								minutes = number_4;
-							else
-								minutes = parseInt(number_3.toString() + number_4.toString());
-							if(minutes > 9){
-								if(seconds > 9)
-									this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds; 
-								else
-									this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+"0"+seconds;
-							}
-							else
+							if(second_1)
 							{
-								if(seconds > 9)
-									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds; 
-								else
-									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+								second_1 = false;
+								number_1 = number;
+								this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+number_1; 
+								seconds = number_1;
 							}
-						}
-						else if(hour_1){
-							hour_1 = false;
-							number_5 = number;
-							if(minutes > 9){
-								if(seconds > 9)
-									this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+seconds; 
-								else
-									this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+"0"+seconds;
-							}
-							else
+							else if(second_2)
 							{
-								if(seconds > 9)
-									this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+seconds; 
+								second_2 = false;
+								number_2 = number;
+								if(!number_1)
+									seconds = number_2;
 								else
-									this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+"0"+seconds;
+									seconds = parseInt(number_1.toString() + number_2.toString());
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes +" : "+"0"+seconds;
+								
 							}
-							hours = number_5;
+							else if(minute_1){
+								minute_1 = false;
+								number_3 = number;
+								if(seconds > 9)
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+seconds; 
+								else
+									this._CDTText.innerHTML = "0"+hours +" : "+"0"+number_3+" : "+"0"+seconds;
+								minutes = number_3;
+							}
+							else if(minute_2){
+								minute_2 = false;
+								number_4 = number;
+								if(!number_3)
+									minutes = number_4;
+								else
+									minutes = parseInt(number_3.toString() + number_4.toString());
+								if(minutes > 9){
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+hours +" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+							}
+							else if(hour_1){
+								hour_1 = false;
+								number_5 = number;
+								if(minutes > 9){
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+number_5+" : "+minutes+" : "+"0"+seconds;
+								}
+								else
+								{
+									if(seconds > 9)
+										this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+seconds; 
+									else
+										this._CDTText.innerHTML = "0"+number_5+" : "+"0"+minutes+" : "+"0"+seconds;
+								}
+								hours = number_5;
 
-						}
-						else if(hour_2){
-							hour_2 = false;
-							number_6 = number;
-							if(!number_5)
-								hours = number_6;
-							else
-								hours = parseInt(number_5.toString() + number_6.toString());
-							if(hours > 9)
-							{
-								if(minutes > 9){
-									if(seconds > 9)
-										this._CDTText.innerHTML = hours+" : "+minutes+" : "+seconds; 
-									else
-										this._CDTText.innerHTML = hours+" : "+minutes+" : "+"0"+seconds;
-								}
+							}
+							else if(hour_2){
+								hour_2 = false;
+								number_6 = number;
+								if(!number_5)
+									hours = number_6;
 								else
+									hours = parseInt(number_5.toString() + number_6.toString());
+								if(hours > 9)
 								{
-									if(seconds > 9)
-										this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+seconds; 
+									if(minutes > 9){
+										if(seconds > 9)
+											this._CDTText.innerHTML = hours+" : "+minutes+" : "+seconds; 
+										else
+											this._CDTText.innerHTML = hours+" : "+minutes+" : "+"0"+seconds;
+									}
 									else
-										this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+"0"+seconds;
-								}
-							}else{
-								if(minutes > 9){
-									if(seconds > 9)
-										this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+seconds; 
+									{
+										if(seconds > 9)
+											this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+seconds; 
+										else
+											this._CDTText.innerHTML = hours+" : "+"0"+minutes+" : "+"0"+seconds;
+									}
+								}else{
+									if(minutes > 9){
+										if(seconds > 9)
+											this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+seconds; 
+										else
+											this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+"0"+seconds;
+									}
 									else
-										this._CDTText.innerHTML = "0"+hours+" : "+minutes+" : "+"0"+seconds;
-								}
-								else
-								{
-									if(seconds > 9)
-										this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+seconds; 
-									else
-										this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+"0"+seconds;
+									{
+										if(seconds > 9)
+											this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+seconds; 
+										else
+											this._CDTText.innerHTML = "0"+hours+" : "+"0"+minutes+" : "+"0"+seconds;
+									}
 								}
 							}
 						}
@@ -715,14 +717,53 @@ function Timer(){
 							this._buttonSet.style.cursor = "pointer";
 							this._buttonSet.addEventListener('click', _setCDTimer);
 						}
+						var intervalGo = true;
+						var setButton = 0;
 						this._setCDTimer = function(){
-							//alert("go");
-							//if(!seconds && !minutes && !hours)
-							//	return;
+							if(!seconds && !minutes && !hours)
+								return;
+
+
+							if(setButton === 0)
+								setButton = 1;
+							else if(setButton === 1)
+							{
+								setButton = 2;
+								clearInterval(interval);
+							}
+							else if(setButton === 2)
+							{
+								setButton = 1;
+								interval = setInterval(_CDTimerGo, 5);
+							}
+
+
+							switch(setButton){
+							case 0 : 
+								buttonStart.innerHTML = "Start";
+								break;
+							case 1 : 
+								_buttonSet.style.background = "#1E90FF";
+								_buttonSet.innerHTML = "Pause";
+								break;
+							case 2 : 
+								_buttonSet.style.background = "#a41717";
+								_buttonSet.innerHTML = "Cont...";
+								break;
+							}
+
+
+							if(move){
+								intervalGo = false;
+								move = false;
+								step = 1000;
+								interval = setInterval(_CDTimerGo, 10);
+							}
+
 							
-							step = 1000;
-							interval = setInterval(_CDTimerGo, 10);
+							
 						}
+
 						this._CDTimerGo = function(){
 							if(step === 0)
 							{
@@ -735,7 +776,23 @@ function Timer(){
 									if(minutes === 0 && hours === 0)
 									{
 										clearInterval(interval);
+										intervalGo = true;
+										move = true;
 										step = 0;
+										second_1 = true;
+										second_2 = true;
+										minute_1 = true;
+										minute_2 = true;
+										hour_1 = true;
+										hour_2 = true;
+										number_1 = 0;
+										number_2 = 0;
+										number_3 = 0;
+										number_4 = 0;
+										number_5 = 0;
+										number_6 = 0;
+										_buttonSet.innerHTML = "Set";
+										_buttonSet.style.background = "#14a714";
 									}
 									else{
 										seconds = 59;
