@@ -445,22 +445,23 @@ function Timer(){
 				this._arrowCD.style.cursor = "pointer";
 				this._arrowCD.addEventListener('click', _moveLeftToCenterBlock);	
 			}
+			var moveArrow = true;
 			this._moveLeftToCenterBlock = function(){		
-						if(move)
+						if(moveArrow)
 						{
-							//_ClearTimer();
+							_ClearCDTimer();
 							step = 100;
 							interval = setInterval(_moveLefttTo, 10);
 
 						}
 					}
 					this._moveLefttTo= function(){
-						move = false;
+						moveArrow = false;
 						this._buttons.style.marginLeft = "-"+step+"%";
 						if(step === 0)
 						{
 							clearInterval(interval);
-							move = true;
+							moveArrow = true;
 							step = 0;
 							return;
 						}
@@ -723,7 +724,6 @@ function Timer(){
 							if(!seconds && !minutes && !hours)
 								return;
 
-
 							if(setButton === 0)
 								setButton = 1;
 							else if(setButton === 1)
@@ -736,7 +736,6 @@ function Timer(){
 								setButton = 1;
 								interval = setInterval(_CDTimerGo, 5);
 							}
-
 
 							switch(setButton){
 							case 0 : 
@@ -758,10 +757,7 @@ function Timer(){
 								move = false;
 								step = 1000;
 								interval = setInterval(_CDTimerGo, 10);
-							}
-
-							
-							
+							}	
 						}
 
 						this._CDTimerGo = function(){
@@ -776,23 +772,7 @@ function Timer(){
 									if(minutes === 0 && hours === 0)
 									{
 										clearInterval(interval);
-										intervalGo = true;
-										move = true;
-										step = 0;
-										second_1 = true;
-										second_2 = true;
-										minute_1 = true;
-										minute_2 = true;
-										hour_1 = true;
-										hour_2 = true;
-										number_1 = 0;
-										number_2 = 0;
-										number_3 = 0;
-										number_4 = 0;
-										number_5 = 0;
-										number_6 = 0;
-										_buttonSet.innerHTML = "Set";
-										_buttonSet.style.background = "#14a714";
+										_ClearCDTimer();
 									}
 									else{
 										seconds = 59;
@@ -807,12 +787,6 @@ function Timer(){
 
 									}
 								}
-
-
-
-								
-							
-
 							}
 							_CDTText.innerHTML = hours +" : "+minutes+" : "+seconds; 
 							_CDTTextSmall.innerHTML = step;
@@ -836,7 +810,29 @@ function Timer(){
 							this._buttonClear.addEventListener('click', _ClearCDTimer);
 						}
 						this._ClearCDTimer = function(){
-
+							setButton = 0;
+							intervalGo = true;
+							move = true;
+							step = 0;
+							second_1 = true;
+							second_2 = true;
+							minute_1 = true;
+							minute_2 = true;
+							hour_1 = true;
+							hour_2 = true;
+							number_1 = 0;
+							number_2 = 0;
+							number_3 = 0;
+							number_4 = 0;
+							number_5 = 0;
+							number_6 = 0;
+							minutes = 0;
+							seconds = 0;
+							hours = 0;
+							_buttonSet.innerHTML = "Set";
+							_buttonSet.style.background = "#14a714";
+							_CDTText.innerHTML = "0"+hours +" : "+"0"+minutes+" : "+"0"+seconds; 
+							_CDTTextSmall.innerHTML = step;
 						}
 
 
