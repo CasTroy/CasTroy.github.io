@@ -4,7 +4,8 @@ function Timer(){
 
 	//Create body
 		this._createBody = function(){
-			this._body = document.body;
+			this._body =  document.getElementsByClassName("time")[0];//document.body;
+			this._body.style.height = "100%";
 		}
 	//Create container
 		this._createContainer = function(){
@@ -260,7 +261,7 @@ function Timer(){
 						
 					}
 					this._timerGo = function(){		
-						if(count > 999)
+						if(count === 995)
 						{
 
 							if (hours <= 9)
@@ -764,7 +765,7 @@ function Timer(){
 						this._CDTimerGo = function(){
 							if(step === 0)
 							{
-								step = 1000;
+								step = 995;
 
 								if(seconds)
 									seconds--;
