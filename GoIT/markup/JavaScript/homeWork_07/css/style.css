@@ -1,0 +1,63 @@
+.container{
+	width: 592px;
+	height: 350px;
+	background: #ffffff;
+	border: 1px solid #bfbfbf;
+}
+.box{
+	width: 570px;
+	//min-height: 160px;
+	border: 1px solid #bfbfbf;
+	border-radius: 5px;
+	margin:10px 0 0 10px;
+}
+.firstBlock{
+	width: 560px;
+	margin: 4px 0 0 4px;
+	height: 30px;
+	border: 1px solid #bfbfbf;
+	background: linear-gradient(to top, #cccccc,#e2e2e2);
+	border-radius: 5px;
+}
+.secondBlock{
+	width: 520px;
+	margin: 0 0 0 4px;
+	padding: 25px 20px;
+	font-family: Verdana;
+	font-size: 11px;
+	position: relative;
+}
+
+.insets{
+	height: 25px;
+	border: 1px solid #bfbfbf;
+	border-bottom: none;
+	float: left;
+	margin:5px 0 0 3px;
+	background: white;
+	border-radius: 3px 3px 0 0;
+	font-size: 11px;
+	font-family: Verdana;
+	text-align: center;
+	padding: 5px 5px 0;
+	cursor: pointer;
+
+}
+.nunc{
+	background: white;
+}
+.proin, .aenean{
+	background: #eeeeee;
+}
+
+
+.nunc_text{
+	//display: none;
+}
+.proin_text{
+	display: none;
+
+}
+.aenean_text{
+	display: none;
+}
