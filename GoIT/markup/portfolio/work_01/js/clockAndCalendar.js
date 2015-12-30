@@ -1,14 +1,13 @@
+//календарь работает точно если сайт открыт в высокосном году
 $(function(){
-	var day = 0;
-	var month = 0;
-	var hours = 0;
-	var minutes = 0;
-	var second = 0;
+	var date = new Date();
+	var day = (parseInt(date.getDate())-1);
+	var yearNum = parseInt(date.getFullYear());
+	var month = (parseInt(date.getMonth()));
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var second = date.getSeconds();
 	var year = 0;
-	var yearNum = 2016;
-	//hide 31 numbers
-	$('.calendar__col')[30].style.display = "none";
-//clock	
 	var time = document.getElementById('timeOfClock');
 	var interval = setInterval(moveSecond, 1000)
 //next month
@@ -140,9 +139,9 @@ $(function(){
 	}
 	//move month
 		function moveMonth(){
-			if(month < 12)
-			 	month++
-			else{
+			month++;
+			if(month > 11)
+			{
 				month = 0;
 				yearNum++;
 				year > 4 ? year = 0 : year++;
@@ -150,8 +149,6 @@ $(function(){
 		}
 //next second
 	function moveSecond(){
-
-
 		second++;
 		if(second > 59)
 		{
@@ -167,9 +164,10 @@ $(function(){
 					$('.calendar__col')[day].style.backgroundColor = "#602a65";
 					$('.calendar__col')[day].style.boxShadow = "none";
 					$('.calendar__col')[day].style.color = "white";
-					day++;
+					day++;	
 					if(day > 27)
-						countDay();	
+						countDay();
+
 				} 
 			}
 		}
@@ -194,6 +192,5 @@ $(function(){
 		$('.calendar__col')[day].style.backgroundColor = "#008B45";
 		$('.calendar__col')[day].style.color = "#ebdc3c";
 		$('.calendar__col')[day].style.boxShadow = "0 0 5px white";
-		
 	}	
 });
