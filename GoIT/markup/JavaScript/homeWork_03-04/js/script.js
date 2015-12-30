@@ -17,7 +17,9 @@
 		createTest: function(){
 			this.m_body = document.body;
 			this.createForm();
+			//return this.m_body;
 		},
+		var elemen = createTest();
 	/*Общий контейнер для всего*/
 		createForm: function(){
 			this.m_form = document.createElement('form');

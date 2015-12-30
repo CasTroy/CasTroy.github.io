@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.jquery-box{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	position: absolute;
+	background: green;
+}
+
+

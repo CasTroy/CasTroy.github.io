@@ -81,3 +81,5 @@ $(function(){
 					}, 500)
 				})
 });
+
+ /*http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js*/
