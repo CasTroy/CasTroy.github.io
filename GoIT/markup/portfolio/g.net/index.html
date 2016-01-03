@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>G.NET</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/clockAndCalendar.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<section class = "container">
+	<!--head-->
+		<header class = "head">
+		<!--user-->
+			<section class="user">
+				<div class = "topLine">
+					<div class = "enter">
+						<img src="img/logolist.png" alt="logo_list">
+						<p>Вход</p>
+					</div>
+					<div class = "clock">
+						<p class = "clock__item" id = "timeOfClock">00 : 00</span></p>
+					</div>
+				</div>
+
+				<form action="" class = "headeform">
+					<div class = "headeform__contant">
+						<label class = "headeform__label" for="login">Логин:</label>
+						<input class = "headeform__input" id = "login" type="text" placeholder="Введите логин">
+						<label class = "headeform__label" for="password">Пароль:</label>
+						<input class = "headeform__input" id = "password" type="password" placeholder="Введите пароль">
+						<button class = "headeform__button">Вход</button>
+					</div>	
+				<p href="" class = "headeform__LinkReister">Регистрация</p>	
+				</form>
+				<form action="" class = "headeformRegister">
+					<div class = "headeformRegister__contant">
+						<label class = "headeform__label" for="registerName">Логин:</label>
+						<input class = "headeform__input" id ="registerName" type="text" placeholder="Придумайте логин">
+						<label class = "headeform__label" for="registerPassword">Пароль:</label>
+						<input class = "headeform__input" id ="registerPassword" type="text" placeholder="Придумайте пароль">
+						<button class = "headeformRegister__button">Регистрация</button>
+					</div>
+				</form>
+			</section>
+		<!--logo-->	
+			<section class = "headlogo">
+				<div class = "headlogo__text">
+					<h4 class = "headlogo__h4">Wolcome to</h4>
+					<h1 class = "headlogo__h1">G.NET</h1>
+				</div>
+				<img class = "headlogo__picture" src="img/logo.png" alt="logo">
+			</section>
+		<!--panel navigation and serch-->	
+			<section class = "panel">
+				<div class = "panel_box">
+					<div class = "panel__input panel__left">
+						<img class = "panel__picture" src="img/logolist.png" alt="logo_list">
+						<p class = "panel__text">Навигация</p>
+					</div>
+					<div class = "panel__input panel__right">
+						<img class = "panel__picture" src="img/logolist.png" alt="logo_list">
+						<p class = "panel__text">Поиск</p>
+					</div>
+				</div>
+				<ul class = "panel__list">
+					<li class = "panel__item"><a href="" class = "panel__link">Главная</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Фильмы</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Музыка</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Софт</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Игры</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Картинки</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Видео</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Чтиво</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Обьявления</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Новости</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Общение</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Личный кабинет</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Разместить</a></li>
+					<li class = "panel__item"><a href="" class = "panel__link">Загрузки</a></li>
+				</ul>
+				<form action="" class = "search">
+					<input class = "search__input" type="text" placeholder="Что ищем?">
+					<button class = "search__button">Найти</button>
+				</form>
+			</section>
+		</header>
+	<!--body-->
+		<section class = "body__contant">
+			<div class = "bground"></div>
+			<p class = "month">Январь - 2016</p>
+			<table class = "calendar">
+				<tr class = "calendar__row">
+					<td class = "calendar__col">1</td>
+					<td class = "calendar__col">2</td>
+					<td class = "calendar__col">3</td>
+					<td class = "calendar__col">4</td>
+					<td class = "calendar__col">5</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">6</td>
+					<td class = "calendar__col">7</td>
+					<td class = "calendar__col">8</td>
+					<td class = "calendar__col">9</td>
+					<td class = "calendar__col">10</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">11</td>
+					<td class = "calendar__col">12</td>
+					<td class = "calendar__col">13</td>
+					<td class = "calendar__col">14</td>
+					<td class = "calendar__col">15</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">16</td>
+					<td class = "calendar__col">17</td>
+					<td class = "calendar__col">18</td>
+					<td class = "calendar__col">19</td>
+					<td class = "calendar__col">20</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">21</td>
+					<td class = "calendar__col">22</td>
+					<td class = "calendar__col">23</td>
+					<td class = "calendar__col">24</td>
+					<td class = "calendar__col">25</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">26</td>
+					<td class = "calendar__col">27</td>
+					<td class = "calendar__col">28</td>
+					<td class = "calendar__col">29</td>
+					<td class = "calendar__col">30</td>
+				</tr>
+				<tr class = "calendar__row">
+					<td class = "calendar__col">31</td>
+				</tr>
+			</table>
+		</section>
+		<!--picture-->
+			<section class = "picture">
+				<ul class="regulations">
+								<li class="regulations__item">
+									<h1 class="regulations__header">Бесконтрольный UDP-трафик</h1>
+									<h1 class="regulations__header">на 194.28.158.1-194.28.158.254</h1>
+									<p class="regulations__text">От некоторых пользователей на адреса диапазона 194.28.158.1-194.28.158.254 идет неконтролируемый UDP трафик, который приводит к перегрузке каналов передачи данных самых пользователей и сети в целом. Причина пока не известна, но возможно это связано после посещения определенных сайтов или работы руткитов. В итоге замечания "Инет лагает" будут постоянными. В таком случае, у тех у кого будет выявлена подобная ситуация будут отключены от сети с уведомлением, если это возможно или без него. Содержание компьютера в чистоте от не известного, залог нормального функционирования сети и интернет.</p>
+								</li>
+								<li class="regulations__item">
+									<h1 class="regulations__header">Помощь в пользовании разделом "Загрузки"</h1>
+									<p class="regulations__text">Раздел <a class = "regulations__link" href="">"Загрузки"</a> предназначен для быстрого закачивания различной информации. В нем действуют некоторые ограничения, которые будут уточнятся в процессе его работы. В правом верхнем углу работает таймер обратного отсчета, по истечении которого, вся информация будет удалена с хранилища. В поле "линк" нужно вписывать только прямые ссылки (пример есть ниже), иначе вы не получите желаемого результата. Поле "Выбрать торрент-файл" - выбираем файл *.torrent и добавляем. После чего вам присваивается индивидуальный номер загрузки, по которому вы узнаете статус загрузки в "Статус загрузок". Все неясности можно спросить в разделе <a class = "regulations__link" href="">"Общение"</a> - личное сообщение администратору. Приятного пользования. Добавлено 01.05.11</p>
+								</li>
+								<li class="regulations__item">
+									<h1 class="regulations__header">Вирусная активность на компьютере</h1>
+									<p class="regulations__text">Уважаемые пользователи ресурса G.NET. Для нормальной, стабильной работоспособности сети убедительно-настоятельна просьба: "Держите свои компьютеры чистыми от вирусов". Для этого по крайней мере должен стоять работоспособный антивирус с обновленными антивирусными базами на сегодняшний день. Если он не обновляется - это равносильно тому, что его просто нету. Если вы не можете найти антивирус, то для этого можете воспользоваться этим Avira AntiVir Personal, полностью бесплатный и работоспособный. Его вполне достаточно на первый случай. И последнее, 100% защиты от вирусов не существует. Те, у кого найдутся вирусы, незамедлительно будут отключены от сети. Добавленно 15.02.11</p>
+								</li>
+								<li class="regulations__item">
+									<h1 class="regulations__header">Ненорматьивная лексика на сайте</h1>
+									<p class="regulations__text">На сайте запрещается оставлять где-нибудь нецензурные выражения, а так же такие, которые скрываются под видом цензуры (фонетическое звучание слова). В разе выявления их, пользователь получит безоговорочный запрет на доступ к сайту на неопределенный строк. Придерживайтесь порядочного тона. (24.10.10)</p>
+								</li>
+								<li class="regulations__item">
+									<h1 class="regulations__header">Повышение мер безопасности.</h1>
+									<p class="regulations__text">С 11.07.10 вводится повышенная система безопасности. Для подключения дополнительного компьютера необходимо его зарегистрировать в базе данных G.NET</p>
+								</li>
+								<li class="regulations__item">
+									<h1 class="regulations__header">Как правильно оформлять новость на сайте.</h1>
+									<p class="regulations__text">Это пример как надо правильно оформлять новость на сайте.</p>
+									<ol class = "regulations__list help">
+										<li>
+											<h3 class = "help__h1">Картинка (их может быть и не одна). Минимальный размер (350х500) пикселей.</h3>
+											<p class = "help__p">Исключение может быть для разделов <a class = "regulations__link" href="">"Видео"</a> и <a class = "regulations__link" href="">"Чтиво".</a></h3>
+										</li>
+										<li>
+											<h3 class = "help__h1">Краткое описание.</h3>
+											<p class = "help__p">Исключение может быть для раздела <a class = "regulations__link" href="">"Видео"</a> или <a class = "regulations__link" href="">"Картинки".</a></p>
+										</li>
+										<li>
+											<h3 class = "help__h1">Файл (или несколько файлов).</p>
+											<p class = "help__p">В разделе <a class = "regulations__link" href="">"Чтиво"</a> их может и не быть.</p>
+										</li>
+									</ol>
+									<p class="regulations__text"><span class="regulations__boldText">Примечание:</span> Неправильно оформленые новости будут удалятся. А так же, не нормативные новости.</p>
+									<div class = "winrar">
+										<div class = "winrar_img"></div>
+										<p class="regulations__text"><span class="regulations__boldText">WinRAR</span> — это файловый архиватор для Windows (32- и 64-разрядные), Pocket PC, Linux, FreeBSD, Mac OS X, MS DOS и OS/2 с высокой степенью сжатия.</p>
+									</div>
+								</li>
+							</ul>			
+			</section>
+	<!--footer-->
+		<footer class = "foot">
+			<p class = "foot__text">Администрация не несет ответственности за содержание информации, размещаемой пользователями ресурса.</p>
+			<p class = "foot__gNet">G.NET &copy; 2015</p>
+		</footer>
+	</section>
+
+
+	
+	
+</body>
+</html>

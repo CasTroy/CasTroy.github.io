@@ -15,7 +15,7 @@ $(function(){
 		switch(month)
 			{
 				case 0:
-					if(day === 30)
+					if(day === 31)
 					{
 						day = 0;
 						moveMonth();
