@@ -11,10 +11,11 @@
 	display: inline-block;
 }
 .box{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .inpt{
 	margin-right: 10px;
+	height: 20px;
 }
 .showH{
 	opacity: 0.5;
