@@ -1,13 +1,191 @@
-*{
-	margin: 0;
-	padding: 0;
+.jcarousel {
+  position: relative;
+  overflow: hidden;
 }
-.jquery-box{
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	position: absolute;
-	background: green;
+.jcarousel	ul{
+    width: 20000em;
+    position: relative;
+}
+.jcarousel li{
+    float: left;
+}
+.wrap_jcarousel{
+  width: 600px;
+  margin: 10px auto;
+  position: relative;
 }
 
+/*js*/
+	.chJs{
+		padding-top: 100px;
+	}
+	.niceCheck {
+		width: 17px;
+		height: 17px;
+		display: inline-block;
+		cursor: pointer;
+		background: url(../img/checkbox.png);
+		display: block;
+	}
+	.niceCheck input {
+		display: none;
+	}
+	.showOn{
+		background-position: 0 -51px;
+	}
+	.disableChB{
+		background-position: 0 -51px;
+		opacity: 0.5;
+	}
 
+.block{
+	margin: 0 auto;
+	width: 20%;
+	height: 150px;
+	clear: both;
+}
+/*css*/
+	.boxForCbox{
+		display: block;
+	}
+	.checkBoxCss{
+		position: absolute;
+	    clip: rect(0, 0, 0, 0);
+	}
+	.labelCss {
+	    cursor: pointer;
+	}
+	.labelCss:after {
+	    content: " ";
+	    display: inline-block;
+	    width: 17px;
+	    height: 17px;
+	    background: url(../img/checkbox.png);
+	    position: relative;
+	    top: 3px;
+	    margin-left: 15px;
+	}
+	.second:after{
+		background-position: 0 -51px;
+	}
+	.third:after{
+		background-position: 0 -51px;
+		opacity: 0.5;
+	}
+
+
+	.checkBoxCss:checked + .first:after {
+		background-position: 0 -51px;
+	}
+	.checkBoxCss:checked + .second:after {
+		background-position: 0 0;
+	}
+
+/*panel*/
+	.icon{
+		width: 10px;
+		height: 10px;
+		float: right;
+		margin-top: 25px;
+		margin-right: 10px;
+		background-image: url(../img/triangle.png);
+		background-size: 100%;
+		
+	}
+/*first*/	
+	.first__icon{
+		transform: rotate(90deg);
+	}
+	.firstList{
+		width: 500px;
+		list-style: none;
+		padding: 0px;
+		position: relative;
+	}
+	.firstList a{
+		text-decoration: none;
+		color: white;
+	}
+	.first__item{
+		
+		float: left;
+		background: #363636;
+		width: 150px;
+		
+	}
+	.first__item:nth-child(1){
+		border-right: 1px solid black;
+	}
+	.first__item:nth-child(2){
+		border-right: 1px solid black;
+	}
+	.first__text{
+		display: inline-block;
+		padding: 20px;
+	}
+/*second*/
+	.secondList{
+		position: absolute;
+		padding: 0px;
+		overflow: hidden;
+		list-style: none;
+		width: 450px;
+		height: 0px;
+	}
+	.second__item{
+		width: 150px;
+		background: #363636;
+		border-bottom: 1px solid black;
+	}
+	.second__item:nth-child(5){
+		border: none;
+	}
+	.second__text{
+		display: block;
+		padding: 20px;
+	}
+/*third*/
+	.thirdList{
+		width: 350px;
+		position: absolute;
+		padding: 0px;
+		overflow: hidden;
+		list-style: none;
+		top: 59px;
+		left: 150px;
+		height: 0px;
+	}
+	.third__item{
+		background: #363636;
+		width: 150px;
+		border-bottom: 1px solid black;
+	}
+	.third__item:nth-child(3){
+		border: none;
+	}
+	.third__text{
+		display: block;
+		padding: 20px;
+	}
+/*fourth*/
+	.fourthList{
+		position: absolute;
+		padding: 0px;
+		overflow: hidden;
+		list-style: none;
+		top: 117px;
+		left: 150px;
+		height: 0px;
+	}
+	.fourth__item{
+		width: 150px;
+		background: #363636;
+		border-bottom: 1px solid black;
+	}
+	.fourth__item:nth-child(3){
+		border: none;
+	}
+	.fourth__text{
+		display: block;
+		padding: 20px;
+	}
