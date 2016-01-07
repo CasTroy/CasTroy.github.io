@@ -1,21 +1,28 @@
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-}
-.jcarousel	ul{
-    width: 20000em;
-    position: relative;
-}
-.jcarousel li{
-    float: left;
-}
-.wrap_jcarousel{
-  width: 600px;
-  margin: 10px auto;
-  position: relative;
-}
-
-/*js*/
+/*courusel*/
+	.jcarousel {
+	  position: relative;
+	  overflow: hidden;
+	}
+	.jcarousel	ul{
+	    width: 20000em;
+	    position: relative;
+	}
+	.jcarousel li{
+	    float: left;
+	}
+	.wrap_jcarousel{
+	  width: 600px;
+	  margin: 10px auto;
+	  position: relative;
+	}
+/*box for all*/	
+	.block{
+		margin: 0 auto;
+		width: 20%;
+		height: 150px;
+		clear: both;
+	}
+/*checkbox js*/
 	.chJs{
 		padding-top: 100px;
 	}
@@ -37,14 +44,7 @@
 		background-position: 0 -51px;
 		opacity: 0.5;
 	}
-
-.block{
-	margin: 0 auto;
-	width: 20%;
-	height: 150px;
-	clear: both;
-}
-/*css*/
+/*checkbox css*/
 	.boxForCbox{
 		display: block;
 	}
@@ -72,16 +72,13 @@
 		background-position: 0 -51px;
 		opacity: 0.5;
 	}
-
-
 	.checkBoxCss:checked + .first:after {
 		background-position: 0 -51px;
 	}
 	.checkBoxCss:checked + .second:after {
 		background-position: 0 0;
 	}
-
-/*panel*/
+/*menu*/
 	.icon{
 		width: 10px;
 		height: 10px;
@@ -92,100 +89,99 @@
 		background-size: 100%;
 		
 	}
-/*first*/	
-	.first__icon{
-		transform: rotate(90deg);
-	}
-	.firstList{
-		width: 500px;
-		list-style: none;
-		padding: 0px;
-		position: relative;
-	}
-	.firstList a{
-		text-decoration: none;
-		color: white;
-	}
-	.first__item{
-		
-		float: left;
-		background: #363636;
-		width: 150px;
-		
-	}
-	.first__item:nth-child(1){
-		border-right: 1px solid black;
-	}
-	.first__item:nth-child(2){
-		border-right: 1px solid black;
-	}
-	.first__text{
-		display: inline-block;
-		padding: 20px;
-	}
-/*second*/
-	.secondList{
-		position: absolute;
-		padding: 0px;
-		overflow: hidden;
-		list-style: none;
-		width: 450px;
-		height: 0px;
-	}
-	.second__item{
-		width: 150px;
-		background: #363636;
-		border-bottom: 1px solid black;
-	}
-	.second__item:nth-child(5){
-		border: none;
-	}
-	.second__text{
-		display: block;
-		padding: 20px;
-	}
-/*third*/
-	.thirdList{
-		width: 350px;
-		position: absolute;
-		padding: 0px;
-		overflow: hidden;
-		list-style: none;
-		top: 59px;
-		left: 150px;
-		height: 0px;
-	}
-	.third__item{
-		background: #363636;
-		width: 150px;
-		border-bottom: 1px solid black;
-	}
-	.third__item:nth-child(3){
-		border: none;
-	}
-	.third__text{
-		display: block;
-		padding: 20px;
-	}
-/*fourth*/
-	.fourthList{
-		position: absolute;
-		padding: 0px;
-		overflow: hidden;
-		list-style: none;
-		top: 117px;
-		left: 150px;
-		height: 0px;
-	}
-	.fourth__item{
-		width: 150px;
-		background: #363636;
-		border-bottom: 1px solid black;
-	}
-	.fourth__item:nth-child(3){
-		border: none;
-	}
-	.fourth__text{
-		display: block;
-		padding: 20px;
-	}
+	/*first item*/	
+		.first__icon{
+			transform: rotate(90deg);
+		}
+		.firstList{
+			width: 500px;
+			list-style: none;
+			padding: 0px;
+			position: relative;
+		}
+		.firstList a{
+			text-decoration: none;
+			color: white;
+		}
+		.first__item{
+			float: left;
+			background: #363636;
+			width: 150px;
+			
+		}
+		.first__item:nth-child(1){
+			border-right: 1px solid black;
+		}
+		.first__item:nth-child(2){
+			border-right: 1px solid black;
+		}
+		.first__text{
+			display: inline-block;
+			padding: 20px;
+		}
+	/*second item*/
+		.secondList{
+			position: absolute;
+			padding: 0px;
+			overflow: hidden;
+			list-style: none;
+			width: 450px;
+			height: 0px;
+		}
+		.second__item{
+			width: 150px;
+			background: #363636;
+			border-bottom: 1px solid black;
+		}
+		.second__item:nth-child(5){
+			border: none;
+		}
+		.second__text{
+			display: block;
+			padding: 20px;
+		}
+	/*third item*/
+		.thirdList{
+			width: 350px;
+			position: absolute;
+			padding: 0px;
+			overflow: hidden;
+			list-style: none;
+			top: 59px;
+			left: 150px;
+			height: 0px;
+		}
+		.third__item{
+			background: #363636;
+			width: 150px;
+			border-bottom: 1px solid black;
+		}
+		.third__item:nth-child(3){
+			border: none;
+		}
+		.third__text{
+			display: block;
+			padding: 20px;
+		}
+	/*fourth item*/
+		.fourthList{
+			position: absolute;
+			padding: 0px;
+			overflow: hidden;
+			list-style: none;
+			top: 117px;
+			left: 150px;
+			height: 0px;
+		}
+		.fourth__item{
+			width: 150px;
+			background: #363636;
+			border-bottom: 1px solid black;
+		}
+		.fourth__item:nth-child(3){
+			border: none;
+		}
+		.fourth__text{
+			display: block;
+			padding: 20px;
+		}
