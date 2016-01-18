@@ -1,7 +1,7 @@
 $(function(){
 	var listTmpl = $('#list-template').html();
-
 	var tmpl = _.template(listTmpl);
+	
 /*my profile settings*/
 	var my_profile = {
 		title: "Jack Yurchenco",
@@ -15,14 +15,14 @@ $(function(){
 			'Lorem ipsum dolor sit amet.',
 		],
 		plhone_title: "phone number: ",
-		plhone: '+380936652615'
+		plhone: '+380936652615',
 		facebook_title: "link to the page facebbok: ",
 		facebook_url: "https://www.facebook.com/zheka.yurchenko",
 		facebook_text: "my page on facebook",
 		fidbek_title: "my fidbek",
 		fidbek_text: "I can build you fence"
 	}
-
+/*result*/
 	var result = tmpl(my_profile);
 	$('body').append(result);
 });
