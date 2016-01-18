@@ -1,0 +1,26 @@
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.title{
+	text-align: center;
+}
+.photo{
+	display: block;
+	margin: 0 auto;
+}
+.specialty{
+	text-align:  center;
+	font-size: 20px;
+	font-weight: 900;
+}
+.causes_title{
+	text-align: center;
+}
+.causes_list{
+	width: 50%;
+	margin: 0 auto;
+}
+.info{
+	text-align: center;
+}
