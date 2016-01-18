@@ -22,6 +22,7 @@ $(function(){
 		fidbek_title: "my fidbek",
 		fidbek_text: "I can build you fence"
 	}
+	
 /*result*/
 	var result = tmpl(my_profile);
 	$('body').append(result);
