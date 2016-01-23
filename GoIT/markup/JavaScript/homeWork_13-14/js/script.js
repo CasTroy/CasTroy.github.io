@@ -7,9 +7,6 @@ $(function(){
 	var tmpl = _.template($('#test').html());
 	var result = tmpl(test);
 	$('body').append(result);
-
-
-	
 /*show result*/	
 	var showResult = false;
 	$('#buttonOn').on('click', function(){
@@ -32,7 +29,6 @@ $(function(){
 	$('#buttonOff').on('click', function(){
 		if(showResult)
 		{
-			
 		/*animate*/
 			$('.container').animate({
 				top: "-600px"
@@ -42,10 +38,10 @@ $(function(){
 			setTimeout(function(){
 				$('.container').remove();
 				showResult = false;
+				location.reload();
 			}, 1500);
 		}
 	})
-
 /*create window*/
 	function createWindow(){
 		var answers = [
@@ -146,10 +142,6 @@ $(function(){
 
 			
 	}
-
-
-
-
 /*events*/
 	/*question 1*/
 		$('#number0').on('click', function(){
@@ -207,8 +199,6 @@ $(function(){
 			$(id2).attr("checked", false);
 			$(id3).attr("checked", "checked");
 		}
-
-
 /*set Object*/
 	function setObjact(){
 	/*contant oftest*/
@@ -264,5 +254,4 @@ $(function(){
 	function getObject(){
 		return localStorage.getItem('questions');
 	}
-
 });
