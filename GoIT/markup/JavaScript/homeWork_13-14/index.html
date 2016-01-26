@@ -59,31 +59,3 @@
 	</script>
 </body>
 </html>
-
-<!--<%= item%>
-<h1 class = "title"><%= title%></h1>
-
-<% for (var i=0; i < numberOfQuestions; i++) { %>
-	<li>
-		<ul class = "sublist">
-			<h4><%=test[i].question%></h4>
-			<%if(i === 3){%>
-				<p class = "twoAnswers"><%= twoAnswers%><p>
-			<%}%>
-			<% for (var j=0; j < numberOfAnswers; j++) { %>
-				<li>
-				<%if(i === 3){%>
-					<label><input type="checkbox" id = "<%= 'number'+id++%>"><%=test[i].answer[j]%></label>
-				<%}else{%>
-					<label><input type="radio" name ="<%= 'name'+i %>" id = "<%= 'number'+id++%>"><%=test[i].answer[j]%></label>
-				<%}%>
-				</li>
-			<% } %>
-		</ul>	
-	</li>
-<% } %>
-<div class = "buttons">
-	<button type = "button" id = "buttonOn"><%=buttonOn%></button>
-	<button type = "button" id = "buttonOff" disabled = "disabled"><%=buttonOff%></button>
-</div>
--->

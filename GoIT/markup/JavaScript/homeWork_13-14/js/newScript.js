@@ -1,17 +1,12 @@
 'use strict'
 $(function(){
 //here i am setting object in localstorage
-
 	setObjact();
 //here i am getting object out localstorage
 	var testing = JSON.parse(getObject());
 	var tmpl = _.template($('#test').html());
 	var result = tmpl(testing);
-	$('body').append(result);
-
-
-
-		
+	$('body').append(result);		
 /*create window*/
 	function createWindow(){
 	/*creat DOM*/
@@ -92,12 +87,6 @@ $(function(){
 
 		containerText.innerHTML = Math.round(res) + "%";	
 	}
-		
-
-	
-
-			
-
 /*show result*/	
 	var showResult = false;
 	$('#buttonOn').on('click', function(){
