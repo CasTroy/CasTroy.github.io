@@ -1,11 +1,26 @@
- @font-face {
+@font-face {
+    font-family: GothaProBla; /* Имя шрифта */
+    src: url(../fonts/GothaProBla.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: amblelbold; /* Имя шрифта */
+    src: url(../fonts/amblebold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
     font-family: amblelight; /* Имя шрифта */
     src: url(../fonts/amblelight.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+    font-family: ambleregular; /* Имя шрифта */
+    src: url(../fonts/ambleregular.ttf); /* Путь к файлу со шрифтом */
+}
+
 *{
 	margin: 0;
 	padding: 0;
-	font-family: amblelight;
+	font-family: ambleregular;
+	text-shadow: 1px 0px 0px black, 0 0 1em #FFA07A;
+	color: #104E8B;
 }
 /*form*/
 	.title{
@@ -17,23 +32,25 @@
 		padding-left: 100px;
 	}
 	.listQuestions>li{
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
 	.sublist{
 		list-style: none;
 	}
 	.sublist>li {
 		padding: 3px;
+
 	}
 
-	.sublist li:nth-child(2){
-		padding-top: 10px;
+	.sublist li:nth-child(1){
+		padding-top: 20px;
 	}
 	.sublist input{
 		margin-right: 10px;
 	}
-	.sublist h4{
-		font-size: 18px;
+	.quest h4{
+		font-family: amblelbold;
+		font-size: 20px;
 	}
 	.twoAnswers{
 		font-size: 14px;
@@ -52,7 +69,13 @@
 	.buttons button:hover{
 		cursor: pointer;
 	}
-
+	.twoAnswarText{
+		font-family: amblelight;
+		font-size: 14px;
+		text-shadow: none;
+		font-weight: 900;
+		margin-left: 5px;
+	}
 /*container*/
 	.container{
 		width: 100%;
@@ -69,15 +92,25 @@
 		border-radius: 5px 5px 0px 0px;
 		border-top: 1px solid #CDC9C9;
 	}
-	.container__list{
+	.container__result{
 		width: 500px;
 		margin: 0 auto;
+		padding-top: 120px;
 		background: white;
-		height: 490px;
+		height: 290px;
 		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 		border-radius: 0px 0px 5px 5px;
+		
+		text-align: center;
+		
 	}
-	.container__item{
-		padding-top: 30px;
-		margin-left: 50px;
+	.container__text{
+		font-weight: 900;
+		font-size: 56px;
+		background: #436EEE;
+		display: inline-block;
+		padding: 30px;
+		border-radius: 90px;
+		font-family: GothaProBla;
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 	}
