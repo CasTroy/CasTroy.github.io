@@ -7,8 +7,6 @@ $(function(){
 	var tmpl = _.template($('#test').html());
 	var result = tmpl(testing);
 	$('body').append(result);
-		
-
 /*set*/
 	function setObject(){
 		var questions = {
@@ -88,11 +86,12 @@ $(function(){
 	function getObject(){
 		return localStorage.getItem('questions');
 	}
-/*show result*/
+/*click button*/
 	$('#buttonOn').on('click', function(){
 		createModal();
 		showResult();
 	})
+/*show result*/	
 	function showResult(){
 		var elements = $('input:radio');
 		var indexElement = 0;
@@ -150,7 +149,6 @@ $(function(){
 		var baground = $('<div class = "baground"></div>');
 		var container = $('<div class = "container"></div>');
 		baground.append(container);
-		
 		var list = $('<ol class = "list"></ol>');
 		container.append(list);
 		for(var index in testing.questions)
@@ -171,8 +169,6 @@ $(function(){
 				answerItem.text(item);
 			})
 		}
-
-
 		var button = $('<input type = "submit" value = "try again" id = "buttonOff">');
 		button.click(removeModal);
 		container.append(button);
