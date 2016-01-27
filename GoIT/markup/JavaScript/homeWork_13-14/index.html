@@ -12,49 +12,33 @@
 <body>
 <!--template-->
 	<script type = "text/template" id = "test">
-		<form action="">
-			<h1 class = "title"><%= textTitle%></h1>
-			<ol class = "listQuestions">
-				<% var count = 0%>
-				<%for(var index in questions){%>
-					<li class = "quest" ><h4><%= questions[index].title%></h4>
-						<ul class = "sublist">
-							<%if(questions[index].oneAnswer){%>
-								<%questions[index].answers.forEach(function(item, i){%>
-									<% if(i === questions[index].check){%>
-										<li>
-											<label><input type="radio" name ="<%= 'name'+nameForRadBox %>" class = "right" ><%= item%></label>
-										</li>
-									<% }else{ %>
-										<li>
-											<label><input type="radio" name ="<%= 'name'+nameForRadBox %>" class = "wrong" ><%= item%></label>
-										</li>
-									<% } %>
-									<% count++;if(count === 3){count = 0;nameForRadBox++;}%>
-								<% }) %>
+		<form action="" class = "form">
+			<h1><%= textTitle%></h1>
+			<ol class ="tmplList">
+				<% for(var item in questions){%>
+					<li class ="tmplList__item">
+						<h4><%= questions[item].title%></h4>
+						<ul class = "secondList">
+							<% if(questions[item].oneAnser){%>
+								<% var count = 0%>
+								<% questions[item].answers.forEach(function(answer){%>
+									<li class = "secondList__item">
+										<label><input type = "radio" name = "<%= 'name'+nameForInput %>"><%= answer%></label>
+									</li>
+									<% count++; if(count === 3){count = 0;nameForInput++;}%>
+								<%})%>
 							<%}else{%>
-								<span class = "twoAnswarText"><%= "select two answers"%></span>
-								<%questions[index].answers.forEach(function(item, i){%>
-									<% if(i === questions[index].check || i === questions[index].check_two){%>
-										<li>
-											<label><input type="checkbox" class = "<%= 'right' + nameForChBox%>"><%= item%></label>
-										</li>
-									<%}else{%>
-										<li>
-											<label><input type="checkbox" class = "wrong"><%= item%></label>
-										</li>
-									<% } %>
-									<% count++;if(count === 3){count = 0;nameForChBox++;}%>							
-								<% }) %>	
+								<% questions[item].answers.forEach(function(answer){%>
+									<li class = "secondList__item">
+										<label><input type = "checkbox"><%= answer%></label>
+									</li>
+								<%})%>
 							<%}%>	
 						</ul>
 					</li>
 				<%}%>
 			</ol>
-			<div class = "buttons">
-				<button type = "button" id = "buttonOn"><%=buttonOn%></button>
-				<button type = "button" id = "buttonOff" disabled = "disabled"><%=buttonOff%></button>
-			</div>
+			<button type = "button" id = "buttonOn"><%=buttonOn%></button>
 		</form>
 	</script>
 </body>

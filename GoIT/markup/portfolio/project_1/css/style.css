@@ -1,206 +1,25 @@
-@font-face {
-    font-family: LatoRegular; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoRegular/LatoRegular.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: LatoLightItalic; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoLightItalic/LatoLightItalic.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: LatoLight; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoLight/LatoLight.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: LatoItalic; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoItalic/LatoItalic.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: LatoBoldItalic; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoBoldItalic/LatoBoldItalic.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: LatoBold; /* Имя шрифта */
-    src: url(../fonts/Lato/LatoBold/LatoBold.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: GothaProBla; /* Имя шрифта */
-    src: url(../fonts/Gotham/GothaProBla.otf); /* Путь к файлу со шрифтом */
-}
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+ 	max-width:1200px;
+ 	margin: 0 auto; 
+}
+.inset{
+	
+}
+.inset__information{
+	float: left;
+	background: grey;
+}
+.inset__works{
+	float: right;
+	background: green;
 }
 
-/*320px*/
-	@media screen and (min-width: 320px){
-	/*top*/	
-		.top{
-			margin-left: 5%;
-			position: relative;
-			margin-bottom: 80px;
-		}
-		.top__logo{
-			margin-top:30px;
-			text-align: center;
-			margin-left: 10px;
-		}
-		.top__list{
-			margin-top:15px;
-			text-align: center;
-			list-style: none;
-			overflow: hidden;
-			width: 200px;
-			height: 22px;
-			position: absolute;
-			left: 12%;
-			padding: 15px;
-			z-index: 2;
-
-		}
-		.top__item{
-			background: #7B68EE;
-		}
-		.top__item:nth-child(1){
-			font-size: 26px;
-			background: none;
-			border: 1px solid gray;
-            background-color: #191970;
-            padding: 5px;
-            opacity: 0.7;
-            color: white;
-            height: 30px;
-            width: 30px;
-            padding-bottom: 0px;
-            border-radius: 10px  10px 30px 30px;
-            transition: 1s;
-			margin-left: 80px;
-		}
-		.top__item:nth-child(1):hover{
-			cursor: pointer;
-			border: 1px solid #6A5ACD;
-            background-color:#7B68EE;
-            opacity: 1;
-            box-shadow: 0px 0px 5px 1px #4682B4;
-            -webkit-transform:translateY(-10px);
-		}
-		.top__item:nth-child(2){
-			margin-top: 13px;
-		}
-		.top__link{
-			height: 30px;
-			padding-top: 15px;
-			display: block;
-			font-size: 14px;
-			font-weight: 400;
-			text-transform: uppercase;
-			color: white;
-			text-decoration: none;
-			font-family: LatoRegular;
-			transition: 1s;
-		}
-		.top__link:hover{
-			color:#868686;
-			background: #ffbb42;
-			box-shadow: 0px 10px 5px 1px #4682B4;
-		}
-	/*boost*/
-		.boost{
-			background-color:#B0C4DE;
-		}
-		.boost__title{
-			padding-top: 30px;
-			font-size: 24px;
-			text-align: center;
-			font-family: GothaProBla;
-			text-transform: uppercase;
-		}
-		.boost__text{
-			text-align: center;
-			font-family: LatoLight;
-		}
-		.boost__form{
-			width: 270px;
-			margin: 0 auto;
-			position: relative;
-			z-index: 1;
-		}
-		.boost__input{
-			width: 250px;
-			height: 45px;
-			margin-bottom: 5px;
-			padding-left: 10px;
-			border: none;
-			transition: 1s;
-		}
-		.boost__input:hover{
-			box-shadow: 0px 0px 10px 1px #4682B4;
-		}
-		.boost__input:nth-child(1){
-			margin-top: 10px;
-		}
-		.boost__input:nth-child(4){
-			width: 263px;
-			background-color:#ffbb42;
-			border: none;
-			text-transform: uppercase;
-			color:#868686;
-			font-weight: 900;
-		}
-		.boost__input:nth-child(4):hover{
-			cursor: pointer;
-		}
-		/*hint*/
-			.hint{
-				position: absolute;
-				width: 200px;
-				height: 40px;
-				background: #7B68EE;
-				border-radius: 20px 5px 20px 5px;
-				box-shadow: 0px 0px 10px 1px #4682B4; 
-				opacity: 0;
-			}
-			.hint p{
-				font-family: GothaProBla;
-				margin-top: 10px;
-				text-align: center;
-				color: white;
-			} 
-			.name{
-				top: -20px;
-				left: 60px;
-			}
-			.email{
-				top: 30px;
-				left: 60px;
-			}
-			.phone{
-				top: 80px;
-				left: 60px;
-			}
-			
-		.boost__monitor{
-			margin: 30px auto;
-			width: 300px;
-			height: 170px;
-			background-image: url('../img/monitor.png');
-			background-size: 100%;
-			background-repeat: no-repeat;
-			position: relative;
-		}
-		.boost__arrow{
-			width: 30px;
-			height: 30px;
-			background-image: url('../img/arows.png');
-			position: absolute;
-			top: 50px;
-		}
-		.boost__arrow:hover{
-			cursor: pointer;
-		}
-		.boost__left{
-			transform: scale(-1,1);
-		}
-		.boost__right{
-			left: 270px;
-		}	
-	}
+.inset__information, .inset__works{
+	width: 50%;
+	height: 100px;
+	text-align: center;
+}

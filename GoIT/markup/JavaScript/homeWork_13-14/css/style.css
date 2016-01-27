@@ -1,116 +1,66 @@
-@font-face {
-    font-family: GothaProBla; /* Имя шрифта */
-    src: url(../fonts/GothaProBla.otf); /* Путь к файлу со шрифтом */
+@font-face{
+	font-family: amblebold;
+	src: url(../fonts/amblebold.ttf);
 }
-@font-face {
-    font-family: amblelbold; /* Имя шрифта */
-    src: url(../fonts/amblebold.ttf); /* Путь к файлу со шрифтом */
+@font-face{
+	font-family: ambleregular;
+	src: url(../fonts/ambleregular.ttf);
 }
-@font-face {
-    font-family: amblelight; /* Имя шрифта */
-    src: url(../fonts/amblelight.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-    font-family: ambleregular; /* Имя шрифта */
-    src: url(../fonts/ambleregular.ttf); /* Путь к файлу со шрифтом */
+@font-face{
+	font-family: amblebolditalic;
+	src: url(../fonts/amblebolditalic.ttf);
 }
 
+html, body{
+	min-height: 100%;
+}
 *{
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	font-family: ambleregular;
-	text-shadow: 1px 0px 0px black, 0 0 1em #FFA07A;
-	color: #104E8B;
 }
-/*form*/
-	.title{
-		text-align: center;
-	}
-	.listQuestions{
-		width: 500px;
-		margin: 0 auto;
-		padding-left: 100px;
-	}
-	.listQuestions>li{
-		padding-bottom: 30px;
-	}
-	.sublist{
-		list-style: none;
-	}
-	.sublist>li {
-		padding: 3px;
-
-	}
-
-	.sublist li:nth-child(1){
-		padding-top: 20px;
-	}
-	.sublist input{
-		margin-right: 10px;
-	}
-	.quest h4{
-		font-family: amblelbold;
-		font-size: 20px;
-	}
-	.twoAnswers{
-		font-size: 14px;
-		color: #8B6914;
-	}
-	.buttons{
-		width: 200px;
-		margin: 0 auto;
-		padding-left: 50px;
-
-	}
-	.buttons button{
-		font-weight: 900;
-		padding: 5px;
-	}
-	.buttons button:hover{
-		cursor: pointer;
-	}
-	.twoAnswarText{
-		font-family: amblelight;
-		font-size: 14px;
-		text-shadow: none;
-		font-weight: 900;
-		margin-left: 5px;
-	}
-/*container*/
-	.container{
-		width: 100%;
-		height: 525px;
-		position: absolute;
-		top: -600px;
-	}
-	.resultTitle{
-		text-align: center;
-		width: 500px;
-		margin: 5px auto 0px;
-		background: white;
-		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-		border-radius: 5px 5px 0px 0px;
-		border-top: 1px solid #CDC9C9;
-	}
-	.container__result{
-		width: 500px;
-		margin: 0 auto;
-		padding-top: 120px;
-		background: white;
-		height: 290px;
-		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-		border-radius: 0px 0px 5px 5px;
-		
-		text-align: center;
-		
-	}
-	.container__text{
-		font-weight: 900;
-		font-size: 56px;
-		background: #436EEE;
-		display: inline-block;
-		padding: 30px;
-		border-radius: 90px;
-		font-family: GothaProBla;
-		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-	}
+h1{
+	text-align: center;
+}
+h4{
+	font-family: amblebold;
+	font-size: 26px;
+}
+.baground{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	min-height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.container{
+	width: 600px;
+	margin: 200px auto 0;
+	background-color: 	#BEBEBE;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.tmplList__item{
+	margin-top: 10px;
+	margin-left: 20%;
+}
+.list__item{
+	background: rgba(255, 0, 0, 0.4);
+	padding: 10px 0 10px 50px;
+	border-bottom: 1px solid black;
+}
+.secondList__item{
+	margin-left: 30px;
+}
+.list__answer{
+	color: gray;
+}
+.form{
+	width: 600px;
+	margin: 0 auto;
+}
+#buttonOn, #buttonOff{
+	width: 100px;
+	height: 40px;
+	margin: 30px 0 30px 40%;
+}
