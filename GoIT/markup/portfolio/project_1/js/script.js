@@ -1,39 +1,32 @@
 'use strict'
 $(function(){
-
-	
-
-
-showInformation('#educ', '.education');
-showInformation('#cource', '.courses');
-
-
-
-function showInformation(id, block){
-	var check = false;
-	var stopClick = true;
-	$(id).hover()
-
-	/*
-	$(id).on('click', function(){
-	if(stopClick)
-	{
-		stopClick = false;
-		if(!check){
-			$(block).animate({
-				height: "250px"
-			}, 500, function(){
-				stopClick = true;
-			})
-		}else{
-			$(block).animate({
-				height: "50px"
-			}, 500, function(){
-				stopClick = true;
-			})
-		}
-		check =!check;
-	}	
-	})*/
-}
+	var check = true;
+	$('.inset__works').on('click', function(){
+		if(check)
+		{
+		 	check = false;
+		 	$(".information").animate({
+		 		opacity: "0"
+		 	}, 1000, function(){
+		 		check = true;
+		 		$(".information").css({
+		 			display: "none"
+		 		})
+		 	})
+		}		
+	})
+	$('.inset__information').on('click', function(){
+	 	if(check)
+	 	{
+	 		check = false;
+	 		$(".information").css({
+	 			display: "block"
+	 		})
+		 	$(".information").animate({
+		 		opacity: "1"
+		 	},1000, function(){
+		 		check = true
+		 	})
+	 	}
+	})
 });
