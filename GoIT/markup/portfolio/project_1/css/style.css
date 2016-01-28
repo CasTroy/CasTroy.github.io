@@ -32,7 +32,8 @@ h1,h4,h5{
 	font-family: Amble-Bold;
 }
 body{
-	background: #D1EEEE;
+	//background: #D1EEEE;
+	background: linear-gradient(to top, white, #D1EEEE);
 }
 /*1200px*/
 	@media (min-width: 1200px){	
