@@ -35,7 +35,7 @@ h1,h4,h5{
 	font-family: Amble-Bold;
 }
 body{
-	height: 100%;
+	min-height: 100%;
 	background: linear-gradient(to top, white, #D1EEEE);
 }
 /*1200px*/
@@ -44,6 +44,7 @@ body{
 		.container{
 			width: 1200px;
 		 	margin: 0 auto; 
+		 	overflow: hidden;
 		}
 		.inset{
 			height: 100px;
@@ -85,22 +86,33 @@ body{
 			margin-top: 30px;
 			text-align: center;
 			font-size: 32px;
+			width: 1200px;
 
 			
 		}
 		/*contact*/
 			.contact{
+				width: 1200px;
 				height: 400px;
 				background: white;
 				box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
 			}
 			.contact__photo{
 				float: right;
-				box-shadow: -2px 0px 3px 0px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 				width: 250px;
 				height: 400px;
+				margin-right: 10px;
 				background-image: url(../img/i2.png);
 				background-repeat: no-repeat;
+				display: inline-block;
+				transition: 1s;
+				cursor: pointer;
+			}
+			.contact__photo:hover{
+				box-shadow: 5px 5px 10px 0px rgba(72,61,139,0.75);
+				//border-radius: 30px 0 0 0;
+ 				transform: rotate(-3deg);
 			}
 			.contact__list{
 				color: #4F4F4F;	
@@ -109,6 +121,21 @@ body{
 				width: 70%;
 				font-size: 20px;
 				padding: 10px 30px;
+			}
+			.end_link{
+				position: relative;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			.logo{
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				//background-color: white;
+				z-index: 1;
+				background-image: url(../img/logos.png);
+				background-repeat: no-repeat;
+				opacity: 0;
 			}
 			.contac__item:nth-child(1){
 				padding-top: 50px;
@@ -121,7 +148,9 @@ body{
 
 			.contact__contant{
 				display: inline-block;
+				
 			}
+
 			.contact__contant a{
 				text-decoration: none;
 				color: 	#AB82FF;
@@ -170,6 +199,7 @@ body{
 				text-decoration: none;
 				color: 	#AB82FF;
 				transition: 1s;
+				display: inline-block;
 			}
 			.education__link:hover{
 				color: 	#551A8B;
