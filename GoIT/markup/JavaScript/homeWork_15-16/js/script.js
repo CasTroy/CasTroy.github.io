@@ -30,14 +30,14 @@ $(function(){
 			this.company    = 'google';
 			this.salary     = 10000;
 			this.goToWork = function(){
-				console.log('it went to work')
+				return 'went to work';
 			};
 		}
 		function student(){
 			this.univercity     = 'Kyiv College';
 			this.scholarship    = 100;
 			this.gotToWatchTV = function(){
-				console.log('it went to watch tv')
+				return 'went to watch tv';
 			};
 		}
 	/*init*/	
@@ -66,14 +66,18 @@ $(function(){
 						 "\n  age:\t\t", newWorker.age,
 						 "\n  sex:\t\t", newWorker.sex,
 						 "\n  height:\t", newWorker.height,
-						 "\n  weight:\t", newWorker.weight
+						 "\n  weight:\t", newWorker.weight		 
 			);
+			console.log(newWorker.name,newWorker.goToWork()); 
+			
+			
 		/*student*/
 			console.log('\nStudent:\t',newStudent.name,
 						 "\n  age:\t\t", newStudent.age,
 						 "\n  sex:\t\t", newStudent.sex,
 						 "\n  height:\t", newStudent.height,
 						 "\n  weight:\t", newStudent.weight);
+			console.log(newStudent.name,newStudent.gotToWatchTV()); 
 });
 /*FOR H.M. 15*/
 	var list;
