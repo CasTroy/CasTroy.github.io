@@ -11,11 +11,7 @@ $(function(){
 	$('.button').click(show);
 	function show(){
 		var text = $('#text').val();
-		$.ajax({
-			url:
-			"http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='"+text+"'&callback=GoogleCallback&context=?",
-			dataType: 'jsonp'
-		});
+		$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='"+text+"'&callback=GoogleCallback&context=?")
 	}
 /*HOME WORK 16*/
 	/*create classes*/
@@ -80,28 +76,11 @@ $(function(){
 			console.log(newStudent.name,newStudent.gotToWatchTV()); 
 });
 /*FOR H.M. 15*/
-	var list;
+	var element;
 	function GoogleCallback (func, data) {
-		if(list)
-			list.remove();
-	    list = $('<ul class = "list"></ul>')
-	    $('body').append(list);
-
-	    for(var index in data.results){
-	    	var item = $('<li class = "list__item"></li>');
-	    	list.append(item);
-
-			var link = $('<a href = "" class = "list__link"></a>');
-			link.attr('href', data.results[index].url);
-			link.text(data.results[index].titleNoFormatting);
-	 		item.append(link);
-		
-			var linkText = $('<p class = "list__text"></p>');
-			linkText.text(data.results[index].unescapedUrl);
-			item.append(linkText);
-			
-			var content = $('<p class = "list__content"></p>');
-			content.html(data.results[index].content);
-			item.append(content);
-	    }	
+		$('.list').remove();
+		element = data;
+		var tmpl = _.template($('#test').html());
+		var result = tmpl(element);
+		$('body').append(result);
 	}
