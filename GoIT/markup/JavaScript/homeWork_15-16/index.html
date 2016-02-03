@@ -9,25 +9,23 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-
-
-
-	<h1 class = "title__text"><span class = "blue">Shm</span><span class = "red">o</span><span class = "yellow">o</span><span class = "blue">g</span><span class = "green">l</span><span class = "red">e</span></h1>
-	<form action="#">
-		<input type="text" id = "text">
-		<button type = "button" class = "button" value=" "></button>
-	</form>
-	
-	<script type = "text/template" id = "test">
-	<ul class = "list">
-		<% for(var index in element.results){%>
-			<li class = "list__item">
-				<a href = "<%= element.results[index].url%>" class = "list__link"><%=element.results[index].titleNoFormatting%></a>
-				<p class = "list__text"><%= element.results[index].unescapedUrl%></p>
-				<p class = "list__content"><%= element.results[index].content%></p>
-			</li>
-		<%}%>	
-	</ul>	
-	</script>
+	<!--form-->
+		<h1 class = "title__text"><span class = "blue">Shm</span><span class = "red">o</span><span class = "yellow">o</span><span class = "blue">g</span><span class = "green">l</span><span class = "red">e</span></h1>
+		<form action="#">
+			<input type="text" id = "text">
+			<button type = "button" class = "button" value=" "></button>
+		</form>
+	<!--tmp-->
+		<script type = "text/template" id = "test">
+			<ul class = "list">
+				<% for(var index in element.results){%>
+					<li class = "list__item">
+						<a href = "<%= element.results[index].url%>" class = "list__link"><%=element.results[index].titleNoFormatting%></a>
+						<p class = "list__text"><%= element.results[index].unescapedUrl%></p>
+						<p class = "list__content"><%= element.results[index].content%></p>
+					</li>
+				<%}%>	
+			</ul>	
+		</script>
 </body>
 </html>
