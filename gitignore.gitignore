@@ -1,2 +1,2 @@
 $ cat .gitignore
-node_modules/
+ignore/
