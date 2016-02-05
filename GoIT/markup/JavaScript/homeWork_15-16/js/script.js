@@ -11,7 +11,7 @@ $(function(){
 	$('.button').click(show);
 	function show(){
 		var text = $('#text').val();
-		$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='"+text+"'&callback=GoogleCallback&context=?")
+		$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q='"+text+"'&callback=GoogleCallback&context=?");		
 	}
 /*HOME WORK 16*/
 	/*create classes*/
@@ -78,6 +78,7 @@ $(function(){
 /*FOR H.M. 15*/
 	var element;
 	function GoogleCallback (func, data) {
+		console.log(data);
 		$('.list').remove();
 		element = data;
 		var tmpl = _.template($('#test').html());

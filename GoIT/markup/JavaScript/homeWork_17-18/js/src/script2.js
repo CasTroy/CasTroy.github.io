@@ -1,4 +1,1 @@
-'use strict'
-$(function(){
-	console.log('second sctipt');
-});
+console.log('second sctipt');
