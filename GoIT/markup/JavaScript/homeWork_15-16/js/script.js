@@ -5,14 +5,14 @@ $(function(){
 		if(event.keyCode == 13)
 		{
 			e.preventDefault();
-			show();
+			getObject(0);
 		}
 	});
-	$('.button').click(show);
-	function show(){
-		var text = $('#text').val();
-		$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q='"+text+"'&callback=GoogleCallback&context=?");		
-	}
+	$('.button').on('click', function(){
+		getObject(0);
+	})
+	
+	
 /*HOME WORK 16*/
 	/*create classes*/
 		function human(){
@@ -77,11 +77,26 @@ $(function(){
 });
 /*FOR H.M. 15*/
 	var element;
+	var count = 0;
+
+	function getObject(step){
+		var text = $('#text').val();
+		$.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=8&start=" + step + "&q='"+text+"'&callback=GoogleCallback&context=?");		
+	}
 	function GoogleCallback (func, data) {
-		console.log(data);
 		$('.list').remove();
 		element = data;
 		var tmpl = _.template($('#test').html());
 		var result = tmpl(element);
 		$('body').append(result);
+
+		$('.navigation__item').css("color", "#4285f4");
+		$('.navigation__item')[count].style.color = "black";
 	}
+	function showList(index){
+		count = index;
+		$('.navigation').remove();
+		$('.list').remove();
+		getObject(index*8);
+	}
+ 

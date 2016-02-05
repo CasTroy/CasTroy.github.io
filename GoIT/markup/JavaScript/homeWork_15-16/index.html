@@ -7,6 +7,7 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="js/lodash.js"></script>
 	<script src="js/script.js"></script>
+
 </head>
 <body>
 	<!--form-->
@@ -25,7 +26,19 @@
 						<p class = "list__content"><%= element.results[index].content%></p>
 					</li>
 				<%}%>	
-			</ul>	
+			</ul>
+			<div class = "navigation">
+				<h3 class = "title__text navigation__title">
+					<span class = "blue">Shm</span><span class = "red">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "yellow">o</span><span class = "blue">g</span><span class = "green">l</span><span class = "red">e</span>
+				</h3>
+				<ul class = "navigation__list">
+					<%for(var i = 0; i < 8; ++i){%>
+						<li class = "navigation__item" onclick="showList(<%= i %>)">
+							<p class = "navigation__link number"><%= i+1%></p>
+						</li>
+					<%}%>
+				</ul>
+			</div>	
 		</script>
 </body>
 </html>

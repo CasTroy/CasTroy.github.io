@@ -63,4 +63,46 @@ form{
 	font-size: 26px;
 	margin: 30px 0 0 30px;
 }
+/*navigation*/
+	.navigation__list{
+		list-style: none;
+		margin-left: 115px;
 
+	}
+	.navigation__title{
+		font-size: 36px;
+	}
+	.navigation__item{
+		float: left;
+		margin-right: 13px;
+		color:#4285f4;
+		padding-bottom: 30px;
+	}
+	.navigation__item:nth-child(2){
+		margin-right: 14px;
+	}
+	.navigation__item:nth-child(3){
+		margin-right: 15px;
+	}
+	.navigation__item:nth-child(5){
+		margin-right: 14px;
+	}
+	.navigation__item:nth-child(6){
+		margin-right: 14px;
+	}
+	.navigation__item:nth-child(7){
+		margin-right: 14px;
+	}
+	.navigation__item:nth-child(8){
+		margin-right: 14px;
+	}
+	.navigation__item:nth-child(9){
+		margin-right: 10px;
+	}
+	.navigation__link{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.navigation__link:hover{
+		text-decoration: underline;
+	}
