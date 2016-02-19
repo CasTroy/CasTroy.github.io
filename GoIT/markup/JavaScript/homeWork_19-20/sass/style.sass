@@ -1,0 +1,428 @@
+@import variables
+@import mixins
+
+
+*
+	margin: 0
+	padding: 0
+	font-family: Ubuntu-Regular
+	text-decoration: none
+/*container*/
+.container
+  min-height: calc(100vh - 60px)
+.tContent, .pContent, .slider__sContent, .iContent, .sContent, .nContent, .bContent, .lContent, .fContent
+  margin: 0 auto
+  width: $sizeBlock
+/*top*/
+.top
+  height: 100px
+  &__tContent
+    padding: 33px 0
+    //top__left
+    .tLeft
+      &__tLogo
+        float: left
+      .tText
+        font-family: Ubuntu-Regular
+        float: left
+        color: $topTextColor
+        margin-left: 5px
+        &__large
+          font-size: 30px
+          font-weight: 500
+          line-height: 20px
+        &__small
+          margin-left: 2px
+          opacity: 0.65
+          color: $topTextColor
+          font-size: 12px
+          font-weight: 300
+          line-height: 20px
+          text-transform: uppercase  
+    //top__right
+    .tRight
+      float: right
+      /*list*/
+      .tList
+        &__tItem
+          margin-left: 25px
+          float: left
+          list-style: none
+          &:nth-child(1)>.tItem__tLink
+            background-position: 5px 0
+          &:nth-child(1)>.tItem__tLink:hover
+            background-position: 5px $iconActive
+          &:nth-child(2)>.tItem__tLink
+            background-position: -18px 0
+          &:nth-child(2)>.tItem__tLink:hover
+            background-position: -18px $iconActive
+          &:nth-child(3)>.tItem__tLink
+            background-position: -45px 0
+          &:nth-child(3)>.tItem__tLink:hover
+            background-position: -45px $iconActive
+          &:nth-child(4)>.tItem__tLink
+            background-position: -70px 0
+          &:nth-child(4)>.tItem__tLink:hover
+            background-position: -70px $iconActive
+          &:nth-child(5)>.tItem__tLink
+            background-position: -97px 0
+          &:nth-child(5)>.tItem__tLink:hover
+            background-position: -97px $iconActive
+        .tLink
+          width: 16px
+          height: 20px
+          display: inline-block
+          background-image: url(../img/sptiteIcon.png)
+          opacity: 0.2
+        .tLink:hover
+          opacity: 1
+/*panel*/
+.pContent
+  height: 60px
+  background-color: $bgColorPanel
+  //panel list 
+  &__pList
+    list-style: none
+    .pItem
+      float: left
+      &__pLink
+        text-decoration: none
+        color: $linkColorPanel
+        display: inline-block
+        text-transform: uppercase
+        padding: 21px 40px
+        font-family: Ubuntu-Condensed
+        border-right: 1px solid #181a1d
+      &__pLink:hover
+        color: $hoverlinkColorPanel
+      &__pLink:active
+        background-color: $activelinkColorPanel
+  //panel form      
+  &__pForm
+    width: 260px
+    float: right
+    .pSearch
+      width: 225px
+      height: 38px
+      margin: 9px 5px
+      padding-left: 15px
+      background-color:#35383c
+      border: 1px solid black
+      background-image: url(../img/SEARCH.png)
+      background-size: 10%
+      background-repeat: no-repeat
+      background-position: 210px
+/*slider*/
+.blueberry 
+  margin: 0 auto
+  position: relative
+.blueberry .slides
+  display: block
+  position: relative
+  overflow: hidden
+.blueberry .slides li 
+  position: absolute
+  top: 0
+  left: 0
+  overflow: hidden
+.blueberry .slides li img 
+  display: block
+  width: 100%
+  max-width: none
+.blueberry .slides li.active
+  display: block
+  position: relative
+.blueberry .crop li img
+  width: auto
+.blueberry .pager 
+  height: 40px
+  text-align: center
+.blueberry .pager li
+  display: inline-block
+.blueberry .pager li a, .blueberry .pager li a span 
+  display: block
+  height: 4px
+  width: 4px
+.pager
+  position: absolute
+  margin-top: -30px
+  left: 46.5%
+  z-index: 1
+.blueberry .pager li a 
+  padding: 3px
+  width: 10px
+  height: 10px
+  background: white
+  margin-right: 10px
+.blueberry .pager li a span 
+  overflow: hidden
+  background: white
+  text-indent: -9999px
+  width: 10px
+  height: 10px
+.blueberry .pager li.active a span
+  background: #2a2d32
+/*information*/
+.iContent
+  height: 400px
+  &__iList
+    list-style: none
+  .iList
+    &__iItem:nth-child(2) .iIcon
+      background-position: -40px
+    &__iItem:nth-child(3) .iIcon
+      background-position: -80px  
+    .iItem
+      float: left
+      width: 33%
+      margin-top: 75px
+      //left block of information
+      &__iLeft
+        float: left
+        display: inline-block
+        width: 25%
+        opacity: 0.1
+        color: #2a2b2e
+        font-family: Ubuntu-Regular
+        font-size: 90px
+        font-weight: 600
+        line-height: 70px
+      //right block of information
+      .iRight
+        padding-left: 40px
+        width: 59%
+        display: inline-block
+        &__iIcon
+          width: 40px
+          height: 40px
+          border: none
+          background-image:url(../img/spriteInfo.png)
+        &__iTitle
+          color: $informationTitleColor
+          font-family: Ubuntu-Regular
+          font-size: 20px
+          font-weight: 600
+          line-height: 20px
+          margin: 15px 0 0 2px
+        &__iText
+          color: $informationTextColor
+          font-family: Arial
+          font-size: 13px
+          font-weight: 400
+          line-height: 20px
+          margin: 30px 0 25px
+        &__iLink
+          color: $informationTitleColor
+          font-family: Ubuntu-Regular
+          font-size: 13px
+          font-weight: 500
+          line-height: 20px
+          text-decoration: none
+        .iLink:hover
+          color: $informationHoverLinkColor     
+/*services*/
+.services
+    background: $bgColorPanel
+    height: 500px
+    clear: both
+    //services title
+    .sTitle
+      color: $linkColorPanel
+      font-family: Ubuntu-Regular
+      font-size: 24px
+      font-weight: 600
+      line-height: 20px
+      padding: 50px 0
+    //services list
+    .sList
+      list-style: none
+      .sItem:nth-child(4)
+        margin-right: 0px
+      &__sItem
+        width: 260px
+        margin-right: 40px
+        float: left
+        text-decoration: none
+        .sLink:hover
+          color: $hoverlinkColorPanel
+        .sLink
+          text-decoration: none
+          color: $linkColorPanel
+          .sPhoto:active
+            opacity: 0.1
+          &__sPhoto
+            width: 260px
+            height: 260px
+          &__sText
+            margin-top: 30px
+            text-align: center
+            font-family: Ubuntu-Regular
+            font-size: 16px
+            font-weight: 500
+            line-height: 20px 
+/*news*/
+.news
+  background-color: #f7f7f7
+  height: 540px
+  .nContent
+    &__nLeft
+      float: left
+    &__nRight
+      float: right 
+    .nLeft, .nRight
+      width: 50%
+      margin-top: 60px
+    //left  
+    .nLeft
+      &__nList
+        list-style: none
+        .nItem
+          position: relative
+          .nPhoto
+            width: 150px
+            height: 150px
+            float: left
+            margin-top: 30px
+            clear: both
+            &__nImg
+              position: absolute
+            &__nMonth
+              width: 20px
+              padding: 10px 15px 10px 10px
+              background-color:#248cec
+              color: $linkColorPanel
+              margin: 15px 0 0 -20px
+              position: absolute
+            &__nNumber
+              position: absolute
+              font-weight: 600
+              width: 20px
+              padding: 10px 10px 10px 15px
+              background-color:#f4b60d
+              color: $bgColorPanel
+              margin: 50px 0 0 -20px
+          .nText
+            margin-top: 30px
+            width: 375px
+            display: inline-block
+            float: right
+            .nHead
+              .nLinkTitle:hover
+                color: $newsHoverlinkColor
+              &__nLinkTitle
+                color: $bgColorPanel
+                font-size: 16px
+                font-weight: 600
+                line-height: 20px
+            .nComents
+              margin: 5px 0 25px
+              &__nLinkComents
+                color: $newsHoverlinkColor 
+            .nComText
+              font-family: Arial
+              font-size: 13px
+              font-weight: 400
+              line-height: 20px   
+    //right
+    .nRight
+      position: relative
+      .nrList
+        margin-top: 30px
+        position: absolute
+        list-style: none
+        &__nrItem
+          margin-bottom: 5px
+          overflow: hidden
+          height: 34px
+          &:nth-child(1)
+             height: 175px
+          .nPanel
+            cursor: pointer
+            color: $linkColorPanel
+            background-color: #f4b60d 
+            &__nPlus
+              float: left
+              width: 40px
+              border-right: 1px solid #f6c53d
+              text-align: center
+              font-size: 13px
+              padding: 10px 0
+            &__nTitle
+              padding: 10px 0 10px 15px
+              display: inline-block
+              width: 90%
+              margin: 0px
+              font-size: 13px
+              font-weight: 500
+              text-transform: uppercas
+        .nPanelText
+          width: 90% 
+          padding: 45px
+          color: #8a8a8a
+          font-family: Arial
+          font-size: 13px
+          font-weight: 400
+          line-height: 20px
+          background: white
+/*brends*/
+.brends
+  height: 240px
+  .bList
+    list-style: none
+    &__bItem
+      float: left
+      padding-left: 35px
+      margin-top: 95px
+/*links*/
+.links
+  background-color: #2a2d32
+  height: 325px
+  .lListBox
+    list-style: none
+    &__lItemBox
+      float: left
+      color: $linkColorPanel
+      width: 240px
+      margin-left: 39px
+      .lHeader
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+        text-transform: uppercase
+        margin: 60px 0 45px 0
+      .lList
+        list-style: none
+        &__lItem
+          border-bottom: 1px solid #393c40
+          &:nth-child(4)
+            border-bottom: none
+        .lLink
+          opacity: 0.3
+          color: white
+          font-family: Arial
+          font-size: 13px
+          font-weight: 400
+          line-height: 36px
+          &:hover
+            color: #248cec
+/*footer*/       
+.footer
+  clear: both
+  width: 100%
+  height: 60px
+  background-color: #35383c
+  .fList
+    list-style: none
+    &__fItem
+      float: left
+      margin: 20px 35px 0 0
+      &:nth-child(4)
+        float: right
+      .fText
+        opacity: 0.2
+        color: white
+        font-family: Arial
+        font-size: 12px
+        font-weight: 400
+        line-height: 20px               
+  

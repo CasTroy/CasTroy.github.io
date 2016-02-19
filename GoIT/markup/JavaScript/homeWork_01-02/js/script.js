@@ -12,6 +12,7 @@
 		
 	}
 	main();
+
 /*homeWork 02
 	function main(){
 		var numberOfPeople = 5;
