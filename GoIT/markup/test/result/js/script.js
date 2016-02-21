@@ -211,7 +211,7 @@ var usersFriends = [{
 var usersStream = [{
 	name: "Anton",
 	surname: "Petryaev",
-	photo: '../result/images/photo/Anton.jpg',
+	photo: '../result/images/photo/anton.jpg',
 	stream: 1,
 	friend: false
 },
