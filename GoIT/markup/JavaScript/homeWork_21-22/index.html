@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/newScript.js"></script>
+</head>
+<body>
+<!--template-->
+	<script type = "text/template" id = "test">
+		<form action="" class = "form">
+			<h1><%= textTitle%></h1>
+			<ol class ="tmplList">
+				<% for(var item in questions){%>
+					<li class ="tmplList__item">
+						<h4><%= questions[item].title%></h4>
+						<ul class = "secondList">
+							<% if(questions[item].oneAnser){%>
+								<% var count = 0%>
+								<% questions[item].answers.forEach(function(answer){%>
+									<li class = "secondList__item">
+										<label><input type = "radio" name = "<%= 'name'+nameForInput %>"><%= answer%></label>
+									</li>
+									<% count++; if(count === 3){count = 0;nameForInput++;}%>
+								<%})%>
+							<%}else{%>
+								<% questions[item].answers.forEach(function(answer){%>
+									<li class = "secondList__item">
+										<label><input type = "checkbox"><%= answer%></label>
+									</li>
+								<%})%>
+							<%}%>	
+						</ul>
+					</li>
+				<%}%>
+			</ol>
+			<button type = "button" id = "buttonOn"><%=buttonOn%></button>
+		</form>
+	</script>
+</body>
+</html>
