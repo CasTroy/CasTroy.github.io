@@ -199,23 +199,9 @@ var usersFriends = [{
 	photo: '../result/images/photo/katya.jpg',
 	stream: 3,
 	friend: false
-},
-{
-	name: "Anton",
-	surname: "Petryaev",
-	photo: '../result/images/photo/anton.jpg',
-	stream: 1,
-	friend: false
 }]
 
 var usersStream = [{
-	name: "Anton",
-	surname: "Petryaev",
-	photo: '../result/images/photo/anton.jpg',
-	stream: 1,
-	friend: false
-},
-{
 	name: "Katya",
 	surname: "Sambuka",
 	photo: '../result/images/photo/katya.jpg',
