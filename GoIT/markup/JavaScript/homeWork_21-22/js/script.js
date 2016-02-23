@@ -1,6 +1,7 @@
-let obj = {
-	sayHello: function(name){
+var obj = {
+	messege: function (name) {
 		return 'Hello, ' + name;
 	}
 }
+
 module.exports = obj;
