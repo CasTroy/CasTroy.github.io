@@ -147,21 +147,9 @@ var app = {
 	removeModal: removeModal
 };
 
-/*
-let obj = {
-	messege: function (name) {
-		return 'Hello, ' + name;
-	}
-}
-
-
-
-
-try{
-	module.exports = createTemplate;
-	//module.exports = setObject;
-	
-}catch(e){}*/
+try {
+	module.exports = app;
+} catch (e) {}
 'use strict';
 
 var testing = undefined;
