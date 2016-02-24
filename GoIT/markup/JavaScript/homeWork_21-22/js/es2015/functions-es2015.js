@@ -1,17 +1,8 @@
-'use strict'
-$(function(){
-//here i am setting object in localstorage
-	setObject();
-//here i am getting object out localstorage
-	var testing = JSON.parse(getObject());
-	var tmpl = _.template($('#test').html());
-	var result = tmpl(testing);
-	$('body').append(result);
-/*set*/
-	function setObject(){
-		var questions = {
+//set	
+	let setObject = () =>{
+		let questions = {
 		    '1': {
-		        'title': 'What is HTML?',
+		        'title': 'Whats is HTML?',
 		        'answers': [
 		            'Hypertext Markup Language',
 		            'Objective Programming Language',
@@ -73,31 +64,23 @@ $(function(){
 		        'oneAnser': false
 		    },
 		}
-
-		var tmp = {
+		return questions;
+	}
+	let createTemplate = (questions) =>{
+		let tmp = {
 			textTitle: 'Testing',
 			questions,
 			nameForInput: 0,
 			buttonOn: 'show result'
 		}
-		localStorage.setItem('questions', JSON.stringify(tmp))
+		return tmp;
 	}
-/*get*/
-	function getObject(){
-		return localStorage.getItem('questions');
-	}
-/*click button*/
-	$('#buttonOn').on('click', function(){
-		createModal();
-		showResult();
-	})
-/*show result*/	
-	function showResult(){
-		var elements = $('input:radio');
-		var indexElement = 0;
-
-		var elementsCh = $('input:checkbox');
-		var indexElementCh = 0;
+//show result	
+	let showResult = () =>{
+		let elements = $('input:radio');
+		let indexElement = 0;
+		let elementsCh = $('input:checkbox');
+		let indexElementCh = 0;
 		for(var index in testing.questions)
 		{
 			if(testing.questions[index].oneAnser)
@@ -121,7 +104,7 @@ $(function(){
 			}
 			else
 			{
-				var countForAnswers = 0;
+				let countForAnswers = 0;
 				testing.questions[index].answers.forEach(function(item, i){
 				if(elementsCh[indexElementCh].checked)
 				{
@@ -143,41 +126,59 @@ $(function(){
 			}
 		}
 		indexElement = 0;
-	}	
-/*create modal window*/	
-	function createModal(){
-		var baground = $('<div class = "baground"></div>');
-		var container = $('<div class = "container"></div>');
+	}		
+//create modal window
+	let createModal = () =>{
+		let baground = $('<div class = "baground"></div>');
+		let container = $('<div class = "container"></div>');
 		baground.append(container);
-		var list = $('<ol class = "list"></ol>');
+		let list = $('<ol class = "list"></ol>');
 		container.append(list);
 		for(var index in testing.questions)
 		{
-			var item = $('<li class = "list__item"></li>');
-			list.append(item);
-			var quest = $('<h4 class = "list__quest"></h4>');
-			item.append(quest);
+			let itm = $('<li class = "list__item"></li>');
+			list.append(itm);
+			let quest = $('<h4 class = "list__quest"></h4>');
+			itm.append(quest);
 			quest.text(testing.questions[index].title);
-			var answer = $('<ul class = "list__answer"></ul>');
-			item.append(answer);
+			let answer = $('<ul class = "list__answer"></ul>');
+			itm.append(answer);
+
+
+
 			testing.questions[index].answers.forEach(function(item){
+				let answerItem;
 				if(testing.questions[index].oneAnser)
-					var answerItem = $('<li class = "list__answerOne"></li>');
+					answerItem = $('<li class = "list__answerOne"></li>');
 				else
-					var answerItem = $('<li class = "list__answerTwo"></li>');
+					answerItem = $('<li class = "list__answerTwo"></li>');
 				answer.append(answerItem);
 				answerItem.text(item);
 			})
 		}
-		var button = $('<input type = "submit" value = "try again" id = "buttonOff">');
+		let button = $('<input type = "submit" value = "try again" id = "buttonOff">');
 		button.click(removeModal);
 		container.append(button);
 		$('body').append(baground);
+		return baground;
 	}
-/*delete modal window*/			
-	function removeModal(){
+//delete modal window			
+	let removeModal = () =>{
 		$("input").attr("checked", false);
 		$('.baground').remove();
+		return true;
 	}
-});
 
+let obj = {
+	messege: function (name) {
+		return 'Hello, ' + name;
+	}
+}
+let func = () => 'hellow';
+
+
+
+try{
+	//module.exports = obj;
+	module.exports = func;
+}catch(e){}
