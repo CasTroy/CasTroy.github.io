@@ -44,6 +44,7 @@ var setObject = function setObject() {
 	};
 	return questions;
 };
+//create template	
 var createTemplate = function createTemplate(questions) {
 	var tmp = {
 		textTitle: 'Testing',
@@ -114,7 +115,6 @@ var createModal = function createModal() {
 		quest.text(testing.questions[index].title);
 		var answer = $('<ul class = "list__answer"></ul>');
 		itm.append(answer);
-
 		testing.questions[index].answers.forEach(function (item) {
 			var answerItem = undefined;
 			if (testing.questions[index].oneAnser) answerItem = $('<li class = "list__answerOne"></li>');else answerItem = $('<li class = "list__answerTwo"></li>');
@@ -139,19 +139,29 @@ var removeModal = function removeModal() {
 	return true;
 };
 
-var obj = {
-	messege: function messege(name) {
-		return 'Hello, ' + name;
-	}
-};
-var func = function func() {
-	return 'hellow';
+var app = {
+	setObject: setObject,
+	createTemplate: createTemplate,
+	showResult: showResult,
+	createModal: createModal,
+	removeModal: removeModal
 };
 
-try {
-	//module.exports = obj;
-	module.exports = func;
-} catch (e) {}
+/*
+let obj = {
+	messege: function (name) {
+		return 'Hello, ' + name;
+	}
+}
+
+
+
+
+try{
+	module.exports = createTemplate;
+	//module.exports = setObject;
+	
+}catch(e){}*/
 'use strict';
 
 var testing = undefined;
@@ -160,9 +170,8 @@ var result = undefined;
 $(function () {
 	//main
 
-	var tmp = createTemplate(setObject());
+	var tmp = app.createTemplate(app.setObject());
 	localStorage.setItem('questions', JSON.stringify(tmp));
-
 	testing = JSON.parse(localStorage.getItem('questions'));
 	tmpl = _.template($('#test').html());
 	result = tmpl(testing);
@@ -170,7 +179,7 @@ $(function () {
 
 	//click button
 	$('#buttonOn').on('click', function () {
-		createModal();
-		showResult();
+		app.createModal();
+		app.showResult();
 	});
 });

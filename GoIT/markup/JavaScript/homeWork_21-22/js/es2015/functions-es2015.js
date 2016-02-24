@@ -1,3 +1,5 @@
+
+
 //set	
 	let setObject = () =>{
 		let questions = {
@@ -66,6 +68,7 @@
 		}
 		return questions;
 	}
+//create template	
 	let createTemplate = (questions) =>{
 		let tmp = {
 			textTitle: 'Testing',
@@ -143,9 +146,6 @@
 			quest.text(testing.questions[index].title);
 			let answer = $('<ul class = "list__answer"></ul>');
 			itm.append(answer);
-
-
-
 			testing.questions[index].answers.forEach(function(item){
 				let answerItem;
 				if(testing.questions[index].oneAnser)
@@ -169,16 +169,33 @@
 		return true;
 	}
 
+let app = {
+	setObject,
+	createTemplate,
+	showResult,
+	createModal, 
+	removeModal
+}
+
+
+
+
+
+
+
+
+
 let obj = {
 	messege: function (name) {
 		return 'Hello, ' + name;
 	}
 }
-let func = () => 'hellow';
+
 
 
 
 try{
-	//module.exports = obj;
-	module.exports = func;
+	module.exports = app;
+	
+	
 }catch(e){}

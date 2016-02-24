@@ -44,6 +44,7 @@ var setObject = function setObject() {
 	};
 	return questions;
 };
+//create template	
 var createTemplate = function createTemplate(questions) {
 	var tmp = {
 		textTitle: 'Testing',
@@ -114,7 +115,6 @@ var createModal = function createModal() {
 		quest.text(testing.questions[index].title);
 		var answer = $('<ul class = "list__answer"></ul>');
 		itm.append(answer);
-
 		testing.questions[index].answers.forEach(function (item) {
 			var answerItem = undefined;
 			if (testing.questions[index].oneAnser) answerItem = $('<li class = "list__answerOne"></li>');else answerItem = $('<li class = "list__answerTwo"></li>');
@@ -139,16 +139,20 @@ var removeModal = function removeModal() {
 	return true;
 };
 
+var app = {
+	setObject: setObject,
+	createTemplate: createTemplate,
+	showResult: showResult,
+	createModal: createModal,
+	removeModal: removeModal
+};
+
 var obj = {
 	messege: function messege(name) {
 		return 'Hello, ' + name;
 	}
 };
-var func = function func() {
-	return 'hellow';
-};
 
 try {
-	//module.exports = obj;
-	module.exports = func;
+	module.exports = app;
 } catch (e) {}

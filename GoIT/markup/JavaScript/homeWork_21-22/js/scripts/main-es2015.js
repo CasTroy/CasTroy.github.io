@@ -6,9 +6,8 @@ var result = undefined;
 $(function () {
 	//main
 
-	var tmp = createTemplate(setObject());
+	var tmp = app.createTemplate(app.setObject());
 	localStorage.setItem('questions', JSON.stringify(tmp));
-
 	testing = JSON.parse(localStorage.getItem('questions'));
 	tmpl = _.template($('#test').html());
 	result = tmpl(testing);
@@ -16,7 +15,7 @@ $(function () {
 
 	//click button
 	$('#buttonOn').on('click', function () {
-		createModal();
-		showResult();
+		app.createModal();
+		app.showResult();
 	});
 });
