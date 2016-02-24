@@ -1,5 +1,3 @@
-
-
 //set	
 	let setObject = () =>{
 		let questions = {
@@ -168,7 +166,7 @@
 		$('.baground').remove();
 		return true;
 	}
-
+//object
 let app = {
 	setObject,
 	createTemplate,
