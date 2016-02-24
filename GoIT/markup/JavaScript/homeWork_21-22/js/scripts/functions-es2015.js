@@ -147,12 +147,6 @@ var app = {
 	removeModal: removeModal
 };
 
-var obj = {
-	messege: function messege(name) {
-		return 'Hello, ' + name;
-	}
-};
-
 try {
 	module.exports = app;
 } catch (e) {}

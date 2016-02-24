@@ -177,25 +177,6 @@ let app = {
 	removeModal
 }
 
-
-
-
-
-
-
-
-
-let obj = {
-	messege: function (name) {
-		return 'Hello, ' + name;
-	}
-}
-
-
-
-
 try{
 	module.exports = app;
-	
-	
 }catch(e){}

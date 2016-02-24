@@ -1,4 +1,3 @@
-//var setObject = require('../js/scripts/functions-es2015.js');
 var app = require('../js/scripts/functions-es2015.js');
 
 var questions = {
@@ -65,9 +64,6 @@ var questions = {
         'oneAnser': false
     },
 }
-
-
-
 var tmp = {
 	textTitle: 'Testing',
 	questions,
@@ -75,18 +71,16 @@ var tmp = {
 	buttonOn: 'show result'
 }
 
-
 describe("app", function() {
-  it("call setObject: result is not equal", function() {
-  	var result;
-  	result = app.setObject();
-    expect(result).toEqual(questions);
-  });
+  	it("call setObject: result is not equal", function() {
+	  	var result;
+	  	result = app.setObject();
+	    expect(result).toEqual(questions);
+  	});
 
-  it("call createTemplate: result is not equal", function() {
+	it("call createTemplate: result is not equal", function() {
 		var result;
 		result = app.createTemplate(questions);
 		expect(result).toEqual(tmp);	
 	});
-
 });
