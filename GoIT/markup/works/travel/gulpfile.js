@@ -10,11 +10,12 @@ var gulp = require('gulp'),
 
  
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('sass/style.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('css'));
 });
  
+ 
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+	gulp.watch('sass/style.sass', ['sass']);
 });
