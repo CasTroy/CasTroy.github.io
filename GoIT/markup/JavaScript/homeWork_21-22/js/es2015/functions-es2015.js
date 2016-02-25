@@ -167,14 +167,14 @@
 		return true;
 	}
 //object
-let app = {
-	setObject,
-	createTemplate,
-	showResult,
-	createModal, 
-	removeModal
-}
+	let app = {
+		setObject,
+		createTemplate,
+		showResult,
+		createModal, 
+		removeModal
+	}
 
-try{
-	module.exports = app;
-}catch(e){}
+	try{
+		module.exports = app;
+	}catch(e){}
