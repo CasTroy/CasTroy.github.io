@@ -1,1 +1,1 @@
-body{color:green;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;border-radius:10px}p{color:red}
+*{margin:0;padding:0}.site{min-height:calc(100vh - 80px)}.top{height:500px;background:gray}.bottom{height:80px;background:green}
