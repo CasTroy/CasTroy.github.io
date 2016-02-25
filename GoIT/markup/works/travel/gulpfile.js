@@ -12,6 +12,8 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
   return gulp.src('sass/style.sass')
     .pipe(sass().on('error', sass.logError))
+    .pipe(minifyCSS())
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('css'));
 });
  
