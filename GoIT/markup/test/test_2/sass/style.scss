@@ -4,11 +4,52 @@
 
 
 
-@include min-screen(768px) { 
-  .container{
-    width: 100%;
-  }
+body{
+  background: $bgColor;
 }
+
+
+@include min-screen(768px) { 
+  .photo{
+    width: 40%;
+    float: left;
+    margin-top: 100px;
+    &__img{
+      width: 100%;
+    }
+  }
+  .contant{
+    width: 60%;
+    float: right;
+    margin-top: 30px;
+  }
+  .title{
+    text-transform: uppercase;
+    font-family: MuseoSansCyrlLight;
+    font-weight: 300;
+    margin-left: 75px;
+    font-size: 20px;
+    &__qa{
+      margin-left: 60px;
+    }
+    &__name{
+      display: block;
+      font-size: 43px;
+    }  
+  }
+  .memory{
+    width: 400px;
+    margin-top: 50px;
+  }
+  .head, .text{
+    font-family: MuseoSansCyrlRegular;
+    color: #262626;
+    font-size: 12px;
+  } 
+}
+
+
+
 
 @include min-screen(1024px) { 
   .container{

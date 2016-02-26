@@ -1,12 +1,15 @@
 @font-face{
-  font-family: MuseoSansCyrl;
-  src: url(../fonts/museosanscyrl.ttf);
+  font-family: MuseoSansCyrlLight;
+  src: url(../fonts/msc/MuseoSansCyrl.otf);
 }
-  
+@font-face{
+  font-family: MuseoSansCyrlRegular;
+  src: url(../fonts/msc/MuseoSansCyrl_0.otf);
+}
 @font-face{
   font-family: PlayfairDisplayItalic;
   src: url(../fonts/PlayfairDisplayItalic.ttf);
 }
   
 
-$break-small: 768px;
+$bgColor: #f6f6f6;
