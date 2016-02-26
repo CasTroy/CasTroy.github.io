@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
-  return gulp.src('sass/style.scss')
+  return gulp.src('sass/style.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(rename('style.min.css'))
@@ -16,5 +16,5 @@ gulp.task('sass', function () {
 
 
 gulp.task('sass:watch', function () {
-  gulp.watch('sass/style.scss', ['sass']);
+  gulp.watch('sass/style.sass', ['sass']);
 });

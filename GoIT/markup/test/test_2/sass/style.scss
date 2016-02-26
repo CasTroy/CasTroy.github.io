@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "_media-queries";
+
+
+
+@include min-screen(768px) { 
+  .container{
+    width: 100%;
+  }
+}
+
+@include min-screen(1024px) { 
+  .container{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+}

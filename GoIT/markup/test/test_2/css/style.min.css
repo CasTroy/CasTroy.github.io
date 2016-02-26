@@ -1,1 +1,1 @@
-body,p{color:green}body{-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;border-radius:10px}
+@font-face{font-family:MuseoSansCyrl;src:url(../fonts/museosanscyrl.ttf)}@font-face{font-family:PlayfairDisplayItalic;src:url(../fonts/PlayfairDisplayItalic.ttf)}@media only screen and (min-width:768px){.container{width:100%}}@media only screen and (min-width:1024px){.container{width:100px;height:100px;background-color:green}}
