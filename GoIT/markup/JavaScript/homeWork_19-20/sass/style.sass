@@ -267,36 +267,36 @@
 .news
   background-color: #f7f7f7
   height: 540px
-  .nContent
-    &__nLeft
+  .content
+    &__left
       float: left
-    &__nRight
+    &__right
       float: right 
-    .nLeft, .nRight
+    .left, .right
       width: 50%
       margin-top: 60px
     //left  
-    .nLeft
-      &__nList
+    .left
+      &__list
         list-style: none
-        .nItem
+        .item
           position: relative
-          .nPhoto
+          .photo
             width: 150px
             height: 150px
             float: left
             margin-top: 30px
             clear: both
-            &__nImg
+            &__img
               position: absolute
-            &__nMonth
+            &__month
               width: 20px
               padding: 10px 15px 10px 10px
               background-color:#248cec
               color: $linkColorPanel
               margin: 15px 0 0 -20px
               position: absolute
-            &__nNumber
+            &__number
               position: absolute
               font-weight: 600
               width: 20px
@@ -304,53 +304,53 @@
               background-color:#f4b60d
               color: $bgColorPanel
               margin: 50px 0 0 -20px
-          .nText
+          .text
             margin-top: 30px
             width: 375px
             display: inline-block
             float: right
-            .nHead
-              .nLinkTitle:hover
+            .head
+              .head__link:hover
                 color: $newsHoverlinkColor
-              &__nLinkTitle
+              &__link
                 color: $bgColorPanel
                 font-size: 16px
                 font-weight: 600
                 line-height: 20px
-            .nComents
+            .coments
               margin: 5px 0 25px
               &__nLinkComents
                 color: $newsHoverlinkColor 
-            .nComText
+            .coments--text
               font-family: Arial
               font-size: 13px
               font-weight: 400
               line-height: 20px   
     //right
-    .nRight
+    .right
       position: relative
-      .nrList
+      .list
         margin-top: 30px
         position: absolute
         list-style: none
-        &__nrItem
+        &__item
           margin-bottom: 5px
           overflow: hidden
           height: 34px
           &:nth-child(1)
              height: 175px
-          .nPanel
+          .panel
             cursor: pointer
             color: $linkColorPanel
             background-color: #f4b60d 
-            &__nPlus
+            &__plus
               float: left
               width: 40px
               border-right: 1px solid #f6c53d
               text-align: center
               font-size: 13px
               padding: 10px 0
-            &__nTitle
+            &__title
               padding: 10px 0 10px 15px
               display: inline-block
               width: 90%
@@ -358,7 +358,7 @@
               font-size: 13px
               font-weight: 500
               text-transform: uppercas
-        .nPanelText
+        .text
           width: 90% 
           padding: 45px
           color: #8a8a8a

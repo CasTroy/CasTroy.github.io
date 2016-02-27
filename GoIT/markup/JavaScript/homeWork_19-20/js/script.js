@@ -5,23 +5,23 @@ $(function(){
 		$('.blueberry').blueberry();
 	});
 //panel	news
-	$(".nPanel").on('click', function(){
+	$(".panel").on('click', function(){
 		var height = parseInt($(this).parent().css('height'));
 		var parent = $(this).parent();
 		var obj = $(this);
 		if(height < 100)
 		{
-			$('.nPanel').find('.nPlus').html('-');
-			$('.nrItem').css({
+			$('.panel').find('.plus').html('-');
+			$('.item').css({
 				height: "34px"
 			})
-			obj.find('.nPlus').html('+');
+			obj.find('.plus').html('+');
 			parent.animate({
 				height: "175px" 
 			}, 500)
 		}
 		else{
-			$(this).find('.nPlus').html('-');
+			$(this).find('.plus').html('-');
 			$(this).parent().animate({
 			height: "34px" 
 			}, 500)
