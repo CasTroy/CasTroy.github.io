@@ -11,6 +11,15 @@ $(function(){
 		var obj = $(this);
 		if(height < 100)
 		{
+			
+			$('.panel').css({
+				color: "#434343",
+				background: "white"
+			})
+			$(this).css({
+				color: "white",
+				background: "#f4b60d"
+			})
 			$('.panel').find('.plus').html('-');
 			$('.item').css({
 				height: "34px"
@@ -21,6 +30,10 @@ $(function(){
 			}, 500)
 		}
 		else{
+			$('.panel').css({
+				color: "#434343",
+				background: "white"
+			})
 			$(this).find('.plus').html('-');
 			$(this).parent().animate({
 			height: "34px" 

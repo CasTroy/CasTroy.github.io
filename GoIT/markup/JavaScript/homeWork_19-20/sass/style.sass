@@ -334,15 +334,18 @@
           overflow: hidden
           height: 34px
           &:nth-child(1)
-             height: 175px
+            height: 175px
+          &:nth-child(1)>div
+            color: $linkColorPanel
+            background-color: #f4b60d
           .panel
             cursor: pointer
-            color: $linkColorPanel
-            background-color: #f4b60d 
+            background-color: white
+            color: $topTextColor
             &__plus
               float: left
               width: 40px
-              border-right: 1px solid #f6c53d
+              border-right: 1px solid #e8e8e8;
               text-align: center
               font-size: 13px
               padding: 10px 0
