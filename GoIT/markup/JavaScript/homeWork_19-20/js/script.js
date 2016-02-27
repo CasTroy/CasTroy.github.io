@@ -30,12 +30,16 @@ $(function(){
 
 //json
 //skills
+	var sortSkills = [];
 	var skills = _.map(objects, 'skills');
 		skills = _.uniqWith(skills, _.isEqual);
-	var sortSkills = [];	
 	$.each(skills, function(){
-		sortSkills.push(_.sortBy(this));
+		$.each(this, function(){
+			sortSkills.push(this);
+		})
 	})
+	sortSkills	= _.uniqWith(sortSkills, _.isEqual);
+	sortSkills = _.sortBy(sortSkills);
 	console.log('sorted array of skills: ', sortSkills);
 //names
 	objects = _.uniqWith(objects, _.isEqual)
