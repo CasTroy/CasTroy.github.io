@@ -167,21 +167,20 @@
 .blueberry .pager li.active a span
   background: #2a2d32
 /*information*/
-.iContent
+.information__content
   height: 400px
-  &__iList
+  .list
     list-style: none
-  .iList
-    &__iItem:nth-child(2) .iIcon
+    &__item:nth-child(2) .icon
       background-position: -40px
-    &__iItem:nth-child(3) .iIcon
+    &__item:nth-child(3) .icon
       background-position: -80px  
-    .iItem
+    .item
       float: left
       width: 33%
       margin-top: 75px
       //left block of information
-      &__iLeft
+      &__left
         float: left
         display: inline-block
         width: 25%
@@ -192,78 +191,78 @@
         font-weight: 600
         line-height: 70px
       //right block of information
-      .iRight
+      &__right
         padding-left: 40px
         width: 59%
         display: inline-block
-        &__iIcon
+        .icon
           width: 40px
           height: 40px
           border: none
           background-image:url(../img/spriteInfo.png)
-        &__iTitle
+        .title
           color: $informationTitleColor
           font-family: Ubuntu-Regular
           font-size: 20px
           font-weight: 600
           line-height: 20px
           margin: 15px 0 0 2px
-        &__iText
+        .text
           color: $informationTextColor
           font-family: Arial
           font-size: 13px
           font-weight: 400
           line-height: 20px
           margin: 30px 0 25px
-        &__iLink
+        .link
           color: $informationTitleColor
           font-family: Ubuntu-Regular
           font-size: 13px
           font-weight: 500
           line-height: 20px
           text-decoration: none
-        .iLink:hover
+        .link:hover
           color: $informationHoverLinkColor     
 /*services*/
 .services
-    background: $bgColorPanel
-    height: 500px
-    clear: both
-    //services title
-    .sTitle
-      color: $linkColorPanel
-      font-family: Ubuntu-Regular
-      font-size: 24px
-      font-weight: 600
-      line-height: 20px
-      padding: 50px 0
-    //services list
-    .sList
-      list-style: none
-      .sItem:nth-child(4)
-        margin-right: 0px
-      &__sItem
-        width: 260px
-        margin-right: 40px
-        float: left
+  background: $bgColorPanel
+  height: 500px
+  clear: both
+  //services title
+  .title
+    color: $linkColorPanel
+    font-family: Ubuntu-Regular
+    font-size: 24px
+    font-weight: 600
+    line-height: 20px
+    padding: 50px 0
+  //services list
+  .list
+    list-style: none
+    .item:nth-child(4)
+      margin-right: 0px
+    &__item
+      width: 260px
+      margin-right: 40px
+      float: left
+      text-decoration: none
+      .link:hover
+        color: $hoverlinkColorPanel
+      .link
         text-decoration: none
-        .sLink:hover
-          color: $hoverlinkColorPanel
-        .sLink
-          text-decoration: none
-          color: $linkColorPanel
-          .sPhoto:active
-            opacity: 0.1
-          &__sPhoto
-            width: 260px
-            height: 260px
-          &__sText
-            margin-top: 30px
-            text-align: center
-            font-family: Ubuntu-Regular
-            font-size: 16px
-            font-weight: 500
-            line-height: 20px 
+        color: $linkColorPanel
+        .sPhoto:active
+          opacity: 0.1
+        &__photo
+          width: 260px
+          height: 260px
+        &__text
+          margin-top: 30px
+          text-align: center
+          font-family: Ubuntu-Regular
+          font-size: 16px
+          font-weight: 500
+          line-height: 20px 
 /*news*/
 .news
   background-color: #f7f7f7
