@@ -10,19 +10,23 @@
 /*container*/
 .container
   min-height: calc(100vh - 60px)
-.tContent, .pContent, .slider__sContent, .iContent, .sContent, .nContent, .bContent, .lContent, .fContent
+//.tContent, .pContent, .slider__sContent, .iContent, .sContent, .nContent, .bContent, .lContent, .fContent
+// margin: 0 auto
+//  width: $sizeBlock
+
+.content
   margin: 0 auto
   width: $sizeBlock
 /*top*/
 .top
   height: 100px
-  &__tContent
+  &__content
     padding: 33px 0
     //top__left
-    .tLeft
-      &__tLogo
+    .left
+      &__logo
         float: left
-      .tText
+      .text
         font-family: Ubuntu-Regular
         float: left
         color: $topTextColor
@@ -40,52 +44,52 @@
           line-height: 20px
           text-transform: uppercase  
     //top__right
-    .tRight
+    .right
       float: right
       /*list*/
-      .tList
-        &__tItem
+      .list
+        &__item
           margin-left: 25px
           float: left
           list-style: none
-          &:nth-child(1)>.tItem__tLink
+          &:nth-child(1)>.item__link
             background-position: 5px 0
-          &:nth-child(1)>.tItem__tLink:hover
+          &:nth-child(1)>.item__link:hover
             background-position: 5px $iconActive
-          &:nth-child(2)>.tItem__tLink
+          &:nth-child(2)>.item__link
             background-position: -18px 0
-          &:nth-child(2)>.tItem__tLink:hover
+          &:nth-child(2)>.item__link:hover
             background-position: -18px $iconActive
-          &:nth-child(3)>.tItem__tLink
+          &:nth-child(3)>.item__link
             background-position: -45px 0
-          &:nth-child(3)>.tItem__tLink:hover
+          &:nth-child(3)>.item__link:hover
             background-position: -45px $iconActive
-          &:nth-child(4)>.tItem__tLink
+          &:nth-child(4)>.item__link
             background-position: -70px 0
-          &:nth-child(4)>.tItem__tLink:hover
+          &:nth-child(4)>.item__link:hover
             background-position: -70px $iconActive
-          &:nth-child(5)>.tItem__tLink
+          &:nth-child(5)>.item__link
             background-position: -97px 0
-          &:nth-child(5)>.tItem__tLink:hover
+          &:nth-child(5)>.item__link:hover
             background-position: -97px $iconActive
-        .tLink
+        .link
           width: 16px
           height: 20px
           display: inline-block
           background-image: url(../img/sptiteIcon.png)
           opacity: 0.2
-        .tLink:hover
+        .link:hover
           opacity: 1
 /*panel*/
-.pContent
+.panel__content
   height: 60px
   background-color: $bgColorPanel
   //panel list 
-  &__pList
+  .list
     list-style: none
-    .pItem
+    &__item
       float: left
-      &__pLink
+      .link
         text-decoration: none
         color: $linkColorPanel
         display: inline-block
@@ -93,15 +97,15 @@
         padding: 21px 40px
         font-family: Ubuntu-Condensed
         border-right: 1px solid #181a1d
-      &__pLink:hover
+      .link:hover
         color: $hoverlinkColorPanel
-      &__pLink:active
+      .link:active
         background-color: $activelinkColorPanel
   //panel form      
-  &__pForm
+  .form
     width: 260px
     float: right
-    .pSearch
+    &__search
       width: 225px
       height: 38px
       margin: 9px 5px
