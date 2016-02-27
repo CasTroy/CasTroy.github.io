@@ -217,8 +217,10 @@
           font-weight: 500
           line-height: 20px
           text-decoration: none
+          position: relative;
         .link:hover
-          color: $informationHoverLinkColor     
+          color: $informationHoverLinkColor
+             
 /*services*/
 .services
   background: $bgColorPanel
@@ -242,13 +244,12 @@
       margin-right: 40px
       float: left
       text-decoration: none
+      position: relative
       .link:hover
         color: $hoverlinkColorPanel
       .link
         text-decoration: none
         color: $linkColorPanel
-        .sPhoto:active
-          opacity: 0.1
         &__photo
           width: 260px
           height: 260px
@@ -258,7 +259,20 @@
           font-family: Ubuntu-Regular
           font-size: 16px
           font-weight: 500
-          line-height: 20px 
+          line-height: 20px
+        &__bg
+          top: 0
+          width: 260px
+          height: 260px
+          background: #2e8ce3
+          background-image: url(../img/plus.png)
+          background-repeat: no-repeat
+          background-position: 115px
+          opacity: 0.9
+          position: absolute
+          display: none;
+
+        
 /*news*/
 .news
   background-color: #f7f7f7

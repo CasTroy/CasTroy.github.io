@@ -4,6 +4,19 @@ $(function(){
 	$(window).load(function() {
 		$('.blueberry').blueberry();
 	});
+//plus
+	$('.link').hover(function(){
+		$(this).find('.link__bg').css({
+			display: "inline"
+		})
+	},
+	function(){
+		$(this).find('.link__bg').css({
+			display: "none"
+		})
+	});	
+	
+
 //panel	news
 	$(".panel").on('click', function(){
 		var height = parseInt($(this).parent().css('height'));
