@@ -1,0 +1,15 @@
+.item__list{
+	list-style: none;
+}
+.item__img{
+	width: 15px;
+	height: 15px;
+	margin-left: 30px;
+}
+.controlls{
+	position: relative;
+}
+.hint{
+	position: absolute;
+	opacity: 0;
+}
