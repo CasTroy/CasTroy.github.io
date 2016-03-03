@@ -22,7 +22,5 @@ define(
 			init();
 		}
 		return View;
-	}
-
-	
+	}	
 );

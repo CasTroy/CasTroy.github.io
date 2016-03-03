@@ -45,6 +45,5 @@ define(
 			}
 		}
 		return Controller;
-	}
-	
+	}	
 );
