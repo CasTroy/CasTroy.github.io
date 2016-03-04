@@ -8,9 +8,6 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
   uglify = require('gulp-uglify');
 
-  
-
-
 var urls = {
   script : ['src/js/script.js', 'src/js/data.json.js'],
   vendor : ['src/js/jquery-2.2.1.js', 'src/js/lodash.js', 'src/js/jquery.blueberry.js']
@@ -41,7 +38,30 @@ gulp.task('vendor', function(){
   .pipe(gulp.dest('build/js/'));
 })
 
+gulp.task('img', function() {
+  gulp.src('src/img/logos/*')
+  .pipe(gulp.dest('build/img/logos'));
+  gulp.src('src/img/photos/*')
+  .pipe(gulp.dest('build/img/photos'));
+  gulp.src('src/img/slides/*')
+  .pipe(gulp.dest('build/img/slides'));
+  gulp.src('src/img/*')
+   .pipe(gulp.dest('build/img'));
+});
 
+gulp.task('fonts', function() {
+  gulp.src('src/fonts/ubuntu/*')
+  .pipe(gulp.dest('build/fonts/ubuntu'));
+});
+
+gulp.task('html', function(){
+  gulp.src('src/*.html')
+  .pipe(gulp.dest('build'));
+})
+
+gulp.task('default', ['vendor', 'sass', 'scripts', 'img', 'fonts', 'html'], function(){
+ 
+})
 
 gulp.task('watch', function () {
   gulp.watch('src/style/style.sass', ['sass']);
