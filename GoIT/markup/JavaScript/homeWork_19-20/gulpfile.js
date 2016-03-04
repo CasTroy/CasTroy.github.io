@@ -21,7 +21,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCss(''))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('scripts', function(){
@@ -29,7 +29,7 @@ gulp.task('scripts', function(){
   .pipe(concat(' '))
   .pipe(uglify())
   .pipe(rename('script.min.js'))
-  .pipe(gulp.dest('build/'));
+  .pipe(gulp.dest('build/js/'));
 });
 
 gulp.task('vendor', function(){
@@ -38,7 +38,7 @@ gulp.task('vendor', function(){
   .pipe(concat(' '))
   .pipe(uglify())
   .pipe(rename('vendor.min.js'))
-  .pipe(gulp.dest('build/'));
+  .pipe(gulp.dest('build/js/'));
 })
 
 
