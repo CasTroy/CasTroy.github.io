@@ -26,4 +26,6 @@ require(
 		var View = new view(Model);
 		var Controller = new controller(Model, View);
 	}
+
+
 );

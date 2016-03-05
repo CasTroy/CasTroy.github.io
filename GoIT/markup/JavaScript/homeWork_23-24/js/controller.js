@@ -33,7 +33,7 @@ define(
 					{
 						element.animate({
 						opacity: 1
-						}, 1000, function(){
+						}, 2000, function(){
 							element.animate({
 								opacity: 0
 							},1500)
