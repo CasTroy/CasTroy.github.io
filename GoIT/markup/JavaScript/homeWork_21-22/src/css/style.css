@@ -1,0 +1,66 @@
+@font-face{
+	font-family: amblebold;
+	src: url(../fonts/amblebold.ttf);
+}
+@font-face{
+	font-family: ambleregular;
+	src: url(../fonts/ambleregular.ttf);
+}
+@font-face{
+	font-family: amblebolditalic;
+	src: url(../fonts/amblebolditalic.ttf);
+}
+
+html, body{
+	min-height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: ambleregular;
+}
+h1{
+	text-align: center;
+}
+h4{
+	font-family: amblebold;
+	font-size: 26px;
+}
+.baground{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	min-height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.container{
+	width: 600px;
+	margin: 200px auto 0;
+	background-color: 	#BEBEBE;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.tmplList__item{
+	margin-top: 10px;
+	margin-left: 20%;
+}
+.list__item{
+	background: rgba(255, 0, 0, 0.4);
+	padding: 10px 0 10px 50px;
+	border-bottom: 1px solid black;
+}
+.secondList__item{
+	margin-left: 30px;
+}
+.list__answer{
+	color: gray;
+}
+.form{
+	width: 600px;
+	margin: 0 auto;
+}
+#buttonOn, #buttonOff{
+	width: 100px;
+	height: 40px;
+	margin: 30px 0 30px 40%;
+}

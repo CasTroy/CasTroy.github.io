@@ -138,7 +138,7 @@ var removeModal = function removeModal() {
 	$('.baground').remove();
 	return true;
 };
-
+//object
 var app = {
 	setObject: setObject,
 	createTemplate: createTemplate,
