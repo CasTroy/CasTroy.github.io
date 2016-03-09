@@ -21,10 +21,10 @@ define(
 			function editItem(){
 				if(view.elements.input.val())
 				{
-					var itemEdit = $(this).attr('data-value');
-					model.editItem(itemEdit, view.elements.input.val());
+					var index = $(this).parent().index();
+					var text = view.elements.input.val();
+					model.editItem(index, text);
 					view.renderList(model.data);
-					console.log(itemEdit);
 				}
 				else
 				{

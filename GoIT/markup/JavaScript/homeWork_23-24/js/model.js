@@ -17,8 +17,7 @@ define(
 				self.data.splice(index, 1);
 				return self.data;
 			}
-			self.editItem = function(item, text) {
-				var index = self.data.indexOf(item);
+			self.editItem = function(index, text) {
 				self.data[index] = text;
 			}
 			

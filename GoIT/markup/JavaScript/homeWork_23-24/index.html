@@ -19,7 +19,8 @@
 	</script>
 	<script type="text/template" id = "list_template">
 		<% for (var i = 0; i < data.length; i++) { %>
-			<li class="item__list"><%= data[i] %>
+			<li class="item__list">
+				<span class = "text"><%= data[i] %></span>
 				<img src="img/delete.png" data-value="<%= data[i] %>"  alt="Cancel" class="item__img img--delete">
 				<img src="img/edit.png" data-value="<%= data[i] %>" alt="Cancel" class="item__img img--edit">
 			</li>
