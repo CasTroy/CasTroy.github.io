@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 320px) {
+  .container {
+    min-height: calc(100vh - 190px); }
+  .header {
+    height: 540px;
+    background-image: url(../img/vso.jpg);
+    background-position: -425px 0; }
+  .log__label {
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    font-weight: 700; }
+  .log__input {
+    width: 85px;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Montserrat-Regular; }
+  .log__input::-webkit-input-placeholder {
+    color: white; }
+  .log__input::-moz-placeholder {
+    color: white; }
+  .log__input:-moz-placeholder {
+    color: white; }
+  .log__input:-ms-input-placeholder {
+    color: white; }
+  .log__input:focus {
+    outline: none; }
+  .footer {
+    height: 190px;
+    background: gray; } }

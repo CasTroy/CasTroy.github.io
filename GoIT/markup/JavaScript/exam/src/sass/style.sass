@@ -1,0 +1,50 @@
+@import variables
+@import mixins
+
+*
+  margin: 0
+  padding: 0
+
+@media screen and (max-width: $mobyle_320px) 
+  .container
+    min-height: calc(100vh - 190px)
+  .header
+    height: 540px
+    background-image: url(../img/vso.jpg)
+    background-position: -425px 0
+  
+  .log
+    &__label
+      color: white
+      font-family: Montserrat-Regular
+      font-size: 14px
+      font-weight: 700
+    &__input
+      width: 85px
+      text-align: center
+      background: none;
+      color: white;
+      border: 3px solid white
+      border-radius: 25px
+      padding: 10px
+      font-weight: 700
+      font-size: 14px
+      font-family: Montserrat-Regular
+    &__input::-webkit-input-placeholder
+      color: white
+    &__input::-moz-placeholder
+      color: white
+    &__input:-moz-placeholder
+      color: white
+    &__input:-ms-input-placeholder      
+      color: white
+    &__input:focus
+      outline: none
+
+  .footer
+    height: 190px
+    background: gray
+
+
+
+

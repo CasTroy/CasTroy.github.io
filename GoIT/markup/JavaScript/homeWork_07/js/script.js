@@ -30,5 +30,17 @@ function active(classText, className,  classText1, className1, classText2, class
 			background: '#eeeeee'
 		});
 }
+
+var vasya = {name: 'Vasya', 
+
+greetings: function() { 
+
+console.log('My name is '+this.name)
+
+} 
+
+};         
+
+vasya.greetings();
 });
 

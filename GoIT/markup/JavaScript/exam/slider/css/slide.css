@@ -1,0 +1,49 @@
+#sec {
+    width: 90%;
+    margin: 20px auto; 
+}
+
+#wrap {
+    margin: 0 auto;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+}
+
+#sl {
+    position: relative;
+    width:3000px;
+    margin-left: 0;
+    
+}
+
+#sl img {
+    margin-right: 2px;
+    float: left; 
+}
+
+#left, #right, #slowleft, #slowright  {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 175px;
+    background-color: #000;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 40pt;
+    color: #fff;
+    text-align: center;
+    line-height: 3.3;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#right, #slowright {
+    right: 0;
+}
+
+#slowleft, #slowright {
+    width: 100px;
+    z-index: 8;
+}
