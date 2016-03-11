@@ -2,42 +2,151 @@
   font-family: Montserrat-Regular;
   src: url(../fonts/Montserrat-Regular.ttf); }
 
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf); }
+
 * {
   margin: 0;
   padding: 0; }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
     min-height: calc(100vh - 190px); }
+  .montserrat-regular {
+    font-family: Montserrat-Regular;
+    color: white;
+    text-align: center; }
+  .roboto-light {
+    font-family: Roboto-Light;
+    color: white;
+    text-align: center; }
   .header {
     height: 540px;
     background-image: url(../img/vso.jpg);
-    background-position: -425px 0; }
-  .log__label {
-    color: white;
-    font-family: Montserrat-Regular;
-    font-size: 14px;
+    background-position: -422px -10px; }
+    .header__log {
+      padding: 22px 0 0 38px;
+      margin: 0 auto; }
+    .header__title {
+      margin-top: 115px; }
+    .header__find {
+      margin: 13px auto;
+      padding: 0 0 0 10px; }
+  .log {
+    width: 200px; }
+    .log__label {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 0px;
+      margin-left: 12px; }
+    .log__input {
+      width: 75px;
+      text-align: center;
+      background: none;
+      border: 3px solid white;
+      border-radius: 25px;
+      padding: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 15px; }
+    .log__input::-webkit-input-placeholder {
+      color: white; }
+    .log__input::-moz-placeholder {
+      color: white; }
+    .log__input:-moz-placeholder {
+      color: white; }
+    .log__input:-ms-input-placeholder {
+      color: white; }
+    .log__input:focus {
+      outline: none; }
+  .title {
     font-weight: 700; }
-  .log__input {
-    width: 85px;
-    text-align: center;
-    background: none;
-    color: white;
-    border: 3px solid white;
-    border-radius: 25px;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: Montserrat-Regular; }
-  .log__input::-webkit-input-placeholder {
-    color: white; }
-  .log__input::-moz-placeholder {
-    color: white; }
-  .log__input:-moz-placeholder {
-    color: white; }
-  .log__input:-ms-input-placeholder {
-    color: white; }
-  .log__input:focus {
+    .title__urla {
+      font-size: 20px;
+      text-transform: uppercase; }
+    .title__holliday {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-top: 27px;
+      padding-left: 15px; }
+    .title__parther {
+      padding: 0 35px;
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 7px; }
+  .find {
+    width: 280px; }
+    .find__button {
+      width: 280px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ff4e50;
+      padding: 12px 0; }
+    .find__button:focus {
+      outline: none; }
+  .main {
+    width: 95%;
+    margin: 0 auto; }
+  .work__title {
+    color: #333333;
+    font-size: 21px;
+    margin-top: 35px; }
+  .work__list {
+    margin-top: 15px; }
+  .item {
+    margin: 0 auto 10px;
+    list-style: none;
+    width: 295px;
+    height: 240px;
+    border-radius: 6px; }
+    .item__title {
+      font-size: 24px;
+      text-align: left; }
+    .item__text {
+      line-height: 18px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #ccc;
+      text-align: left; }
+  .item--first {
+    background-image: url(../img/step_1.jpg);
+    background-position: -62px -27px; }
+    .item--first .item__form {
+      padding: 68px 0 0 23px; }
+    .item--first .item__title {
+      margin: 15px 0 0 20px; }
+    .item--first .item__text {
+      margin: 10px 20px 0; }
+  .item--second {
+    background-image: url(../img/step_2.jpg);
+    background-position: -28px -20px; }
+    .item--second .item__form {
+      padding: 98px 0 0 21px; }
+    .item--second .item__title {
+      margin: 15px 0 0 20px; }
+    .item--second .item__text {
+      margin: 10px 20px 0; }
+  .item--third {
+    background-image: url(../img/step_3.jpg);
+    background-position: -55px -20px; }
+    .item--third .item__form {
+      padding: 68px 0 0 23px; }
+    .item--third .item__title {
+      margin: 15px 0 0 20px; }
+    .item--third .item__text {
+      margin: 10px 20px 0; }
+  .button {
+    width: 70px;
+    height: 20px;
+    background-color: #ff4e50;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 20px;
+    letter-spacing: 2px; }
+  .button:focus {
     outline: none; }
   .footer {
     height: 190px;

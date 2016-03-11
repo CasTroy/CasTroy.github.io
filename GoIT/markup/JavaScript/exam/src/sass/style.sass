@@ -5,31 +5,47 @@
   margin: 0
   padding: 0
 
-@media screen and (max-width: $mobyle_320px) 
+@media screen and (min-width: $mobyle_320px) 
   .container
     min-height: calc(100vh - 190px)
+  .montserrat-regular
+    font-family: Montserrat-Regular
+    color: white
+    text-align: center
+  .roboto-light
+    font-family: Roboto-Light
+    color: white
+    text-align: center           
+  //header
   .header
     height: 540px
     background-image: url(../img/vso.jpg)
-    background-position: -425px 0
-  
+    background-position: -422px -10px
+    &__log
+      padding: 22px 0 0 38px
+      margin: 0 auto
+    &__title
+      margin-top: 115px
+    &__find
+      margin: 13px auto
+      padding: 0 0 0 10px 
   .log
+    width: 200px
     &__label
-      color: white
-      font-family: Montserrat-Regular
       font-size: 14px
       font-weight: 700
+      line-height: 0px
+      margin-left: 12px
     &__input
-      width: 85px
+      width: 75px
       text-align: center
-      background: none;
-      color: white;
+      background: none
       border: 3px solid white
       border-radius: 25px
-      padding: 10px
+      padding: 5px
       font-weight: 700
       font-size: 14px
-      font-family: Montserrat-Regular
+      margin-left: 15px
     &__input::-webkit-input-placeholder
       color: white
     &__input::-moz-placeholder
@@ -40,7 +56,104 @@
       color: white
     &__input:focus
       outline: none
+  .title
+    font-weight: 700
+    &__urla
+      font-size: 20px
+      text-transform: uppercase
+    &__holliday
+      font-size: 30px
+      text-transform: uppercase
+      margin-top: 27px
+      padding-left: 15px
+    &__parther
+      padding: 0 35px
+      font-size: 18px
+      font-weight: 300
+      margin-top: 7px
+  .find
+    width: 280px
+    &__button
+      width: 280px
+      border: none
+      border-radius: 25px
+      background-color: #ff4e50
+      padding: 12px 0
+    &__button:focus
+      outline: none 
+  //main
+  .main
+    width: 95%
+    margin: 0 auto
+  .work
+    &__title
+      color: #333333
+      font-size: 21px
+      margin-top: 35px
+    &__list
+      margin-top: 15px
+  .item
+    margin: 0 auto 10px
+    list-style: none
+    width: 295px
+    height: 240px
+    border-radius: 6px
+    &__title
+      font-size: 24px
+      text-align: left
+    &__text
+      line-height: 18px
+      font-size: 14px
+      font-weight: 300
+      color: #ccc
+      text-align: left
 
+  .item--first
+    background-image: url(../img/step_1.jpg)
+    background-position: -62px -27px
+    .item__form
+      padding: 68px 0 0 23px
+    .item__title
+      margin: 15px 0 0 20px
+    .item__text
+      margin: 10px 20px 0
+  .item--second
+    background-image: url(../img/step_2.jpg)
+    background-position: -28px -20px
+    .item__form
+      padding: 98px 0 0 21px
+    .item__title
+      margin: 15px 0 0 20px
+    .item__text
+      margin: 10px 20px 0
+  .item--third
+    background-image: url(../img/step_3.jpg)
+    background-position: -55px -20px
+    .item__form
+      padding: 68px 0 0 23px
+    .item__title
+      margin: 15px 0 0 20px
+    .item__text
+      margin: 10px 20px 0
+
+  
+
+  .button
+    width: 70px
+    height: 20px
+    background-color: #ff4e50
+    border: none
+    text-transform: uppercase
+    font-size: 10px
+    font-weight: 400
+    border-radius: 20px
+    letter-spacing: 2px
+
+  .button:focus
+    outline: none 
+
+  
+  
   .footer
     height: 190px
     background: gray
