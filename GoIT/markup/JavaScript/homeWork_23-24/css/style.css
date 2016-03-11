@@ -13,8 +13,11 @@
 	color: #696969;
 	box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.5);
 }
-
+.item__list:hover>.item__img{
+	display: inline-block;
+}
 .item__img{
+	display: none;
 	width: 15px;
 	height: 15px;
 	margin-left: 30px;
