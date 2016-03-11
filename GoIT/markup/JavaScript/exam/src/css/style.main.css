@@ -154,10 +154,17 @@
     font-size: 22px;
     margin: 35px 0 0 5px; }
   .parthers__list {
-    margin-top: 13px;
-    padding-left: 3px; }
-    .parthers__list .item {
-      padding-bottom: 14px; }
+    margin-top: 13px; }
+    .parthers__list .item:nth-child(1) {
+      padding: 0 0 14px; }
+    .parthers__list .item:nth-child(2) {
+      padding: 0 0 13px; }
+    .parthers__list .item:nth-child(3) {
+      padding: 0 0 17px; }
+  .parthers__other {
+    width: 280px;
+    padding: 0 0 0 5px;
+    margin: 28px auto 0; }
   .figure {
     position: relative;
     width: 200px;
@@ -189,6 +196,43 @@
       margin-top: 10px;
       color: #666;
       font-size: 13px; }
+  .other__button {
+    width: 280px;
+    height: 38px;
+    background: none;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+    color: #ff4e50;
+    cursor: pointer; }
+  .ideas {
+    width: 295px;
+    margin: 0 auto; }
+    .ideas__title {
+      color: #333333;
+      font-size: 22px;
+      margin: 35px 0 0 7px; }
+    .ideas__list {
+      margin-top: 10px; }
+      .ideas__list .list__item {
+        margin-bottom: 10px; }
+      .ideas__list .list__item:nth-child(1) > .idea > .idea__baground {
+        margin: -50px 0 0 -5px; }
+      .ideas__list .list__item:nth-child(1) > .idea > .idea__caption {
+        left: 16.2%; }
+      .ideas__list .list__item:nth-child(2) > .idea > .idea__baground {
+        margin: -140px 0 0; }
+      .ideas__list .list__item:nth-child(2) > .idea > .idea__caption {
+        left: 15%; }
+  .idea {
+    width: 295px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative; }
+    .idea__caption {
+      position: absolute;
+      top: 40%;
+      font-size: 22px; }
   .footer {
     height: 190px;
     background: gray; } }

@@ -156,9 +156,17 @@
       margin: 35px 0 0 5px
     &__list
       margin-top: 13px
-      padding-left: 3px
       .item
-        padding-bottom: 14px
+      .item:nth-child(1)
+        padding: 0 0 14px
+      .item:nth-child(2)
+        padding: 0 0 13px
+      .item:nth-child(3)
+        padding: 0 0 17px 
+    &__other
+      width: 280px
+      padding: 0 0 0 5px
+      margin: 28px auto 0   
   .figure
     position: relative
     width: 200px
@@ -190,6 +198,48 @@
       margin-top: 10px
       color: #666
       font-size: 13px
+  .other
+    &__button
+      width: 280px
+      height: 38px
+      background: none
+      border: 2px solid #ff4e50
+      border-radius: 25px
+      color: #ff4e50
+      cursor: pointer
+  //ideas
+  .ideas
+    width: 295px
+    margin: 0 auto
+    &__title
+      color: #333333
+      font-size: 22px
+      margin: 35px 0 0 7px
+    &__list
+      margin-top: 10px
+      .list__item
+        margin-bottom: 10px
+      .list__item:nth-child(1)>.idea>.idea__baground
+        margin: -50px 0 0 -5px
+      .list__item:nth-child(1)>.idea>.idea__caption
+        left: 16.2%
+      .list__item:nth-child(2)>.idea>.idea__baground
+        margin: -140px 0 0
+      .list__item:nth-child(2)>.idea>.idea__caption
+        left: 15%
+
+
+      
+  .idea
+    width: 295px
+    height: 120px
+    overflow: hidden
+    border-radius: 5px
+    position: relative 
+    &__caption
+      position: absolute
+      top: 40%
+      font-size: 22px   
   //footer
   .footer
     height: 190px
