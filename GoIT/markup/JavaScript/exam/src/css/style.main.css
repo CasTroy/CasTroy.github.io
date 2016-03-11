@@ -94,11 +94,12 @@
     margin-top: 35px; }
   .work__list {
     margin-top: 15px; }
+    .work__list .item {
+      height: 240px; }
   .item {
     margin: 0 auto 10px;
     list-style: none;
     width: 295px;
-    height: 240px;
     border-radius: 6px; }
     .item__title {
       font-size: 24px;
@@ -148,6 +149,46 @@
     letter-spacing: 2px; }
   .button:focus {
     outline: none; }
+  .parthers__title {
+    color: #333333;
+    font-size: 22px;
+    margin: 35px 0 0 5px; }
+  .parthers__list {
+    margin-top: 13px;
+    padding-left: 3px; }
+    .parthers__list .item {
+      padding-bottom: 14px; }
+  .figure {
+    position: relative;
+    width: 200px;
+    margin: 0 auto; }
+  .surcle {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block; }
+  .surcle--big {
+    margin-left: 20%;
+    width: 120px;
+    height: 120px; }
+  .surcle--small {
+    position: absolute;
+    left: 125px;
+    top: 85px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid white;
+    background-color: #ff4e50; }
+  .img--logo {
+    margin: 6px 6px; }
+  .info {
+    margin-top: 15px; }
+    .info__name {
+      color: #333333;
+      font-size: 14px; }
+    .info__hobby {
+      margin-top: 10px;
+      color: #666;
+      font-size: 13px; }
   .footer {
     height: 190px;
     background: gray; } }
