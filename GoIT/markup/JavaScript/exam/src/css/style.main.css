@@ -82,7 +82,8 @@
       border: none;
       border-radius: 25px;
       background-color: #ff4e50;
-      padding: 12px 0; }
+      padding: 12px 0;
+      cursor: pointer; }
     .find__button:focus {
       outline: none; }
   .main {
@@ -93,50 +94,49 @@
     font-size: 21px;
     margin-top: 35px; }
   .work__list {
-    margin-top: 15px; }
-    .work__list .item {
-      height: 240px; }
-  .item {
-    margin: 0 auto 10px;
-    list-style: none;
     width: 295px;
-    border-radius: 6px; }
-    .item__title {
+    margin: 16px auto; }
+    .work__list .item {
+      margin-bottom: 10px; }
+  .owl-controls {
+    display: none; }
+  .step {
+    width: 295px;
+    height: 240px;
+    border-radius: 5px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden; }
+    .step__buground {
+      z-index: 1; }
+    .step__content {
+      position: absolute; }
+  .content {
+    top: 68px;
+    padding: 0 0 0 20px; }
+    .content__form {
+      margin-left: 3px; }
+    .content__title {
+      margin: 15px 0 0;
       font-size: 24px;
       text-align: left; }
-    .item__text {
-      line-height: 18px;
+    .content__text {
+      margin: 10px 0 0;
       font-size: 14px;
-      font-weight: 300;
-      color: #ccc;
-      text-align: left; }
-  .item--first {
-    background-image: url(../img/step_1.jpg);
-    background-position: -62px -27px; }
-    .item--first .item__form {
-      padding: 68px 0 0 23px; }
-    .item--first .item__title {
-      margin: 15px 0 0 20px; }
-    .item--first .item__text {
-      margin: 10px 20px 0; }
-  .item--second {
-    background-image: url(../img/step_2.jpg);
-    background-position: -28px -20px; }
-    .item--second .item__form {
-      padding: 98px 0 0 21px; }
-    .item--second .item__title {
-      margin: 15px 0 0 20px; }
-    .item--second .item__text {
-      margin: 10px 20px 0; }
-  .item--third {
-    background-image: url(../img/step_3.jpg);
-    background-position: -55px -20px; }
-    .item--third .item__form {
-      padding: 68px 0 0 23px; }
-    .item--third .item__title {
-      margin: 15px 0 0 20px; }
-    .item--third .item__text {
-      margin: 10px 20px 0; }
+      text-align: left;
+      opacity: 0.5;
+      line-height: 17px; }
+  .content--nonstandard {
+    top: 98px; }
+  .buground--first {
+    width: 140% !important;
+    margin: -27px 0 0 -65px; }
+  .buground--second {
+    width: 140% !important;
+    margin: -22px 0 0 -35px; }
+  .buground--third {
+    width: 150% !important;
+    margin: -32px 0 0 -71px; }
   .button {
     width: 70px;
     height: 20px;
@@ -146,7 +146,8 @@
     font-size: 10px;
     font-weight: 400;
     border-radius: 20px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    cursor: pointer; }
   .button:focus {
     outline: none; }
   .parthers__title {
@@ -154,16 +155,17 @@
     font-size: 22px;
     margin: 35px 0 0 5px; }
   .parthers__list {
-    margin-top: 13px; }
+    margin-top: 13px;
+    list-style: none; }
     .parthers__list .item:nth-child(1) {
-      padding: 0 0 14px; }
+      padding: 0 0 28px; }
     .parthers__list .item:nth-child(2) {
-      padding: 0 0 13px; }
+      padding: 0 0 25px; }
     .parthers__list .item:nth-child(3) {
-      padding: 0 0 17px; }
+      padding: 0 0 28px; }
   .parthers__other {
     width: 280px;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 8px;
     margin: 28px auto 0; }
   .figure {
     position: relative;
@@ -174,12 +176,12 @@
     overflow: hidden;
     display: inline-block; }
   .surcle--big {
-    margin-left: 20%;
+    margin-left: 23%;
     width: 120px;
     height: 120px; }
   .surcle--small {
     position: absolute;
-    left: 125px;
+    left: 130px;
     top: 85px;
     width: 30px;
     height: 30px;
@@ -188,7 +190,7 @@
   .img--logo {
     margin: 6px 6px; }
   .info {
-    margin-top: 15px; }
+    margin: 13px 0 0 12px; }
     .info__name {
       color: #333333;
       font-size: 14px; }
@@ -204,6 +206,8 @@
     border-radius: 25px;
     color: #ff4e50;
     cursor: pointer; }
+  .other__button:focus {
+    outline: none; }
   .ideas {
     width: 295px;
     margin: 0 auto; }
