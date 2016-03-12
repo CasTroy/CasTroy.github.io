@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/masonry.min.js"></script>
+		<script type="text/javascript" src="js/tmpl.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	<!--<![endif]-->
 
@@ -243,20 +244,14 @@
 		<!--ideas-->	
 			<section class = "ideas">
 				<h2 class = "ideas__title montserrat-regular">Discover holiday activity ideas</h2>
-				<ul class = "ideas__list">
-					<li class = "list__item">
-						<figure class = "item__idea idea">
-							<img src="img/ideas/run.jpg" alt="" class = "idea__baground">
-							<figcaption class = "idea__caption montserrat-regular">Sport and Activity</figcaption>
+				<script type ="text/template" id = "template">
+					<%for(var index in data){%>
+						<figure class = "paint">
+							<img src="<%= data[index].imageurl %>" alt="" class = "paint__item item--picture">
+							<figcaption class = "paint__item item--text montserrat-regular"><%= data[index].word%></figcaption>
 						</figure>
-					</li>
-					<li class = "list__item">
-						<figure class = "item__idea idea">
-							<img src="img/ideas/health.jpg" alt="" class = "idea__baground">
-							<figcaption class = "idea__caption montserrat-regular">Wellnes and health</figcaption>
-						</figure>
-					</li>
-				</ul>
+					<%}%>
+				</script>
 			</section>
 		</main>
 	</section>

@@ -218,29 +218,22 @@
     &__title
       color: #333333
       font-size: 22px
-      margin: 35px 0 0 7px
-    &__list
-      margin-top: 10px
-      .list__item
-        margin-bottom: 10px
-      .list__item:nth-child(1)>.idea>.idea__baground
-        margin: -50px 0 0 -5px
-      .list__item:nth-child(1)>.idea>.idea__caption
-        left: 16.2%
-      .list__item:nth-child(2)>.idea>.idea__baground
-        margin: -140px 0 0
-      .list__item:nth-child(2)>.idea>.idea__caption
-        left: 15% 
-  .idea
+      margin: 35px 0 12px 7px
+  .paint
     width: 295px
     height: 120px
-    overflow: hidden
+    z-index: 0
+    overflow: hidden 
+    position: relative
     border-radius: 5px
-    position: relative 
-    &__caption
-      position: absolute
+    margin-bottom: 10px
+    .item--text
       top: 40%
-      font-size: 22px   
+      left: 25%
+      position: absolute
+      z-index: 1
+      font-size: 22px  
+        
   //footer
   .footer
     height: 190px
