@@ -24,17 +24,20 @@
   .header {
     height: 540px;
     background-image: url(../img/vso.jpg);
-    background-position: -422px -10px; }
+    background-position: -422px -10px;
+    background-repeat: no-repeat; }
     .header__log {
       padding: 22px 0 0 38px;
       margin: 0 auto; }
-    .header__title {
-      margin-top: 115px; }
     .header__link {
       display: block;
       text-decoration: none;
       margin: 13px auto;
       font-size: 13px; }
+    .header__name {
+      margin-top: 115px;
+      font-size: 20px;
+      text-transform: uppercase; }
   .log {
     width: 200px; }
     .log__label {
@@ -46,9 +49,9 @@
       width: 75px;
       text-align: center;
       background: none;
-      border: 3px solid white;
+      border: 2px solid white;
       border-radius: 25px;
-      padding: 5px;
+      padding: 6px;
       font-weight: 700;
       font-size: 14px;
       margin-left: 15px; }
@@ -64,9 +67,6 @@
       outline: none; }
   .title {
     font-weight: 700; }
-    .title__urla {
-      font-size: 20px;
-      text-transform: uppercase; }
     .title__holliday {
       font-size: 30px;
       text-transform: uppercase;
@@ -317,3 +317,79 @@
       font-size: 8px;
       margin-top: 3px;
       letter-spacing: 2px; } }
+
+@media screen and (min-width: 786px) {
+  .header {
+    height: 700px;
+    background-image: url(../img/vso2.jpg);
+    background-position: -337px 0; }
+    .header__log {
+      float: right;
+      margin: 17px; }
+    .header__name {
+      float: left;
+      margin: 45px 0 0 50px;
+      letter-spacing: 1px; }
+    .header__link {
+      margin-top: 33px;
+      font-size: 14px; }
+  .header__title {
+    width: 510px;
+    margin: 0 auto;
+    padding: 97px 15px 0 0;
+    clear: both; }
+    .header__title .title__holliday {
+      font-size: 52px; }
+    .header__title .title__parther {
+      margin: 21px 0 0 13px;
+      font-size: 24px; }
+  .button--big {
+    width: 225px; }
+  .work__title {
+    margin-top: 95px;
+    padding: 0 10px 0 0; }
+  .work__list {
+    width: 748px;
+    list-style: none; }
+    .work__list .item {
+      width: 236px;
+      float: left;
+      margin: 20px 30px 0 -10px; }
+    .work__list .item:nth-child(3) {
+      margin-right: 0px; }
+  .step {
+    position: relative;
+    width: 236px;
+    height: 400px;
+    z-index: 0; }
+  .buground--first {
+    width: 280% !important;
+    margin: -20px 0 0 -225px; }
+  .buground--second {
+    width: 280% !important;
+    margin: -15px 0 0 -185px; }
+  .buground--third {
+    width: 285%  !important;
+    margin: -30px 0 0 -215px; }
+  .owl-controls {
+    background: red;
+    color: rgba(255, 255, 255, 0);
+    display: block; }
+  .owl-prev {
+    width: 45px;
+    height: 55px;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    top: 37px;
+    left: 9%;
+    position: absolute; }
+  .owl-next {
+    width: 45px;
+    height: 55px;
+    background-image: url(../img/arrow2.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    top: 37px;
+    left: 79%;
+    position: absolute; } }
