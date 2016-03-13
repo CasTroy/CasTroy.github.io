@@ -24,8 +24,21 @@ $(function(){
     });
 
 
-    //picture
-    $.getJSON('http://api.pixplorer.co.uk/image?word=black background&amount=7&size=m', function(data){
+    //picture ajax
+    $.getJSON('http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', function(data){
+        var model = new Model(data);
+        var view = new View(model);
+        var controller = new Controller(model, view);
+    });
+
+     
+});
+
+
+//m
+function Model(obj){
+    var self = this;
+    self.init = function(data){
         var array = [];
         var obj = {
             url: 'none',
@@ -37,25 +50,29 @@ $(function(){
             obj.word = data.images[index].word;
             array.push(data.images[index]);
         }
-        var model = new Model(array);
-        var view = new View(model);
-    }); 
-});
-
-
-//m
-function Model(data){
-    var self = this;
-    self.data = data;
+        self.data = array;
+    }
+    self.init(obj);
 }
 //v
 function View(model){
     var self = this;
-    self.renderList = function (data) {
-        var html = $('#template').html();
-        var content = tmpl(html, model);
-        $('.ideas').append(content)
+    self.renderList = function () {
+        var wrapper = tmpl($('#template').html(), model);
+        $('.ideas').append(wrapper)
     };
     self.renderList();
 }
 //c
+function Controller(model, view){
+    var self = this;
+    $('#search').on('click', function(event){
+        event.preventDefault();
+        var text = $('#edit').val();
+        $('.paint').remove();
+        $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data){
+            model.init(data);
+            view.renderList();
+        });
+    })
+}

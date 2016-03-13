@@ -26,9 +26,11 @@
       margin: 0 auto
     &__title
       margin-top: 115px
-    &__find
+    &__link
+      display: block
+      text-decoration: none
       margin: 13px auto
-      padding: 0 0 0 10px 
+      font-size: 13px
   .log
     width: 200px
     &__label
@@ -73,15 +75,16 @@
       margin-top: 7px
   .find
     width: 280px
-    &__button
-      width: 280px
-      border: none
-      border-radius: 25px
-      background-color: #ff4e50
-      padding: 12px 0
-      cursor: pointer
-    &__button:focus
-      outline: none 
+  .button
+    width: 280px
+    border: none
+    border-radius: 25px
+    background-color: #ff4e50
+    cursor: pointer
+  .button:focus
+    outline: none
+  .button--big
+    padding: 12px 0
   //main
   .main
     width: 95%
@@ -136,19 +139,14 @@
   .buground--third
     width: 150% !important
     margin: -32px 0 0 -71px
-  .button
+  .button--small
     width: 70px
     height: 20px
-    background-color: #ff4e50
-    border: none
     text-transform: uppercase
     font-size: 10px
     font-weight: 400
     border-radius: 20px
     letter-spacing: 2px
-    cursor: pointer
-  .button:focus
-    outline: none
   //parthers
   .parthers
     &__title
@@ -200,17 +198,12 @@
       margin-top: 10px
       color: #666
       font-size: 13px
-  .other
-    &__button
-      width: 280px
-      height: 38px
-      background: none
-      border: 2px solid #ff4e50
-      border-radius: 25px
-      color: #ff4e50
-      cursor: pointer
-    &__button:focus
-      outline: none
+  .button--empty
+    height: 38px
+    background: none
+    border: 2px solid #ff4e50
+    color: #ff4e50
+    cursor: pointer
   //ideas
   .ideas
     width: 295px
@@ -229,16 +222,109 @@
     margin-bottom: 10px
     .item--text
       top: 40%
-      left: 25%
+      left: 35%
       position: absolute
       z-index: 1
-      font-size: 22px  
-        
+      font-size: 22px
+    .item--picture
+      width: 100%
+  //search
+  .search
+    width: 295px
+    margin: 0 auto
+    &__title
+      color: #333333
+      font-size: 22px
+      margin: 36px 0 0 6px
+  .form
+    &__question
+      margin: 10px 0 0 5px
+    &__edit
+      margin: 16px 0 0 8px
+    &__imput
+      margin: 10px 0 40px 10px
+  .question
+    font-weight: 300
+    color: #666
+    font-size: 18px
+    line-height: 20px
+  .edit
+    display: block
+    width: 265px
+    height: 40px
+    border: 1px solid #cccccc
+    border-radius: 5px
+    text-align: left
+    padding-left: 15px
+    color: #333 
   //footer
   .footer
-    height: 190px
-    background: gray
+    border-top: 4px solid #ff4e50
+    height: 186px
+    &__title
+      margin: 15px  0 0 5px
+      color: #ff4e50
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+    &__subtitle
+      margin: 11px  0 0 11px
+      color: #333
+      font-size: 14px
+      font-weight: 700
+    &__list
+      width: 210px
+      margin: 0 auto
+      padding: 0 0 0 23px
+      height: 30px
+      list-style: none
+      .list__item:nth-child(4)
+        margin: 0;
+      .list__item
+        margin: 0 15px 0 0
+        float: left
+        .item__link
+          color: #666
+          text-decoration: none
+          font-size: 14px
+          font-weight: 300
+          line-height: 24px
+        .item__link:hover
+          text-decoration: underline
+    .subtitle--parthers
+      margin-top: 3px
+    &__text
+      text-transform: uppercase
+      color: #ccc
+      font-size: 10px
+      font-weight: 700
+      letter-spacing: 1px
+      margin: 12px 0 0 10px
+    .logo
+      width: 100px
+      height: 50px
+      margin: 5px auto 0;
+      &__img
+        float: left
+      &__container
+        float: left
+        width: 50px
+        margin: 5px 0 0 10px
+    .container__text
+      color: #ff4e50
+      text-transform: uppercase
+    .text--big
+      float: left
+      font-size: 18px
+      line-height: 10px
+      letter-spacing: 2px
+    .text--small
+      float: left
+      font-size: 8px
+      margin-top: 3px
+      letter-spacing: 2px
 
+  
 
 
 
