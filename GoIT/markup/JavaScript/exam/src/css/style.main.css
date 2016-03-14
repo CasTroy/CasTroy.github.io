@@ -209,22 +209,17 @@
       color: #333333;
       font-size: 22px;
       margin: 35px 0 12px 7px; }
-  .paint {
+  .grid--item {
     width: 295px;
-    height: 120px;
-    z-index: 0;
-    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
     position: relative; }
-    .paint .item--text {
+    .grid--item .item--text {
       top: 40%;
       left: 35%;
       position: absolute;
       z-index: 1;
       font-size: 22px; }
-  .grid--item {
-    width: 295px;
-    float: left;
-    margin-bottom: 10px; }
   .item--picture {
     vertical-align: bottom;
     width: 100%; }
@@ -264,18 +259,18 @@
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
-    .footer__subtitle {
-      margin: 11px  0 0 11px;
-      color: #333;
-      font-size: 14px;
-      font-weight: 700; }
     .footer__list {
       width: 210px;
       margin: 0 auto;
       padding: 0 0 0 23px;
       height: 30px;
       list-style: none; }
-      .footer__list .list__item:nth-child(4) {
+      .footer__list .list__title {
+        margin: 11px 11px 0 0;
+        color: #333;
+        font-size: 14px;
+        font-weight: 700; }
+      .footer__list .list__item:nth-child(5) {
         margin: 0; }
       .footer__list .list__item {
         margin: 0 15px 0 0;
@@ -288,25 +283,29 @@
           line-height: 24px; }
         .footer__list .list__item .item__link:hover {
           text-decoration: underline; }
-    .footer .subtitle--parthers {
-      margin-top: 3px; }
-    .footer__text {
-      text-transform: uppercase;
-      color: #ccc;
-      font-size: 10px;
+    .footer__subtitle {
+      color: #333;
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: 1px;
-      margin: 12px 0 0 10px; }
+      margin: 20px 0 0 15px; }
     .footer .logo {
-      width: 100px;
+      width: 120px;
       height: 50px;
-      margin: 5px auto 0; }
+      margin: 10px auto 0; }
       .footer .logo__img {
-        float: left; }
+        float: left;
+        margin: 7px 0 0 3px; }
       .footer .logo__container {
         float: left;
         width: 50px;
-        margin: 5px 0 0 10px; }
+        margin: 10px 0 0 10px; }
+      .footer .logo__text {
+        text-transform: uppercase;
+        color: #ccc;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 12px 0 0 10px; }
     .footer .container__text {
       color: #ff4e50;
       text-transform: uppercase; }
@@ -428,4 +427,41 @@
     .ideas__title {
       margin: 97px 40px 33px 0; }
   .grid--item {
-    width: 236px; } }
+    width: 236px; }
+  .search {
+    width: 424px; }
+    .search__title {
+      margin: 100px 0 0 6px; }
+  .form__question {
+    margin: 30px 0 0 5px; }
+  .form__edit {
+    margin: 42px 0 0 8px; }
+  .form__imput {
+    margin: 42px 0 0 5px;
+    width: 160px; }
+  .edit {
+    float: left;
+    width: 230px; }
+  .footer {
+    margin: 100px 0 0 0; }
+    .footer__title {
+      float: left;
+      margin: 36px 0 0 45px; }
+    .footer__subtitle {
+      float: left;
+      margin: 37px 0 0 100px; }
+    .footer__list {
+      margin: 35px 0 0 67px;
+      float: left;
+      width: 70px; }
+      .footer__list .list__title {
+        margin: 0; }
+      .footer__list .list__item {
+        display: block; }
+      .footer__list .list__item:nth-child(2) {
+        margin-top: 10px; }
+  .logo {
+    padding: 14px 28px 0 0;
+    float: right; }
+    .logo .logo__text {
+      margin-left: 30px; } }
