@@ -26,61 +26,60 @@
     background-image: url(../img/vso.jpg);
     background-position: -422px -10px;
     background-repeat: no-repeat; }
-    .header__log {
+    .header .wrapper__log {
       padding: 22px 0 0 38px;
       margin: 0 auto; }
-    .header__link {
+    .header .wrapper__link {
       display: block;
       text-decoration: none;
       margin: 13px auto;
       font-size: 13px; }
-    .header__name {
+    .header .wrapper__name {
       margin-top: 115px;
       font-size: 20px;
       text-transform: uppercase; }
-  .log {
-    width: 200px; }
-    .log__label {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 0px;
-      margin-left: 12px; }
-    .log__input {
-      width: 75px;
-      text-align: center;
-      background: none;
-      border: 2px solid white;
-      border-radius: 25px;
-      padding: 6px;
-      font-weight: 700;
-      font-size: 14px;
-      margin-left: 15px; }
-    .log__input::-webkit-input-placeholder {
-      color: white; }
-    .log__input::-moz-placeholder {
-      color: white; }
-    .log__input:-moz-placeholder {
-      color: white; }
-    .log__input:-ms-input-placeholder {
-      color: white; }
-    .log__input:focus {
-      outline: none; }
-  .title {
-    font-weight: 700; }
-    .title__holliday {
-      font-size: 30px;
-      text-transform: uppercase;
-      margin-top: 27px;
-      padding-left: 15px; }
-    .title__parther {
-      padding: 0 35px;
-      font-size: 18px;
-      font-weight: 300;
-      margin-top: 7px; }
-  .find {
-    width: 280px; }
+    .header .log {
+      width: 200px; }
+      .header .log__label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 0px;
+        margin-left: 12px; }
+      .header .log__input {
+        width: 75px;
+        text-align: center;
+        background: none;
+        border: 2px solid white;
+        border-radius: 25px;
+        padding: 6px;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 15px; }
+      .header .log__input::-webkit-input-placeholder {
+        color: white; }
+      .header .log__input::-moz-placeholder {
+        color: white; }
+      .header .log__input:-moz-placeholder {
+        color: white; }
+      .header .log__input:-ms-input-placeholder {
+        color: white; }
+      .header .log__input:focus {
+        outline: none; }
+    .header .title {
+      font-weight: 700; }
+      .header .title__holliday {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 27px;
+        padding-left: 15px; }
+      .header .title__parther {
+        padding: 0 35px;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 7px; }
+    .header .find {
+      width: 280px; }
   .button {
-    width: 280px;
     border: none;
     border-radius: 25px;
     background-color: #ff4e50;
@@ -88,6 +87,7 @@
   .button:focus {
     outline: none; }
   .button--big {
+    width: 280px;
     padding: 12px 0; }
   .main {
     width: 95%;
@@ -325,24 +325,24 @@
     height: 700px;
     background-image: url(../img/vso2.jpg);
     background-position: -337px 0; }
-    .header__log {
+    .header .wrapper__log {
       float: right;
       margin: 17px; }
-    .header__name {
+    .header .wrapper__name {
       float: left;
       margin: 45px 0 0 50px;
       letter-spacing: 1px; }
-    .header__link {
+    .header .wrapper__link {
       margin-top: 33px;
       font-size: 14px; }
-  .header__title {
+  .wrapper__title {
     width: 510px;
     margin: 0 auto;
     padding: 97px 15px 0 0;
     clear: both; }
-    .header__title .title__holliday {
+    .wrapper__title .title__holliday {
       font-size: 52px; }
-    .header__title .title__parther {
+    .wrapper__title .title__parther {
       margin: 21px 0 0 13px;
       font-size: 24px; }
   .button--big {
@@ -465,3 +465,84 @@
     float: right; }
     .logo .logo__text {
       margin-left: 30px; } }
+
+@media screen and (min-width: 960px) {
+  .header {
+    background-position: -250px 0; }
+    .header .wrapper {
+      margin: 0 auto;
+      width: 940px; }
+      .header .wrapper__log {
+        width: 165px;
+        padding: 0px;
+        margin: 39px 0 0 0; }
+      .header .wrapper__name {
+        margin: 47px 0 0 -2px;
+        font-size: 20px; }
+      .header .wrapper__title {
+        padding: 115px 0 0 0px; }
+        .header .wrapper__title .title__holliday {
+          padding: 0; }
+        .header .wrapper__title .title__parther {
+          margin-left: 0; }
+  .main {
+    width: 920px; }
+  .work__title {
+    padding: 0;
+    letter-spacing: 1px; }
+  .work__list {
+    width: 940px; }
+    .work__list .item {
+      width: 300px;
+      margin: 20px 30px 0 -10px; }
+  .step {
+    width: 300px; }
+  .buground--first {
+    width: 220% !important;
+    margin: -20px 0 0 -190px; }
+  .buground--second {
+    width: 220% !important;
+    margin: -17px 0 0 -160px; }
+  .buground--third {
+    width: 225%  !important;
+    margin: -30px 0 0 -190px; }
+  .owl-prev, .owl-next {
+    top: 151px; }
+  .owl-prev {
+    left: 7%; }
+  .owl-next {
+    left: 82%; }
+  .content {
+    top: 85px;
+    padding: 0 0 0 18px; }
+  .content--nonstandard {
+    top: 115px;
+    padding: 0 0 0 16px; }
+  .partners {
+    width: 920px; }
+    .partners__title {
+      padding: 95px 0px 0; }
+    .partners__list {
+      margin: 25px 0 0 0;
+      list-style: none; }
+    .partners__other {
+      padding: 4px 0 0 0;
+      width: 193px; }
+    .partners .item {
+      margin: 5px 0 0 0; }
+    .partners .item:nth-child(2) {
+      margin: 5px 0 0 40px; }
+    .partners .item:nth-child(3) {
+      margin: 5px 0 0 40px; }
+    .partners .item:nth-child(4) {
+      margin: 5px 0 0 37px; }
+    .partners .surcle--big {
+      margin-left: 20%; }
+    .partners .surcle--small {
+      left: 124px;
+      top: 87px; }
+    .partners .info {
+      margin: 15px 0 0 0px; }
+      .partners .info__hobby {
+        font-size: 14px;
+        margin-top: 11px; } }

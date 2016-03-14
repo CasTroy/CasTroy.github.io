@@ -22,61 +22,61 @@
     background-image: url(../img/vso.jpg)
     background-position: -422px -10px
     background-repeat: no-repeat
-    &__log
-      padding: 22px 0 0 38px
-      margin: 0 auto
-    &__link
-      display: block
-      text-decoration: none
-      margin: 13px auto
-      font-size: 13px
-    &__name
-      margin-top: 115px
-      font-size: 20px
-      text-transform: uppercase
-  .log
-    width: 200px
-    &__label
-      font-size: 14px
+    .wrapper
+      &__log
+        padding: 22px 0 0 38px
+        margin: 0 auto
+      &__link
+        display: block
+        text-decoration: none
+        margin: 13px auto
+        font-size: 13px
+      &__name
+        margin-top: 115px
+        font-size: 20px
+        text-transform: uppercase
+    .log
+      width: 200px
+      &__label
+        font-size: 14px
+        font-weight: 700
+        line-height: 0px
+        margin-left: 12px
+      &__input
+        width: 75px
+        text-align: center
+        background: none
+        border: 2px solid white
+        border-radius: 25px
+        padding: 6px
+        font-weight: 700
+        font-size: 14px
+        margin-left: 15px
+      &__input::-webkit-input-placeholder
+        color: white
+      &__input::-moz-placeholder
+        color: white
+      &__input:-moz-placeholder
+        color: white
+      &__input:-ms-input-placeholder      
+        color: white
+      &__input:focus
+        outline: none
+    .title
       font-weight: 700
-      line-height: 0px
-      margin-left: 12px
-    &__input
-      width: 75px
-      text-align: center
-      background: none
-      border: 2px solid white
-      border-radius: 25px
-      padding: 6px
-      font-weight: 700
-      font-size: 14px
-      margin-left: 15px
-    &__input::-webkit-input-placeholder
-      color: white
-    &__input::-moz-placeholder
-      color: white
-    &__input:-moz-placeholder
-      color: white
-    &__input:-ms-input-placeholder      
-      color: white
-    &__input:focus
-      outline: none
-  .title
-    font-weight: 700
-    &__holliday
-      font-size: 30px
-      text-transform: uppercase
-      margin-top: 27px
-      padding-left: 15px
-    &__parther
-      padding: 0 35px
-      font-size: 18px
-      font-weight: 300
-      margin-top: 7px
-  .find
-    width: 280px
+      &__holliday
+        font-size: 30px
+        text-transform: uppercase
+        margin-top: 27px
+        padding-left: 15px
+      &__parther
+        padding: 0 35px
+        font-size: 18px
+        font-weight: 300
+        margin-top: 7px
+    .find
+      width: 280px
   .button
-    width: 280px
     border: none
     border-radius: 25px
     background-color: #ff4e50
@@ -84,6 +84,7 @@
   .button:focus
     outline: none
   .button--big
+    width: 280px
     padding: 12px 0
   //main
   .main
@@ -333,17 +334,18 @@
     height: 700px
     background-image: url(../img/vso2.jpg)
     background-position: -337px 0
-    &__log
-      float: right
-      margin: 17px
-    &__name
-      float: left
-      margin: 45px 0 0 50px
-      letter-spacing: 1px
-    &__link
-      margin-top: 33px
-      font-size: 14px 
-  .header__title
+    .wrapper
+      &__log
+        float: right
+        margin: 17px
+      &__name
+        float: left
+        margin: 45px 0 0 50px
+        letter-spacing: 1px
+      &__link
+        margin-top: 33px
+        font-size: 14px 
+  .wrapper__title
     width: 510px
     margin: 0 auto
     padding: 97px 15px 0 0
@@ -481,5 +483,90 @@
     float: right
     .logo__text
       margin-left: 30px
-      
+ 
+@media screen and (min-width: $mobyle_960px)     
+  //header
+  .header
+    background-position: -250px 0
+    .wrapper
+      margin: 0 auto
+      width: 940px
+      &__log
+        width: 165px
+        padding: 0px
+        margin: 39px 0 0 0
+      &__name
+        margin: 47px 0 0 -2px
+        font-size: 20px
+      &__title
+        padding: 115px 0 0 0px
+        .title__holliday
+          padding: 0
+        .title__parther
+          margin-left: 0 
+  //main
+  .main
+    width: 920px
+  //work
+  .work
+    &__title
+      padding: 0
+      letter-spacing: 1px
+    &__list
+      width: 940px
+      .item
+        width: 300px
+        margin: 20px 30px 0 -10px
+  .step
+    width: 300px
+  .buground--first
+    width: 220% !important
+    margin: -20px 0 0 -190px
+  .buground--second
+    width: 220% !important
+    margin: -17px 0 0 -160px
+  .buground--third
+    width: 225%  !important
+    margin: -30px 0 0 -190px
+  .owl-prev, .owl-next
+    top: 151px
+  .owl-prev
+    left: 7%
+  .owl-next
+    left: 82%
+  .content
+    top: 85px
+    padding: 0 0 0 18px
+  .content--nonstandard
+    top: 115px
+    padding: 0 0 0 16px
+  //partners
+  .partners
+    width: 920px
+    &__title
+      padding: 95px 0px 0
+    &__list
+      margin: 25px 0 0 0
+      list-style: none
+    &__other
+      padding: 4px 0 0 0
+      width: 193px
+    .item
+      margin: 5px 0 0 0
+    .item:nth-child(2)
+      margin: 5px 0 0 40px
+    .item:nth-child(3)
+      margin: 5px 0 0 40px
+    .item:nth-child(4)
+      margin: 5px 0 0 37px
+    .surcle--big
+      margin-left: 20%
+    .surcle--small
+      left: 124px
+      top: 87px
+    .info
+      margin: 15px 0 0 0px;
+      &__hobby
+        font-size: 14px
+        margin-top: 11px  
 
