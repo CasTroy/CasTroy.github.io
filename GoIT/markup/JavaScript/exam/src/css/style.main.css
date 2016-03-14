@@ -253,37 +253,37 @@
   .footer {
     border-top: 4px solid #ff4e50;
     height: 186px; }
-    .footer__title {
+    .footer .wrapper__title {
       margin: 15px  0 0 5px;
       color: #ff4e50;
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
-    .footer__list {
+    .footer .wrapper__list {
       width: 210px;
       margin: 0 auto;
       padding: 0 0 0 23px;
       height: 30px;
       list-style: none; }
-      .footer__list .list__title {
+      .footer .wrapper__list .list__title {
         margin: 11px 11px 0 0;
         color: #333;
         font-size: 14px;
         font-weight: 700; }
-      .footer__list .list__item:nth-child(5) {
+      .footer .wrapper__list .list__item:nth-child(5) {
         margin: 0; }
-      .footer__list .list__item {
+      .footer .wrapper__list .list__item {
         margin: 0 15px 0 0;
         float: left; }
-        .footer__list .list__item .item__link {
+        .footer .wrapper__list .list__item .item__link {
           color: #666;
           text-decoration: none;
           font-size: 14px;
           font-weight: 300;
           line-height: 24px; }
-        .footer__list .list__item .item__link:hover {
+        .footer .wrapper__list .list__item .item__link:hover {
           text-decoration: underline; }
-    .footer__subtitle {
+    .footer .wrapper__subtitle {
       color: #333;
       font-size: 14px;
       font-weight: 700;
@@ -444,21 +444,23 @@
     width: 230px; }
   .footer {
     margin: 100px 0 0 0; }
-    .footer__title {
+    .footer .wrapper__title {
+      width: auto;
+      padding: 0;
       float: left;
       margin: 36px 0 0 45px; }
-    .footer__subtitle {
+    .footer .wrapper__subtitle {
       float: left;
       margin: 37px 0 0 100px; }
-    .footer__list {
+    .footer .wrapper__list {
       margin: 35px 0 0 67px;
       float: left;
       width: 70px; }
-      .footer__list .list__title {
+      .footer .wrapper__list .list__title {
         margin: 0; }
-      .footer__list .list__item {
+      .footer .wrapper__list .list__item {
         display: block; }
-      .footer__list .list__item:nth-child(2) {
+      .footer .wrapper__list .list__item:nth-child(2) {
         margin-top: 10px; }
   .logo {
     padding: 14px 28px 0 0;
@@ -545,4 +547,35 @@
       margin: 15px 0 0 0px; }
       .partners .info__hobby {
         font-size: 14px;
-        margin-top: 11px; } }
+        margin-top: 11px; }
+  .ideas {
+    width: 940px; }
+    .ideas__title {
+      margin: 96px 20px 33px 0; }
+    .ideas .grid {
+      margin-left: -10px; }
+    .ideas .grid--item {
+      width: 300px;
+      margin-right: 10px;
+      margin-left: 0px; }
+  .search {
+    width: 940px; }
+    .search .form__question {
+      margin: 33px 0 0 10px; }
+    .search .form__edit {
+      width: 220px;
+      margin: 36px 0 0 29%; }
+    .search .form__imput {
+      margin: 38px 0 0 10px; }
+  .footer__wrapper {
+    margin: 0 auto;
+    width: 940px; }
+    .footer__wrapper .wrapper__title {
+      margin: 35px 0 0 15px; }
+    .footer__wrapper .wrapper__list {
+      margin: 35px 0 0 81px; }
+    .footer__wrapper .wrapper__subtitle {
+      margin: 35px 0 0 91px; }
+  .footer .logo {
+    padding: 14px 0 0 0;
+    margin: 10px -23px 0; } }

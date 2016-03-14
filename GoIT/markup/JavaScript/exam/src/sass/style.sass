@@ -260,13 +260,13 @@
   .footer
     border-top: 4px solid #ff4e50
     height: 186px
-    &__title
+    .wrapper__title
       margin: 15px  0 0 5px
       color: #ff4e50
       font-size: 16px
       font-weight: 700
       text-transform: uppercase
-    &__list
+    .wrapper__list
       width: 210px
       margin: 0 auto
       padding: 0 0 0 23px
@@ -290,7 +290,7 @@
           line-height: 24px
         .item__link:hover
           text-decoration: underline
-    &__subtitle
+    .wrapper__subtitle
       color: #333
       font-size: 14px
       font-weight: 700
@@ -462,13 +462,15 @@
   //footer
   .footer
     margin: 100px 0 0 0
-    &__title
+    .wrapper__title
+      width: auto
+      padding: 0
       float: left
       margin: 36px 0 0 45px
-    &__subtitle
+    .wrapper__subtitle
       float: left
       margin: 37px 0 0 100px
-    &__list
+    .wrapper__list
       margin: 35px 0 0 67px
       float: left 
       width: 70px
@@ -569,4 +571,40 @@
       &__hobby
         font-size: 14px
         margin-top: 11px  
+  //ideas
+  .ideas
+    width: 940px
+    &__title
+      margin: 96px 20px 33px 0
+    .grid
+      margin-left: -10px
+    .grid--item 
+      width: 300px
+      margin-right: 10px
+      margin-left: 0px
+  //search
+  .search
+    width: 940px
+    .form__question
+      margin: 33px 0 0 10px
+    .form__edit
+      width: 220px
+      margin: 36px 0 0 29%
+    .form__imput
+      margin: 38px 0 0 10px
+  //footer
+  .footer
+    &__wrapper
+      margin: 0 auto
+      width: 940px
+      .wrapper__title
+        margin: 35px 0 0 15px
+      .wrapper__list
+        margin: 35px 0 0 81px
+      .wrapper__subtitle
+        margin: 35px 0 0 91px
+    .logo
+      padding: 14px 0 0 0
+      margin: 10px -23px 0
+
 
