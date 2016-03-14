@@ -579,3 +579,8 @@
   .footer .logo {
     padding: 14px 0 0 0;
     margin: 10px -23px 0; } }
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-position: 0px 0;
+    background-size: cover; } }
