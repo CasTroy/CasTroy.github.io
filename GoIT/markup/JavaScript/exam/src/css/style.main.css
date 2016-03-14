@@ -25,7 +25,8 @@
     height: 540px;
     background-image: url(../img/vso.jpg);
     background-position: -422px -10px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover; }
     .header .wrapper__log {
       padding: 22px 0 0 38px;
       margin: 0 auto; }
@@ -319,6 +320,11 @@
       font-size: 8px;
       margin-top: 3px;
       letter-spacing: 2px; } }
+
+@media screen and (min-width: 680px) {
+  .header {
+    background-position: 0 0;
+    background-size: cover; } }
 
 @media screen and (min-width: 786px) {
   .header {

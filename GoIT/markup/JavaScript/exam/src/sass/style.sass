@@ -22,6 +22,7 @@
     background-image: url(../img/vso.jpg)
     background-position: -422px -10px
     background-repeat: no-repeat
+    background-size: cover
     .wrapper
       &__log
         padding: 22px 0 0 38px
@@ -327,7 +328,12 @@
       font-size: 8px
       margin-top: 3px
       letter-spacing: 2px
-
+ 
+@media screen and (min-width: $mobyle_680px)
+  //header
+  .header
+    background-position: 0 0
+    background-size: cover
 @media screen and (min-width: $mobyle_768px)
   //header
   .header
