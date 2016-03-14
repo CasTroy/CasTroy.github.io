@@ -2,26 +2,37 @@
 	document.getElementById("content").style.color = "red";
 	document.getElementById("content").style.opacity = "0.5";
 	document.getElementById("content").style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";*/
+ 
+
 
 
 'use strict'
 $(function(){
+
+
+   
+
     //courusel
 	$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            }
         }
-    }
 	})
-    //masonry
-    $('.paint').masonry({
-      itemSelector: '.paint__item',
-      columnWidth: '.paint__item'
-    });
+
+   /* $('.grid').masonry({
+      // options
+      itemSelector: '.grid--item',
+      columnWidth: '.grid--item',
+    });*/
+
+
+
+
 
 
     //picture ajax
@@ -58,8 +69,20 @@ function Model(obj){
 function View(model){
     var self = this;
     self.renderList = function () {
+
+
         var wrapper = tmpl($('#template').html(), model);
         $('.ideas').append(wrapper)
+
+        $('#gallery').imagesLoaded(function (){
+           $('.grid').masonry({
+              // options
+              itemSelector: '.grid--item',
+              columnWidth: '.grid--item',
+              gutter: 10
+            });
+        })
+        /**/
     };
     self.renderList();
 }
@@ -69,7 +92,7 @@ function Controller(model, view){
     $('#search').on('click', function(event){
         event.preventDefault();
         var text = $('#edit').val();
-        $('.paint').remove();
+        $('.grid').remove();
         $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data){
             model.init(data);
             view.renderList();

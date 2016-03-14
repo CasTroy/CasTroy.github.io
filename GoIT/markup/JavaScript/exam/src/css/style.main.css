@@ -148,20 +148,20 @@
     font-weight: 400;
     border-radius: 20px;
     letter-spacing: 2px; }
-  .parthers__title {
+  .partners__title {
     color: #333333;
     font-size: 22px;
     margin: 35px 0 0 5px; }
-  .parthers__list {
+  .partners__list {
     margin-top: 13px;
     list-style: none; }
-    .parthers__list .item:nth-child(1) {
+    .partners__list .item:nth-child(1) {
       padding: 0 0 28px; }
-    .parthers__list .item:nth-child(2) {
+    .partners__list .item:nth-child(2) {
       padding: 0 0 25px; }
-    .parthers__list .item:nth-child(3) {
+    .partners__list .item:nth-child(3) {
       padding: 0 0 28px; }
-  .parthers__other {
+  .partners__other {
     width: 280px;
     padding: 0 0 0 8px;
     margin: 28px auto 0; }
@@ -214,17 +214,20 @@
     height: 120px;
     z-index: 0;
     overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-    margin-bottom: 10px; }
+    position: relative; }
     .paint .item--text {
       top: 40%;
       left: 35%;
       position: absolute;
       z-index: 1;
       font-size: 22px; }
-    .paint .item--picture {
-      width: 100%; }
+  .grid--item {
+    width: 295px;
+    float: left;
+    margin-bottom: 10px; }
+  .item--picture {
+    vertical-align: bottom;
+    width: 100%; }
   .search {
     width: 295px;
     margin: 0 auto; }
@@ -362,6 +365,10 @@
     width: 236px;
     height: 400px;
     z-index: 0; }
+    .step__content {
+      margin-top: 142px; }
+  .content--nonstandard {
+    top: 115px; }
   .buground--first {
     width: 280% !important;
     margin: -20px 0 0 -225px; }
@@ -392,4 +399,33 @@
     z-index: 1;
     top: 37px;
     left: 79%;
-    position: absolute; } }
+    position: absolute; }
+  .partners {
+    width: 532px;
+    margin: 0 auto; }
+    .partners__title {
+      clear: both;
+      margin: 0 0 0 -5px;
+      padding: 95px 0 0; }
+    .partners__list .item {
+      margin: 17px 0 0 33px;
+      float: left; }
+    .partners__list .item:nth-child(2) {
+      margin: 17px 0 0 55px; }
+    .partners__list .item:nth-child(3) {
+      margin: 0 0 0 35px; }
+    .partners__list .item:nth-child(4) {
+      margin: 0 0 0 55px; }
+    .partners__other {
+      clear: both;
+      padding: 40px 0 0;
+      width: 190px; }
+  .button--empty {
+    width: 190px;
+    height: 40px; }
+  .ideas {
+    width: 100%; }
+    .ideas__title {
+      margin: 97px 40px 33px 0; }
+  .grid--item {
+    width: 236px; } }
