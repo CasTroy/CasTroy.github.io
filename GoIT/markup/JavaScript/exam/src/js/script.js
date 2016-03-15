@@ -24,24 +24,6 @@ $(function(){
         }
 	})
 
-   /* $('.grid').masonry({
-      // options
-      itemSelector: '.grid--item',
-      columnWidth: '.grid--item',
-    });*/
-
-
-
-
-
-
-    //picture ajax
-    /*$.getJSON('http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', function(data){
-        var model = new Model(data);
-        var view = new View(model);
-        var controller = new Controller(model, view);
-    });*/
-
     $.ajax({
         url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
         success: function(data){
@@ -50,8 +32,6 @@ $(function(){
             var controller = new Controller(model, view);
         }
     })
-
-     
 });
 
 
@@ -85,13 +65,11 @@ function View(model){
 
         $('#gallery').imagesLoaded(function (){
            $('.grid').masonry({
-              // options
               itemSelector: '.grid--item',
               columnWidth: '.grid--item',
               gutter: 10
             });
         })
-        /**/
     };
     self.renderList();
 }
@@ -102,8 +80,6 @@ function Controller(model, view){
         event.preventDefault();
         var text = $('#edit').val();
         $('.grid').remove();
-
-
         $.ajax({
             url: 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m',
             success: function(data){
@@ -111,11 +87,5 @@ function Controller(model, view){
                 view.renderList();
             }
         })
-
-        /*
-        $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data){
-            model.init(data);
-            view.renderList();
-        });*/
     })
 }

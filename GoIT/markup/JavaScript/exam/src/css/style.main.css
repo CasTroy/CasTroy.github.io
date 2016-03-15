@@ -22,65 +22,67 @@
     color: white;
     text-align: center; }
   .header {
-    height: 540px;
+    height: 550px;
     background-image: url(../img/vso.jpg);
-    background-position: -422px -10px;
+    background-position: -417px -10px;
     background-repeat: no-repeat;
     background-size: cover; }
-    .header .wrapper__log {
-      padding: 22px 0 0 38px;
-      margin: 0 auto; }
-    .header .wrapper__link {
-      display: block;
-      text-decoration: none;
-      margin: 13px auto;
-      font-size: 13px; }
-    .header .wrapper__name {
-      margin-top: 115px;
-      font-size: 20px;
-      text-transform: uppercase; }
-    .header .log {
-      width: 200px; }
-      .header .log__label {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 0px;
-        margin-left: 12px; }
-      .header .log__input {
-        width: 75px;
-        text-align: center;
-        background: none;
-        border: 2px solid white;
-        border-radius: 25px;
-        padding: 6px;
-        font-weight: 700;
-        font-size: 14px;
-        margin-left: 15px; }
-      .header .log__input::-webkit-input-placeholder {
-        color: white; }
-      .header .log__input::-moz-placeholder {
-        color: white; }
-      .header .log__input:-moz-placeholder {
-        color: white; }
-      .header .log__input:-ms-input-placeholder {
-        color: white; }
-      .header .log__input:focus {
-        outline: none; }
-    .header .title {
-      font-weight: 700; }
-      .header .title__holliday {
-        font-size: 30px;
-        text-transform: uppercase;
-        margin-top: 27px;
-        padding-left: 15px; }
-      .header .title__parther {
-        padding: 0 35px;
-        font-size: 18px;
-        font-weight: 300;
-        margin-top: 7px; }
-    .header .find {
-      width: 280px; }
+  .wrapper__log {
+    padding: 21px 0 0 45px;
+    margin: 0 auto; }
+  .wrapper__urlaub {
+    margin-top: 115px; }
+  .wrapper__button {
+    margin: 14px auto;
+    font-size: 13px;
+    display: block;
+    text-decoration: none; }
+  .log {
+    width: 200px; }
+    .log__label {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 0px; }
+    .log__input {
+      width: 75px;
+      text-align: center;
+      background: none;
+      border: 2px solid white;
+      border-radius: 25px;
+      padding: 6px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 15px; }
+    .log__input::-webkit-input-placeholder {
+      color: white; }
+    .log__input::-moz-placeholder {
+      color: white; }
+    .log__input:-moz-placeholder {
+      color: white; }
+    .log__input:-ms-input-placeholder {
+      color: white; }
+    .log__input:focus {
+      outline: none; }
+  .dreams {
+    font-weight: 700; }
+    .dreams__holliday {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-top: 8.6%; }
+    .dreams__parther {
+      padding: 0 42px;
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 7px;
+      line-height: 22px; }
+  .find {
+    width: 280px; }
+  .urlaub {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
   .button {
+    font-size: 14px;
     border: none;
     border-radius: 25px;
     background-color: #ff4e50;
@@ -91,21 +93,23 @@
     width: 280px;
     padding: 12px 0; }
   .main {
-    width: 95%;
     margin: 0 auto; }
   .work__title {
-    color: #333333;
-    font-size: 21px;
-    margin-top: 35px; }
+    margin: 24px 2px 0 0px; }
   .work__list {
-    width: 295px;
-    margin: 16px auto; }
-    .work__list .item {
-      margin-bottom: 10px; }
+    margin: 15px auto; }
+  .title {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700; }
+  .list {
+    width: 300px; }
+  .item {
+    margin-bottom: 10px; }
   .owl-controls {
     display: none; }
   .step {
-    width: 295px;
+    width: 300px;
     height: 240px;
     border-radius: 5px;
     z-index: 0;
@@ -114,33 +118,25 @@
     .step__buground {
       z-index: 1; }
     .step__content {
-      position: absolute; }
+      top: 66px;
+      left: 2px;
+      padding: 0 0 0 20px; }
+  .content--nonstandard {
+    top: 96px;
+    left: 0px; }
   .content {
-    top: 68px;
-    padding: 0 0 0 20px; }
-    .content__form {
-      margin-left: 3px; }
+    position: absolute; }
     .content__title {
-      margin: 15px 0 0;
+      margin: 15px -2px 0;
       font-size: 24px;
       text-align: left; }
     .content__text {
-      margin: 10px 0 0;
+      margin: 11px 0 0 -2px;
+      padding: 0 10px 0 0;
       font-size: 14px;
       text-align: left;
       opacity: 0.5;
       line-height: 17px; }
-  .content--nonstandard {
-    top: 98px; }
-  .buground--first {
-    width: 140% !important;
-    margin: -27px 0 0 -65px; }
-  .buground--second {
-    width: 140% !important;
-    margin: -22px 0 0 -35px; }
-  .buground--third {
-    width: 150% !important;
-    margin: -32px 0 0 -71px; }
   .button--small {
     width: 70px;
     height: 20px;
@@ -149,6 +145,15 @@
     font-weight: 400;
     border-radius: 20px;
     letter-spacing: 2px; }
+  .buground--first {
+    width: 140% !important;
+    margin: -30px 0 0 -70px; }
+  .buground--second {
+    width: 136% !important;
+    margin: -24px 0 0 -35px; }
+  .buground--third {
+    width: 150% !important;
+    margin: -36px 0 0 -77px; }
   .partners__title {
     color: #333333;
     font-size: 22px;
