@@ -224,9 +224,9 @@
 				<script type ="text/template" id = "template">
 					<div class = "grid" id = "gallery">
 						<%for(var index in data){%>
-							<div class = "grid--item">
-								<img src="<%= data[index].imageurl %>" alt="" class = "item--picture">
-								<p class = "item--text montserrat-regular"><%= data[index].word%></p>
+							<div class="grid--item">
+								<img src="<%=data[index].imageurl%>" alt="" class="item--picture">
+								<p class="item--text montserrat-regular"><%= data[index].word%></p>
 							</div>
 						<%}%>
 					</div>
@@ -256,7 +256,7 @@
 				<li class = "nav__item"><a href="" class = "link roboto-light">Blog</a></li>
 			</ul>
 			<h3 class = "wrapper__subtitle subtitle--parthers montserrat-regular">Partners</h3>
-			<figure class = "logo">
+			<figure class = "wrapper__logo logo">
 				<p class = "logo__text montserrat-regular">designed by</p>
 				<img src="img/logo.png" alt="" class = "logo__img">
 				<figcaption class = "logo__container">
