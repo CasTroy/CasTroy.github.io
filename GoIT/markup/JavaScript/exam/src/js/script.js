@@ -36,11 +36,20 @@ $(function(){
 
 
     //picture ajax
-    $.getJSON('http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', function(data){
+    /*$.getJSON('http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', function(data){
         var model = new Model(data);
         var view = new View(model);
         var controller = new Controller(model, view);
-    });
+    });*/
+
+    $.ajax({
+        url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
+        success: function(data){
+            var model = new Model(data);
+            var view = new View(model);
+            var controller = new Controller(model, view);
+        }
+    })
 
      
 });
@@ -93,9 +102,20 @@ function Controller(model, view){
         event.preventDefault();
         var text = $('#edit').val();
         $('.grid').remove();
+
+
+        $.ajax({
+            url: 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m',
+            success: function(data){
+                model.init(data);
+                view.renderList();
+            }
+        })
+
+        /*
         $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data){
             model.init(data);
             view.renderList();
-        });
+        });*/
     })
 }
