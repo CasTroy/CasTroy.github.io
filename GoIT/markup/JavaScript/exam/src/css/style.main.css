@@ -8,18 +8,18 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none;
+  color: white; }
 
 @media screen and (min-width: 320px) {
   .container {
     min-height: calc(100vh - 190px); }
   .montserrat-regular {
     font-family: Montserrat-Regular;
-    color: white;
     text-align: center; }
   .roboto-light {
     font-family: Roboto-Light;
-    color: white;
     text-align: center; }
   .header {
     height: 550px;
@@ -103,8 +103,7 @@
     font-size: 22px;
     font-weight: 700; }
   .list {
-    width: 300px;
-    list-style: none; }
+    width: 300px; }
   .item {
     margin-bottom: 10px; }
   .owl-controls {
@@ -163,7 +162,6 @@
     width: 284px;
     margin: 28px auto 0; }
   .humans {
-    list-style: none;
     width: 300px;
     margin: 0 auto; }
     .humans__item {
@@ -278,8 +276,7 @@
     letter-spacing: 1px; }
   .nav {
     width: 300px;
-    height: 30px;
-    list-style: none; }
+    height: 30px; }
     .nav__title {
       margin: 11px 11px 0 0;
       color: #333;
@@ -345,25 +342,32 @@
     height: 700px;
     background-image: url(../img/vso2.jpg);
     background-position: -337px 0; }
-    .header .wrapper__log {
-      float: right;
-      margin: 17px; }
-    .header .wrapper__name {
-      float: left;
-      margin: 45px 0 0 50px;
-      letter-spacing: 1px; }
-    .header .wrapper__link {
-      margin-top: 33px;
-      font-size: 14px; }
-  .wrapper__title {
+  .wrapper {
+    width: 768px;
+    margin: 0 auto; }
+    .wrapper__log {
+      margin: 17px 11px;
+      padding: 22px 0 0 0px; }
+    .wrapper__urlaub {
+      margin: 46px 0 0 39px; }
+    .wrapper__button {
+      margin: 38px 0 0 260px; }
+    .wrapper__dreams {
+      margin: 0 auto;
+      padding: 98px 20px 0 0; }
+  .log {
+    float: right; }
+  .urlaub {
+    float: left;
+    letter-spacing: 1px; }
+  .dreams {
     width: 510px;
-    margin: 0 auto;
-    padding: 97px 15px 0 0;
     clear: both; }
-    .wrapper__title .title__holliday {
-      font-size: 52px; }
-    .wrapper__title .title__parther {
-      margin: 21px 0 0 13px;
+    .dreams__holliday {
+      font-size: 52px;
+      margin-top: 5%; }
+    .dreams__parther {
+      margin: 27px 0 0 0px;
       font-size: 24px; }
   .button--big {
     width: 225px; }
