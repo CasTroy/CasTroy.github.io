@@ -8,10 +8,6 @@
 
 'use strict'
 $(function(){
-
-
-   
-
     //courusel
 	$('.owl-carousel').owlCarousel({
         loop:true,
@@ -23,7 +19,6 @@ $(function(){
             }
         }
 	})
-
     $.ajax({
         url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
         success: function(data){

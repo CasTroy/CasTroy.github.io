@@ -218,6 +218,8 @@
     float: left;
     margin-bottom: 10px;
     position: relative; }
+  .grid--item img {
+    border-radius: 5px; }
   .item--text {
     top: 40%;
     left: 35%;
@@ -337,7 +339,7 @@
     background-position: 0 0;
     background-size: cover; } }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 700px;
     background-image: url(../img/vso2.jpg);
@@ -346,15 +348,15 @@
     width: 768px;
     margin: 0 auto; }
     .wrapper__log {
-      margin: 17px 11px;
+      margin: 17px 2px;
       padding: 22px 0 0 0px; }
     .wrapper__urlaub {
-      margin: 46px 0 0 39px; }
+      margin: 46px 0 0 48px; }
     .wrapper__button {
-      margin: 38px 0 0 260px; }
+      margin: 38px 0 0 270px; }
     .wrapper__dreams {
       margin: 0 auto;
-      padding: 98px 20px 0 0; }
+      padding: 98px 0px 0 0; }
   .log {
     float: right; }
   .urlaub {
@@ -375,14 +377,13 @@
     width: 768px;
     margin: 0 auto; }
     .work__title {
-      margin-top: 95px;
-      padding: 0 10px 0 0; }
+      margin: 95px -5px 0 0px; }
     .work__list {
       margin: 13px auto; }
   .list {
     width: 768px; }
     .list__item {
-      margin: 20px 20px 0 0; }
+      margin: 20px 10px 0; }
   .item {
     width: 236px;
     float: left; }
@@ -434,72 +435,83 @@
     left: 79%;
     position: absolute; }
   .partners {
-    width: 532px;
+    width: 768px;
     margin: 0 auto; }
     .partners__title {
+      width: 100%;
       clear: both;
-      margin: 0 0 0 -5px;
+      margin: 0 0 0 -3px;
       padding: 95px 0 0; }
-    .partners__list .item {
-      margin: 17px 0 0 33px;
-      float: left; }
-    .partners__list .item:nth-child(2) {
-      margin: 17px 0 0 55px; }
-    .partners__list .item:nth-child(3) {
-      margin: 0 0 0 35px; }
-    .partners__list .item:nth-child(4) {
-      margin: 0 0 0 55px; }
     .partners__other {
       clear: both;
-      padding: 40px 0 0;
-      width: 190px; }
+      padding: 70px 0 0 88px; }
+  .humans {
+    width: 100%; }
+    .humans__item {
+      float: left; }
+    .humans__item:nth-child(1) {
+      margin: 31px 0 0 20.5%; }
+    .humans__item:nth-child(2) {
+      margin: 31px 0 0 7.5%; }
+    .humans__item:nth-child(3) {
+      margin: 25px 0 0 20.5%; }
+    .humans__item:nth-child(4) {
+      margin: 23px 0 0 7.1%; }
   .button--empty {
-    width: 190px;
+    width: 193px;
     height: 40px; }
   .ideas {
-    width: 100%; }
+    width: 768px; }
     .ideas__title {
-      margin: 97px 40px 33px 0; }
+      margin: 95px 6px 33px 0; }
+  .grid {
+    width: 768px; }
   .grid--item {
-    width: 236px; }
+    width: 236px;
+    margin: 0 0 10px 10px; }
   .search {
-    width: 424px; }
+    width: 768px; }
     .search__title {
-      margin: 100px 0 0 6px; }
+      margin: 100px 0 0 -5px; }
   .form__question {
-    margin: 30px 0 0 5px; }
+    margin: 30px 0 0 -3px; }
   .form__edit {
-    margin: 42px 0 0 8px; }
+    margin: 40px 0 0 177px; }
   .form__imput {
-    margin: 42px 0 0 5px;
+    margin: 41px 0 0 11px;
     width: 160px; }
   .edit {
     float: left;
-    width: 230px; }
+    width: 223px;
+    height: 38px; }
   .footer {
     margin: 100px 0 0 0; }
-    .footer .wrapper__title {
-      width: auto;
-      padding: 0;
-      float: left;
-      margin: 36px 0 0 45px; }
-    .footer .wrapper__subtitle {
-      float: left;
-      margin: 37px 0 0 100px; }
-    .footer .wrapper__list {
-      margin: 35px 0 0 67px;
-      float: left;
-      width: 70px; }
-      .footer .wrapper__list .list__title {
-        margin: 0; }
-      .footer .wrapper__list .list__item {
-        display: block; }
-      .footer .wrapper__list .list__item:nth-child(2) {
-        margin-top: 10px; }
+  .wrapper__title {
+    margin: 37px 0 0 39px;
+    float: left;
+    padding: 0; }
+  .wrapper__subtitle {
+    float: left;
+    margin: 37px 0 0 102px; }
+  .wrapper__nav {
+    margin: 37px 0 0 73px; }
+  .wrapper__logo {
+    padding: 15px 34px 0 0; }
+  .nav {
+    float: left;
+    width: 70px; }
+    .nav__title {
+      margin: 0; }
+    .nav__item {
+      width: 100%;
+      display: block; }
+    .nav__item:nth-child(2) {
+      margin: 10px 0 0 0; }
+    .nav__item:nth-child(3), .nav__item:nth-child(4), .nav__item:nth-child(5) {
+      margin: 0; }
   .logo {
-    padding: 14px 28px 0 0;
     float: right; }
-    .logo .logo__text {
+    .logo__text {
       margin-left: 30px; } }
 
 @media screen and (min-width: 960px) {

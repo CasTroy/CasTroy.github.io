@@ -217,12 +217,14 @@
     width: 300px
     margin: 0 auto
     &__title
-      margin: 35px 0 12px -5px
+      margin: 35px 0 12px -5px 
   .grid--item 
     width: 300px
     float: left
     margin-bottom: 10px
     position: relative
+  .grid--item img
+    border-radius: 5px
   .item--text
     top: 40%
     left: 35%
@@ -355,15 +357,15 @@
     width: 768px
     margin: 0 auto
     &__log
-      margin: 17px 11px
+      margin: 17px 2px
       padding: 22px 0 0 0px
     &__urlaub
-      margin: 46px 0 0 39px
+      margin: 46px 0 0 48px
     &__button
-      margin: 38px 0 0 260px
+      margin: 38px 0 0 270px
     &__dreams
       margin: 0 auto
-      padding: 98px 20px 0 0
+      padding: 98px 0px 0 0
   .log
     float: right
   .urlaub
@@ -385,14 +387,13 @@
     width: 768px
     margin: 0 auto
     &__title
-      margin-top: 95px
-      padding: 0 10px 0 0
+      margin: 95px -5px 0 0px
     &__list
       margin: 13px auto
   .list
     width: 768px
     &__item 
-      margin: 20px 20px 0 0 
+      margin: 20px 10px 0
   .item
     width: 236px
     float: left
@@ -444,81 +445,92 @@
     top: 37px
     left: 79%
     position: absolute
-  //partners
+  //partners 
   .partners
-    width: 532px
+    width: 768px
     margin: 0 auto
     &__title
+      width: 100%
       clear: both
-      margin: 0 0 0 -5px
+      margin: 0 0 0 -3px
       padding: 95px 0 0
-    &__list
-      .item
-        margin: 17px 0 0 33px 
-        float: left
-      .item:nth-child(2)
-        margin: 17px 0 0 55px
-      .item:nth-child(3)
-        margin: 0 0 0 35px
-      .item:nth-child(4)
-        margin: 0 0 0 55px  
     &__other
       clear: both
-      padding: 40px 0 0
-      width: 190px
+      padding: 70px 0 0 88px
+  .humans
+    width: 100%
+    &__item
+      float: left
+    &__item:nth-child(1)
+      margin: 31px 0 0 20.5%
+    &__item:nth-child(2)
+      margin: 31px 0 0 7.5%
+    &__item:nth-child(3)
+      margin: 25px 0 0 20.5%
+    &__item:nth-child(4)
+      margin: 23px 0 0 7.1%
   .button--empty
-    width: 190px
+    width: 193px
     height: 40px
   //ideas
   .ideas
-    width: 100%
+    width: 768px
     &__title
-      margin: 97px 40px 33px 0
+      margin: 95px 6px 33px 0
+  .grid
+    width: 768px
   .grid--item 
     width: 236px
+    margin: 0 0 10px 10px
   //search
   .search
-    width: 424px
+    width: 768px
     &__title
-      margin: 100px 0 0 6px
+      margin: 100px 0 0 -5px
   .form
     &__question
-      margin: 30px 0 0 5px
+      margin: 30px 0 0 -3px
     &__edit
-      margin: 42px 0 0 8px
+      margin: 40px 0 0 177px
     &__imput
-      margin: 42px 0 0 5px
+      margin: 41px 0 0 11px
       width: 160px
   .edit
     float: left
-    width: 230px
+    width: 223px
+    height: 38px
   //footer
   .footer
     margin: 100px 0 0 0
-    .wrapper__title
-      width: auto
+  .wrapper
+    &__title
+      margin: 37px 0 0 39px
+      float: left
       padding: 0
+    &__subtitle
       float: left
-      margin: 36px 0 0 45px
-    .wrapper__subtitle
-      float: left
-      margin: 37px 0 0 100px
-    .wrapper__list
-      margin: 35px 0 0 67px
-      float: left 
-      width: 70px
-      .list__title
-        margin: 0
-      .list__item
-        display: block
-      .list__item:nth-child(2)
-        margin-top: 10px
+      margin: 37px 0 0 102px
+    &__nav
+      margin: 37px 0 0 73px
+    &__logo
+      padding: 15px 34px 0 0
+  .nav
+    float: left 
+    width: 70px
+    &__title
+      margin: 0
+    &__item
+      width: 100%
+      display: block
+    &__item:nth-child(2)
+      margin: 10px 0 0 0
+    &__item:nth-child(3), &__item:nth-child(4), &__item:nth-child(5)
+      margin: 0
   .logo
-    padding: 14px 28px 0 0
     float: right
-    .logo__text
+    &__text
       margin-left: 30px
- 
+
 @media screen and (min-width: $mobyle_960px)
   //header
   .header
