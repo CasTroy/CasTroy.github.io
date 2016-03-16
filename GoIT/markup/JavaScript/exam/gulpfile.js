@@ -11,9 +11,7 @@ gulp.task('sass', function () {
     .pipe(rename("style.main.css"))
     .pipe(gulp.dest('src/css'));
 });
- 
-
-
 gulp.task('sass:watch', function () {
   gulp.watch('src/sass/style.sass', ['sass']);
 });
+
