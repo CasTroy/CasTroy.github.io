@@ -25,6 +25,7 @@
     background-repeat: no-repeat
     background-size: cover
   .wrapper
+    overflow: hidden
     &__log
       padding: 21px 0 0 45px
       margin: 0 auto
@@ -95,6 +96,7 @@
     margin: 0 auto
   //work
   .work
+    overflow: hidden
     &__title
       margin: 24px 2px 0 0px
     &__list
@@ -530,40 +532,30 @@
     float: right
     &__text
       margin-left: 30px
-
 @media screen and (min-width: $mobyle_960px)
   //header
   .header
     background-position: -250px 0
-    .wrapper
-      margin: 0 auto
-      width: 940px
-      &__log
-        width: 165px
-        padding: 0px
-        margin: 39px 0 0 0
-      &__name
-        margin: 47px 0 0 -2px
-        font-size: 20px
-      &__title
-        padding: 115px 0 0 0px
-        .title__holliday
-          padding: 0
-        .title__parther
-          margin-left: 0 
-  //main
-  .main
-    width: 920px
+  .wrapper
+    width: 960px
+    &__log
+      margin: 17px -27px
+    &__urlaub
+      margin: 46px 0 0 -1px
+    &__dreams
+      padding: 97px 16px 0 0px
+    &__button
+      margin: 38px 0 0 357px
   //work
   .work
+    width: 960px
     &__title
-      padding: 0
-      letter-spacing: 1px
-    &__list
-      width: 940px
-      .item
-        width: 300px
-        margin: 20px 30px 0 -10px
+      margin: 95px 25px 0 0px
+  .list
+    width: 960px
+    &__item
+      width: 300px
+      margin: 20px 20px 0 0px
   .step
     width: 300px
   .buground--first
@@ -582,75 +574,69 @@
   .owl-next
     left: 82%
   .content
-    top: 85px
+    top: 227px
     padding: 0 0 0 18px
   .content--nonstandard
-    top: 115px
+    top: 256px
+    left: 4px
     padding: 0 0 0 16px
-  //partners
+  //partners 
   .partners
-    width: 920px
+    width: 960px
     &__title
-      padding: 95px 0px 0
-    &__list
-      margin: 25px 0 0 0
-      list-style: none
+      margin: -1px 0 0 -14px
     &__other
-      padding: 4px 0 0 0
-      width: 193px
-    .item
-      margin: 5px 0 0 0
-    .item:nth-child(2)
-      margin: 5px 0 0 40px
-    .item:nth-child(3)
-      margin: 5px 0 0 40px
-    .item:nth-child(4)
-      margin: 5px 0 0 37px
-    .surcle--big
-      margin-left: 20%
-    .surcle--small
-      left: 124px
-      top: 87px
-    .info
-      margin: 15px 0 0 0px;
-      &__hobby
-        font-size: 14px
-        margin-top: 11px  
+      padding: 36px 0 0 67px
+  .humans
+    &__item:nth-child(1)
+      margin: 31px 0 0 1.1%
+    &__item:nth-child(2)
+      margin: 32px 0 0 4.1%
+    &__item:nth-child(3)
+      margin: 32px 0 0 4.2%
+    &__item:nth-child(4)
+      margin: 31px 0 0 4.1%
+  .button--empty
+    width: 193px
+    height: 40px
   //ideas
   .ideas
-    width: 940px
+    width: 960px
     &__title
-      margin: 96px 20px 33px 0
-    .grid
-      margin-left: -10px
-    .grid--item 
-      width: 300px
-      margin-right: 10px
-      margin-left: 0px
+      margin: 96px 30px 33px 0
+  .grid
+    width: 960px
+  .grid--item 
+    width: 300px
+    margin: 0 0 10px 0
   //search
   .search
-    width: 940px
-    .form__question
-      margin: 33px 0 0 10px
-    .form__edit
-      width: 220px
-      margin: 36px 0 0 29%
-    .form__imput
-      margin: 38px 0 0 10px
+    width: 960px
+    &__title
+      margin: 100px 0 0 -27px
+  .form
+    &__question
+      margin: 32px 0 0 -23px
+    &__edit
+      margin: 39px 0 0 264px
+    &__imput
+      margin: 40px 0 0 10px
+      width: 160px
   //footer
   .footer
-    &__wrapper
-      margin: 0 auto
-      width: 940px
-      .wrapper__title
-        margin: 35px 0 0 15px
-      .wrapper__list
-        margin: 35px 0 0 81px
-      .wrapper__subtitle
-        margin: 35px 0 0 91px
-    .logo
-      padding: 14px 0 0 0
-      margin: 10px -23px 0
+    margin: 100px 0 0 0
+  .wrapper
+    height: 100%
+    &__title
+      margin: 37px 0 0 -1px
+    &__subtitle
+      margin: 37px 0 0 91px
+    &__nav
+      margin: 37px 0 0 87px
+    &__logo
+      margin: 11px -20px 0
+
+
 
 @media screen and (min-width: $mobyle_1200px)
   //header
