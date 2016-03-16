@@ -55,6 +55,95 @@
 		padding: 10px 30px;
 		background-color: #ff4e50;
 	}	
-
-	
-	
+/*main*/
+	.main{
+		width: 100%;
+	}
+	/*work*/
+		.work{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.work__title{
+			margin: 100px 0 50px;
+		}
+		.title{
+			text-align: center;
+			color: #333;
+			font-size: 22px;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		.content{
+			width: 250px;
+			position: absolute;
+			top: 225px;
+			left: 20px;
+			z-index: 1;
+		}
+		.button--small{
+			padding: 3px 13px;
+			border: none;
+		}
+		.content__title{
+			margin-top: 15px;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.content__text{
+			margin-top: 15px;
+			font-size: 14px;
+			font-weight: 300;
+			color: #ccc;
+		}
+		.item{
+			width: 300px;
+			height: 400px;
+			float: left;
+			overflow: hidden;
+			margin-left: 20px;
+			position: relative;
+		}
+		.step{
+			overflow: hidden;
+		}
+		.buground--first{
+			margin: 0px 0 0 -180px;
+			width: 210% !important;
+		}
+		.buground--second{
+			margin: 0px 0 0 -180px;
+			width: 210% !important;
+		}
+		.buground--third{
+			margin: 0px 0 0 -180px;
+			width: 210% !important;
+		}
+		.owl-prev{
+			position: absolute;
+			top: 160px;
+			left: 20px;
+			z-index: 1;
+			width: 30px;
+			height: 55px;
+			background-image: url(../img/arrow.png);
+		}
+		.owl-next{
+			position: absolute;
+			top: 160px;
+			left: 240px;
+			z-index: 1;
+			width: 30px;
+			height: 55px;
+			background-image: url(../img/arrow2.png);
+		}
+	/*partners*/
+	.partners{
+		clear: both;
+		width: 960px;
+		margin: 0 auto;
+	}
+	.partners__title{
+		clear: both;
+		padding-top: 100px;
+	}

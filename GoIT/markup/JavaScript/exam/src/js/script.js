@@ -19,6 +19,7 @@ $(function(){
             }
         }
 	})
+    //ajax images
     $.ajax({
         url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
         success: function(data){
@@ -27,6 +28,9 @@ $(function(){
             var controller = new Controller(model, view);
         }
     })
+    //hide butoon of navigations
+        $('.owl-prev').html(' ');
+        $('.owl-next').html(' ');
 });
 
 
