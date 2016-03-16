@@ -138,12 +138,47 @@
 			background-image: url(../img/arrow2.png);
 		}
 	/*partners*/
-	.partners{
-		clear: both;
-		width: 960px;
-		margin: 0 auto;
-	}
-	.partners__title{
-		clear: both;
-		padding-top: 100px;
-	}
+		.partners{
+			clear: both;
+			width: 960px;
+			margin: 0 auto;
+		}
+		.partners__title{
+			clear: both;
+			padding: 100px 0 35px;
+		}
+		.humans__item{
+			width: 220px;
+			float:left;
+			margin-left: 20px;
+		}
+		.figure{
+			position: relative;
+		}
+		.surcle--big{
+			margin-left: 50px;
+		}
+		.surcle--small{
+			width: 20px;
+			height: 20px;
+			padding: 5px;
+			background-color:#ff4e50;
+			position: absolute;
+			top: 105px;
+			left: 155px;
+			z-index: 1;
+		}
+		.info__name{
+			margin-top: 23px;
+			text-align: center;
+			color: #333;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		.info__hobby{
+			margin-top: 17px;
+			text-align: center;
+			color: #666;
+			font-size: 14px;
+			font-weight: 300;
+		}
