@@ -32,11 +32,12 @@ $.ajax({
 });*/
 
 if(window.XDomainRequest) {
-    document.getElementById("lkn").setAttribute("href", "https://www.google.com.ua/?gws_rd=ssl"); 
+    
     
     // Use Microsoft XDR
     var xdr = new XDomainRequest();
     xdr.open("get", "http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m");
+    xdr.onload=xdrLoad;
    /* xdr.onload = function () {
     var JSON = $.parseJSON(xdr.responseText);
     if (JSON == null || typeof (JSON) == 'undefined')
@@ -56,7 +57,11 @@ if(window.XDomainRequest) {
 }
 
 
-
+function xdrLoad()
+{
+    var data=xdr.responseText;
+   document.getElementById("lkn").setAttribute("href", "https://www.google.com.ua/?gws_rd=ssl"); 
+}
 
 
 
