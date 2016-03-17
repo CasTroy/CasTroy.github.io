@@ -38,20 +38,6 @@ if(window.XDomainRequest) {
     var xdr = new XDomainRequest();
     xdr.open("get", "http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m");
     xdr.onload=xdrLoad;
-   /* xdr.onload = function () {
-    var JSON = $.parseJSON(xdr.responseText);
-    if (JSON == null || typeof (JSON) == 'undefined')
-    {
-        JSON = $.parseJSON(data.firstChild.textContent);
-    }
-    processData(JSON);
-    };
-    xdr.onprogress = function(){ };
-    xdr.ontimeout = function(){ };
-    xdr.onerror = function () { };
-    setTimeout(function(){
-        xdr.send();
-    }, 0);*/
 } else {
     alert(1)
 }
@@ -60,12 +46,13 @@ if(window.XDomainRequest) {
 function xdrLoad()
 {
    var data=xdr.responseText;
+
+
+
+
    document.getElementById("lkn").setAttribute("href", data.images[0].imageurl); 
+   
 }
-
-
-
-
   /*  //ajax images
     $.ajax({
         url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
