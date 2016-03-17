@@ -9,6 +9,10 @@
 		width: 960px;
 		height: 700px;
 		margin: 0 auto;
+		position: relative;
+	}
+	.wrapper__button{
+		position: absolute;
 	}
 	.log{
 		float: right;
@@ -54,6 +58,7 @@
 		text-decoration: none;
 		padding: 10px 30px;
 		background-color: #ff4e50;
+		z-index: 1;
 	}	
 /*main*/
 	.main{
@@ -147,10 +152,14 @@
 			clear: both;
 			padding: 100px 0 35px;
 		}
+		.humans{
+			width: 960px;
+		}
 		.humans__item{
-			width: 220px;
+			width: 200px;
 			float:left;
-			margin-left: 20px;
+			margin-left: 30px;
+			padding: 0;
 		}
 		.figure{
 			position: relative;
@@ -182,3 +191,71 @@
 			font-size: 14px;
 			font-weight: 300;
 		}
+		.other{
+			clear: both;
+			width: 190px;
+			margin: 0 auto;
+		}
+		.button--empty{
+			margin: 40px 0 0;
+			padding: 5px 15px;
+			font-size: 14px;
+			font-weight: 700;
+			background: none;
+			border: 2px solid red;
+			color: red;
+		}
+	/*ideas*/
+		.ideas{
+			width: 960px;
+			margin: 100px auto 0;
+		}
+		.ideas__title{
+			font-size: 22px;
+			font-weight: 700;
+		}
+		.grid{
+			background: green;
+		}
+		.grid--item { 
+			width: 300px;
+			margin:0;
+			float: left;
+			background: green;
+			margin-bottom: 10px;
+		 }
+		 .item--picture{
+		 	vertical-align: bottom;
+		    width: 100%;
+		 }
+	/*searche*/
+		.search{
+			width: 960px;
+			margin: 100px auto 0;	
+		}
+		.question{
+			text-align: center;
+			color: #666;
+			font-size: 18px;
+			font-weight: 300;
+		}
+		.form__question{
+			margin-top: 45px;
+		}	 
+		.edit{
+			width: 240px;
+			height: 40px;
+		}
+		.form{
+			width: 40%;
+			margin: 0 auto;
+			background: red;
+		}
+		.form__imput{
+			margin: 0px;
+			padding: 10px 0;
+		}
+		.lkn{
+			color: black;
+		}
+

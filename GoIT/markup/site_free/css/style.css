@@ -5,4 +5,8 @@
 	background: green;
 	margin-bottom: 10px
  }
+ .item--picture{
+ 	vertical-align: bottom;
+    width: 100%;
+ }
 .grid-item--width2 { width: 400px; }

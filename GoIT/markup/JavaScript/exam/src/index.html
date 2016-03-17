@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8">
 	<title>Exam</title>
 	<meta name="viewport" content="width=device-width">
+
 	<!--[if lt IE 10]>
 		<script type="text/javascript" src="js/html5shiv.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/ie8-style.css">
-		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<![endif]-->
 	<!--[if gt IE 9]>-->
 		<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
 	<!--<![endif]-->
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+		<script type="text/javascript" src="js/imagesloaded-v3.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.main.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/tmpl.js"></script>
-		<script type="text/javascript" src="js/imagesloaded.min.js"></script>
-		<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/masonry-v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.xdomainrequest.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -35,11 +37,15 @@
 					<h2 class = "dreams__holliday montserrat-regular">Share your holiday dreams</h2>
 					<h3 class = "dreams__parther roboto-light">And find the perfect partner to fullfill it</h3>
 				</hgroup>
-				<a href="#search" class = "wrapper__button button button--big montserrat-regular">Find your holiday partner</a>
+				<a href="#" class = "wrapper__button button button--big montserrat-regular" id = "lkn">Find your holiday partner</a>
+			
+				<!--#search-->
 			</div>	
 		</header>
+
 	<!--main-->	
 		<main class = "main">
+
 		<!--work-->
 			<section class = "work">
 				<h2 class = "work__title title montserrat-regular">How Urlaubsglück works?</h2>
@@ -217,7 +223,7 @@
 		<!--ideas-->	
 			<section class = "ideas">
 				<h2 class = "ideas__title title montserrat-regular">Discover holiday activity ideas</h2>
-				<script type ="text/template" id = "template">
+				<script type="text/template" id="template">
 					<div class = "grid" id = "gallery">
 						<%for(var index in data){%>
 							<div class="grid--item">
