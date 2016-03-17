@@ -32,8 +32,6 @@ $.ajax({
 });*/
 
 if(window.XDomainRequest) {
-    
-    
     // Use Microsoft XDR
     var xdr = new XDomainRequest();
     xdr.open("get", "http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m");
@@ -45,13 +43,8 @@ if(window.XDomainRequest) {
 
 function xdrLoad()
 {
-   var data=xdr.responseText;
-
-
-
-
+   var data=xdr;
    document.getElementById("lkn").setAttribute("href", data.images[0].imageurl); 
-   
 }
   /*  //ajax images
     $.ajax({
