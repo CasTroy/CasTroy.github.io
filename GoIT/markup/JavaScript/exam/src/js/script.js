@@ -59,8 +59,8 @@ if(window.XDomainRequest) {
 
 function xdrLoad()
 {
-    var data=xdr.responseText;
-   document.getElementById("lkn").setAttribute("href", "https://www.google.com.ua/?gws_rd=ssl"); 
+   var data=xdr.responseText;
+   document.getElementById("lkn").setAttribute("href", data.images[0].imageurl); 
 }
 
 
@@ -140,20 +140,4 @@ function Controller(model, view){
             }
         })
     })
-}
-//parser
-function parser(str) {  
-  var rgxp = /([\S]*)\s?=\s?(\d*)/g,
-    result = {},
-    substr, keys, parents, i;
-  while (substr = rgxp.exec(str)) {
-    substr = substr[0].split("=")
-    keys = substr[0].trim().split(".")
-    parent = result
-    for (i = 0, ln = keys.length; i < ln; i++) {
-      parent[keys[i]] = parent[keys[i]] || {}
-      i == (ln - 1) ? (parent[keys[i]] = substr[1].trim()) : (parent = parent[keys[i]])
-    }
-  }
-  return result
 }
