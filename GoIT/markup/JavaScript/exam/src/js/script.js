@@ -30,23 +30,40 @@ $.ajax({
     }).done(function(data) {
        document.getElementById("lkn").setAttribute("href", "https://www.google.com.ua/?gws_rd=ssl"); 
 });*/
+    
+    
+    var xmlhttp = getXmlHttp()
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+    xmlhttp.send(null);
+    var obj = eval('('+xmlhttp.responseText+')')
+    if(xmlhttp.status == 200) {
+      var model = new Model(obj);
+      var view = new View(model);
+      var controller = new Controller(model, view);
+    }
 
+/*
 if(window.XDomainRequest) {
-    // Use Microsoft XDR
-    var xdr = new XDomainRequest();
-    xdr.open("get", "http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m");
-    xdr.onload=xdrLoad;
+    if(xmlhttp.status == 200) {
+      var model = new Model(obj);
+      var view = new View(model);
+      var controller = new Controller(model, view);
+    }
 } else {
-    alert(1)
+    if(xmlhttp.status == 200) {
+        console.log(obj);
+        var model = new Model(obj);
+        var view = new View(model);
+        var controller = new Controller(model, view);
+    }
+
 }
 
 
-function xdrLoad()
-{
-   var data=xdr;
-   document.getElementById("lkn").setAttribute("href", data.images[0].imageurl); 
-}
-  /*  //ajax images
+
+
+/*
+   //ajax images
     $.ajax({
         url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
         success: function(data){
@@ -57,8 +74,8 @@ function xdrLoad()
 
 
 
-    })
-*/
+    })*/
+
     
 
 
@@ -112,12 +129,39 @@ function Controller(model, view){
         event.preventDefault();
         var text = $('#edit').val();
         $('.grid').remove();
-        $.ajax({
+        /*$.ajax({
             url: 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m',
             success: function(data){
                 model.init(data);
                 view.renderList();
             }
+        })*/
+
+        var xmlhttp = getXmlHttp()
+        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', false);
+        xmlhttp.send(null);
+        var obj = eval('('+xmlhttp.responseText+')')
+        if(xmlhttp.status == 200) {
+                var model = new Model(obj);
+                var view = new View(model);
+                var controller = new Controller(model, view);
+            }
         })
-    })
+}
+
+function getXmlHttp(){
+  var xmlhttp;
+  try {
+    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  } catch (e) {
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (E) {
+      xmlhttp = false;
+    }
+  }
+  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+    xmlhttp = new XMLHttpRequest();
+  }
+  return xmlhttp;
 }

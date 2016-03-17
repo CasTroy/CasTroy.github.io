@@ -214,14 +214,10 @@
 			font-size: 22px;
 			font-weight: 700;
 		}
-		.grid{
-			background: green;
-		}
 		.grid--item { 
 			width: 300px;
 			margin:0;
 			float: left;
-			background: green;
 			margin-bottom: 10px;
 		 }
 		 .item--picture{
@@ -254,8 +250,5 @@
 		.form__imput{
 			margin: 0px;
 			padding: 10px 0;
-		}
-		.lkn{
-			color: black;
 		}
 
