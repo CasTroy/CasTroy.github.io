@@ -18,22 +18,13 @@ $(function(){
         }
 	})
 
-
-
-/*
-$.ajax({
-    url: 'https://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
-    data: 'this is data being posted to the server',
-    contentType: 'text/plain',
-    type: 'POST',
-    dataType: 'json'
-    }).done(function(data) {
-       document.getElementById("lkn").setAttribute("href", "https://www.google.com.ua/?gws_rd=ssl"); 
-});*/
     
-    
+    //ajax
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+    if(window.XDomainRequest) 
+        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+    else
+        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
     xmlhttp.send(null);
     var obj = eval('('+xmlhttp.responseText+')')
     if(xmlhttp.status == 200) {
@@ -41,42 +32,6 @@ $.ajax({
       var view = new View(model);
       var controller = new Controller(model, view);
     }
-
-/*
-if(window.XDomainRequest) {
-    if(xmlhttp.status == 200) {
-      var model = new Model(obj);
-      var view = new View(model);
-      var controller = new Controller(model, view);
-    }
-} else {
-    if(xmlhttp.status == 200) {
-        console.log(obj);
-        var model = new Model(obj);
-        var view = new View(model);
-        var controller = new Controller(model, view);
-    }
-
-}
-
-
-
-
-/*
-   //ajax images
-    $.ajax({
-        url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
-        success: function(data){
-            var model = new Model(data);
-            var view = new View(model);
-            var controller = new Controller(model, view);
-        }
-
-
-
-    })*/
-
-    
 
 
     //hide butoon of navigations
@@ -129,13 +84,6 @@ function Controller(model, view){
         event.preventDefault();
         var text = $('#edit').val();
         $('.grid').remove();
-        /*$.ajax({
-            url: 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m',
-            success: function(data){
-                model.init(data);
-                view.renderList();
-            }
-        })*/
 
         var xmlhttp = getXmlHttp()
         xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', false);
