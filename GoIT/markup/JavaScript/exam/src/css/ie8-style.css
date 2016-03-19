@@ -157,7 +157,7 @@
 			z-index: 1;
 			width: 30px;
 			height: 55px;
-			background-image: url(../img/arrow.png);
+			background-image: url(../img/sprite.png);
 		}
 		.owl-next{
 			position: absolute;
@@ -166,7 +166,8 @@
 			z-index: 1;
 			width: 30px;
 			height: 55px;
-			background-image: url(../img/arrow2.png);
+			background-image: url(../img/sprite.png);
+    		background-position: -50px 0px;
 		}
 	/*partners*/
 		.partners{
@@ -193,17 +194,7 @@
 		.surcle--big{
 			margin-left: 50px;
 		}
-		.surcle--small{
-			border: 2px solid white;
-			width: 20px;
-			height: 20px;
-			padding: 5px;
-			background-color:#ff4e50;
-			position: absolute;
-			top: 100px;
-			left: 150px;
-			z-index: 1;
-		}
+		
 		.info__name{
 			margin-top: 23px;
 			text-align: center;
@@ -231,6 +222,46 @@
 			background: none;
 			border: 2px solid red;
 			color: red;
+		}
+		.surcle--small{
+			border: 2px solid white;
+			width: 20px;
+			height: 20px;
+			padding: 5px;
+			position: absolute;
+			top: 100px;
+			left: 150px;
+			z-index: 1;
+		}
+		.icon-tv{
+			background-color:#ff4e50;
+		    background-image: url(../img/sprite.png);
+		    background-position: 6px -71px;
+		}
+	    
+		.icon-coffe {
+			background-image: url(../img/sprite.png);
+			background-position: -138px 4px;
+			background-color: #1cd7ad;
+		}
+		
+		.icon-botl{
+			background-image: url(../img/sprite.png);
+			background-position: -137px -31px;
+			background-color: #ffa507;
+		}
+		
+		.icon-air {
+			background-image: url(../img/sprite.png);
+			background-position: -31px -69px;
+			background-color: #4e73db;
+		}
+		
+		.icon-logo{
+			background-image: url(../img/sprite.png);
+			background-position: -100px 0px;
+			width: 25px;
+			height: 25px;
 		}
 	/*ideas*/
 		.ideas{
