@@ -24,9 +24,6 @@ requirejs.config({
 		}
 	}
 });
-
-
-
 require(
 	[
 		'jquery',
@@ -50,7 +47,6 @@ require(
 	            }
 	        }
 		})
-
 		function getXmlHttp(){
 		  var xmlhttp;
 		  try {
@@ -80,8 +76,6 @@ require(
 	      var view = new view(model);
 	      var controller = new controller(model, view);
 	    }
-
-
 	    //hide butoon of navigations
         $('.owl-prev').html(' ');
         $('.owl-next').html(' ');
