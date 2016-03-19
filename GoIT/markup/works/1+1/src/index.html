@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/assets/owl.theme.green.min.css">
+	<script src="js/jquery-2.2.1.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<section class = "container">
+<!--navigation-->
+	<nav class = "nav">
+		<ul class = "menu">
+			<li class = "menu__item">
+				<img src="img/list.png" alt="list" class ="menu__img">
+				<h2 class = "menu__text text" class ="menu__text">МЕНЮ</h2>
+				<ul class = "submenu">
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 1</a></li>
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 2</a></li>
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 3</a></li>
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 4</a></li>
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 5</a></li>
+					<li class = "submenu__item"><a href="#" class = "text link">МЕНЮ 6</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav>
+<!--slider-->
+	<div class="owl-carousel owl-theme">
+	    <div class="item">
+		    	<ul class = "list">
+		    		<li class = "list__item wrapper">
+						<script type="text/template" id = "template0">
+							<figure class = "figure">
+				    			<div class = "figure__bg">
+				    				<img src="<%=objects[0].imageurl%>" alt="" class = "image">
+				    			</div>
+				    			<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index index--bg"><%=objects[0].index%></a>
+			    					<h2 class = "content__title title text"><%= objects[0].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%= objects[0].subtitle%></h3>
+			    				</figcaption>
+				    		</figure>
+						</script>	    		
+		    		</li>
+		    		<li class = "list__item wrapper">
+		    			<script type="text/template" id ="template1">
+							<figure class = "figure">
+				    			<div class = "figure__bg">
+				    				<img src="<%=objects[1].imageurl%>" alt="" class = "image">
+				    			</div>
+				    			<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=objects[1].index%></a>
+			    					<h2 class = "content__title title text"><%= objects[1].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%= objects[1].subtitle%></h3>
+			    				</figcaption>
+				    		</figure>
+						</script>
+		    		</li>
+		    	</ul>
+		
+	    </div>
+	    <div class="item"><h4 class = "text">2</h4></div>
+	    <div class="item"><h4 class = "text">3</h4></div>
+	    <div class="item"><h4 class = "text">5</h4></div>
+	    <div class="item"><h4 class = "text">4</h4></div>
+	    <div class="item"><h4 class = "text">6</h4></div>
+	</div>
+	
+</section>
+</body>
+</html>

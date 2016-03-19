@@ -1,0 +1,104 @@
+@import variables
+*
+  margin: 0
+  padding: 0
+  list-style: none;
+  text-decoration: none;
+body
+  background-color:#000000
+
+.container
+  margin: 25px
+//navugation
+.nav
+  position: relative
+.menu
+  width: 200px;
+  position: absolute
+  z-index: 2
+  &__img
+    float: left
+  &__text
+    float: left
+    margin-left: 20px
+  &__item
+    cursor: pointer
+    top: 0px
+    height: 25px
+    overflow: hidden
+    transition: 1s
+  &__item:hover
+    height: 250px
+.submenu
+  clear: both
+  margin: 40px 0 0 47px;
+  &__item
+    margin: 10px 0 0 0
+.link:hover
+  color: gold
+.text
+  color: white
+  font-family: exo-regular
+  font-size: 30px
+  font-weight: 400
+  line-height: 21px
+//slider
+.owl-carousel
+  padding-top: 30px
+.item
+  width: 1920px
+.list
+  &__item
+    float: left
+  &__item:nth-child(1)
+    width: $width_big
+    height: $width_big
+    margin: 0 20px 20px 0
+    .figure
+      &__content
+        top: 80%
+      .index--bg
+        background: #db322e
+      &__bg
+        border-bottom: 2px solid red
+  &__item:nth-child(2)
+    clear: both
+    width: $width_big
+    height: $width_small
+    margin-right: 20px
+    .figure
+      &__content
+        top: 60%
+
+.figure
+  border: 2px solid black
+  width: 100%;
+  height: 100%;
+  position: relative
+  &__content
+    position: absolute
+    left: 15px
+.figure:hover 
+  cursor: pointer
+  box-shadow: inset 0px 0px 16px 0px #24a6f2;
+  border: 2px solid #24a6f2
+.figure:hover .figure__bg
+  border: none
+.content
+  &__title
+    margin: 15px 0 0 0
+  &__subtitle
+    margin: 10px 0 0 0
+.index
+  font-size: 20px
+  padding: 5px
+  display: inline-block
+  text-transform: uppercase
+.title
+  font-size: 24px
+  text-transform: uppercase
+  font-weight: 900
+.subtitle
+  font-size: 20px
+  font-weight: 300
+
