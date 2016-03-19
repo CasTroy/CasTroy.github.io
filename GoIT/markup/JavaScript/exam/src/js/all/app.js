@@ -18,6 +18,7 @@ requirejs.config({
 			exports: 'carousel'
 		},
 		'imagesloaded': {
+			deps: ['jquery'],
 			exports: 'imagesloaded'
 		},
 		'masonry': {
