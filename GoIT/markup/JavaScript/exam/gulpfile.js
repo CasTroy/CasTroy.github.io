@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('src/img/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('src/img/sprites/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css',
     padding: 20
