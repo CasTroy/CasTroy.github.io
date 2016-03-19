@@ -4,13 +4,23 @@ var gulp = require('gulp'),
 	minifyCSS = require('gulp-minify-css'),
 	watch = require('gulp-watch'),
  	uglify = require('gulp-uglify'),
- 	concat = require('gulp-concat');
+ 	concat = require('gulp-concat'),
+    spritesmith = require('gulp.spritesmith');
 
 gulp.task('sass', function () {
   return gulp.src('src/sass/style.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(rename("style.main.css"))
     .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css',
+    padding: 20
+  }));
+  return spriteData.pipe(gulp.dest('src/img'));
 });
 
 
