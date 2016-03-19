@@ -1,6 +1,6 @@
 requirejs.config({
 	paths: {
-		'jquery': 'jquery-2.2.1',
+		'jquery': 'jquery-1.12.2.min',
 		'tmpl': 'tmpl',
 		'carousel' : 'owl.carousel.min',
 		'imagesloaded' : 'imagesloaded-v3.min',
@@ -39,8 +39,6 @@ require(
 		'controller'
 	],
 	function ($, tmpl, carousel, imagesloaded, masonry, model, view, controller){
-		
-
 		//couresel
 		$('.owl-carousel').owlCarousel({
 	        loop:true,
