@@ -14,6 +14,7 @@ requirejs.config({
 			exports: 'tmpl'
 		},
 		'carousel': {
+			deps: ['jquery'],
 			exports: 'carousel'
 		},
 		'imagesloaded': {
