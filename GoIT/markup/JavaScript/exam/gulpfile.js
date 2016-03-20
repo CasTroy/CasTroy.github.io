@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
  	uglify = require('gulp-uglify'),
  	concat = require('gulp-concat'),
-    spritesmith = require('gulp.spritesmith');
+  spritesmith = require('gulp.spritesmith');
 
 gulp.task('sass', function () {
   return gulp.src('src/sass/style.sass')
