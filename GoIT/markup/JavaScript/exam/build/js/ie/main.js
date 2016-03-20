@@ -11,14 +11,13 @@ $(function(){
             }
         }
 	})
-
+    //hide butoon of navigations
+        $('.owl-prev').html(' ');
+        $('.owl-next').html(' ');
     
     //ajax
     var xmlhttp = getXmlHttp()
-    if(window.XDomainRequest) 
-        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
-    else
-        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
     xmlhttp.send(null);
     var obj = eval('('+xmlhttp.responseText+')')
     if(xmlhttp.status == 200) {
@@ -26,11 +25,6 @@ $(function(){
       var view = new View(model);
       var controller = new Controller(model, view);
     }
-
-
-    //hide butoon of navigations
-        $('.owl-prev').html(' ');
-        $('.owl-next').html(' ');
 });
 
 
