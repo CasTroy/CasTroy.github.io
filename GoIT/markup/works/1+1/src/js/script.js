@@ -1,26 +1,74 @@
 'use strict'
 
 
-var objects =[{
+var firsts =[{
 		imageurl	: 'img/movies/vs.jpg',
 		index		: 'нові серії',
 		title		: 'величне століття',
 		subtitle	: 'Сезон 7, серия 423'
 	},
 	{
-		imageurl	: 'img/movies/vs.jpg',
-		index		: 'нові жопы',
-		title		: 'величне століття',
-		subtitle	: 'Сезон 7, серия 423'
-	}]
+		imageurl	: 'img/movies/field.jpg',
+		index		: '',
+		title		: 'ceвiлiя / днiпро',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/paris.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/bvb.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	{
+		imageurl	: 'img/movies/euro.jpg',
+		index		: '',
+		title		: 'на зустріч торнадо',
+		subtitle	: 'Документальне кіно'
+	},
+	{
+		imageurl	: 'img/movies/paris.jpg',
+		index		: '',
+		title		: 'байер / іскра',
+		subtitle	: 'Єврокубок'
+	},
+	]
 
-
-var object = {
-	imageurl	: 'img/movies/vs.jpg',
-	index		: 'нові серії',
-	title		: 'величне століття',
-	subtitle	: 'Сезон 7, серия 423'
-}
 
 
 $(function(){
@@ -32,26 +80,12 @@ $(function(){
 	})
 
 
+	var wrapper = tmpl($('#template').html(), {data: firsts});
+	$('.first').append(wrapper)
+    
 
-	
-    //$('.wrapper').append(wrapper)
-    $('.wrapper').each(function (i) {
-    	/*var str = '#template'+i
-    	var wrapper = tmpl($(str).html(), {data: objects});
-    	//this.append(wrapper)
-    	this.appendChild(wrapper);*/
-    	console.log(this)
-    })
 
-   /* $(document.body).click(function () {
-      $("div").each(function (i) {
-        if (this.style.color != "blue") {
-          this.style.color = "blue";
-        } else {
-          this.style.color = "";
-        }
-      });
-    });*/
+
 });
 
 

@@ -31,41 +31,34 @@
 				</ul>
 			</li>	
 		</ul>
+		<div class = "searche">
+			<form action="" class = "searche__form">
+				<img src="img/searche.png" alt="" class = "magnifier">
+				<input type="text" placeholder="ПОШУК" class = "text input">
+			</form>
+		</div>
 	</nav>
 <!--slider-->
 	<div class="owl-carousel owl-theme">
-	    <div class="item">
+	    <div class="item first">
+			<script type="text/template" id = "template">
 		    	<ul class = "list">
-		    		<li class = "list__item wrapper">
-						<script type="text/template" id = "template0">
-							<figure class = "figure">
-				    			<div class = "figure__bg">
-				    				<img src="<%=objects[0].imageurl%>" alt="" class = "image">
-				    			</div>
-				    			<figcaption class = "figure__content content">
-			    					<a href = "" class = "text index index--bg"><%=objects[0].index%></a>
-			    					<h2 class = "content__title title text"><%= objects[0].title%></h2>
-			    					<h3 class = "content__subtitle subtitle text"><%= objects[0].subtitle%></h3>
+		    		<%for(var index in firsts){%>
+		    			<li class = "list__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=firsts[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=firsts[index].index%></a>
+			    					<h2 class = "content__title title text"><%=firsts[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=firsts[index].subtitle%></h3>
 			    				</figcaption>
-				    		</figure>
-						</script>	    		
-		    		</li>
-		    		<li class = "list__item wrapper">
-		    			<script type="text/template" id ="template1">
-							<figure class = "figure">
-				    			<div class = "figure__bg">
-				    				<img src="<%=objects[1].imageurl%>" alt="" class = "image">
-				    			</div>
-				    			<figcaption class = "figure__content content">
-			    					<a href = "" class = "text index"><%=objects[1].index%></a>
-			    					<h2 class = "content__title title text"><%= objects[1].title%></h2>
-			    					<h3 class = "content__subtitle subtitle text"><%= objects[1].subtitle%></h3>
-			    				</figcaption>
-				    		</figure>
-						</script>
-		    		</li>
+		    				</figure>
+		    			</li>
+		    		<%}%>
 		    	</ul>
-		
+			</script> 
 	    </div>
 	    <div class="item"><h4 class = "text">2</h4></div>
 	    <div class="item"><h4 class = "text">3</h4></div>
@@ -73,7 +66,34 @@
 	    <div class="item"><h4 class = "text">4</h4></div>
 	    <div class="item"><h4 class = "text">6</h4></div>
 	</div>
-	
+	<nav class = "navigation">
+		<ul class = "listnav">
+			<li class = "listnav__item">
+				<figure class = "element">
+					<img src="img/Ellipse1.png" alt="Ellipse" class = "element__img">
+					<figcaption class = "element__text text ">меню</figcaption>
+				</figure>
+			</li>
+			<li class = "listnav__item">
+				<figure class = "element">
+					<img src="img/Ellipse2.png" alt="Ellipse" class = "element__img">
+					<figcaption class = "element__text text ">назад</figcaption>
+				</figure>
+			</li>
+			<li class = "listnav__item">
+				<figure class = "element">
+					<img src="img/Ellipse3.png" alt="Ellipse" class = "element__img">
+					<figcaption class = "element__text text ">Далі</figcaption>
+				</figure>
+			</li>
+			<li class = "listnav__item">
+				<figure class = "element">
+					<img src="img/Ellipse4.png" alt="Ellipse" class = "element__img">
+					<figcaption class = "element__text text ">Пошук</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</nav>
 </section>
 </body>
 </html>

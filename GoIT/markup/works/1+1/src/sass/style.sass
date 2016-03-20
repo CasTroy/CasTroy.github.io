@@ -42,33 +42,141 @@ body
   font-size: 30px
   font-weight: 400
   line-height: 21px
-//slider
-.owl-carousel
-  padding-top: 30px
+.nav
+  height: 40px
 .item
-  width: 1920px
+  width: 1920px 
+  height: 934px
 .list
+  position: relative
   &__item
-    float: left
+    position: absolute
   &__item:nth-child(1)
-    width: $width_big
-    height: $width_big
-    margin: 0 20px 20px 0
+    width: $size_big
+    height: $size_big
     .figure
       &__content
-        top: 80%
-      .index--bg
-        background: #db322e
+        top: $top_big
+        .index
+          background-color: #db322e
       &__bg
-        border-bottom: 2px solid red
+        border-bottom: 2px solid $red
   &__item:nth-child(2)
-    clear: both
-    width: $width_big
-    height: $width_small
-    margin-right: 20px
+    top: $mSize2
+    width: $size_big
+    height: $size_small
     .figure
       &__content
-        top: 60%
+        top: $top_small
+      &__bg
+        width: 100%
+        height: 98.5%
+        border-bottom: 2px solid $yellow
+  &__item:nth-child(3)
+    left: $mSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $red
+  &__item:nth-child(4)
+    top: $sSize
+    left: $mSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $purple
+  &__item:nth-child(5)
+    top: $mSize
+    left: $mSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $blue
+  &__item:nth-child(6)
+    left: $lSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $purple
+  &__item:nth-child(7)
+    top: $sSize
+    left: $lSize
+    width: $size_small
+    height: $size_big
+    .figure
+      &__content
+        top: $top_big
+      &__bg
+        border-bottom: 2px solid $red
+  &__item:nth-child(8)
+    left: $bSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $red
+  &__item:nth-child(9)
+    top: $sSize 
+    left: $bSize
+    width: $size_small
+    height: $size_small
+    .figure
+      &__content
+        top: $top_small
+      &__bg
+        border-bottom: 2px solid $yellow
+  &__item:nth-child(10)
+    top: $mSize 
+    left: $bSize
+    width: $size_big
+    height: $size_small
+    .figure
+      &__content
+        top: $tCenter
+        left: $lCenter
+      &__bg
+        border-bottom: 2px solid $blue
+  &__item:nth-child(11)
+    left: $superSize
+    width: $size_small
+    height: $size_big
+    .figure
+      &__content
+        top: $top_big
+      &__bg
+        border-bottom: 2px solid $purple
+
+
+.searche
+  float: right
+.magnifier
+  float: right
+.input
+  width: 120px
+  background: none
+  border: none
+.input:focus
+  outline: none
+.input::-webkit-input-placeholder 
+  color: white
+  
+.image
+  width: 100%
+  height: 100%
 
 .figure
   border: 2px solid black
@@ -101,4 +209,34 @@ body
 .subtitle
   font-size: 20px
   font-weight: 300
+
+//controls
+.owl-dots
+  float: right
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+  background: gold !important
+  border-radius: 0px
+.owl-theme .owl-dots .owl-dot span
+  border-radius: 0px !important
+//footer
+.navigation
+  width: 550px
+  margin: 0 auto
+.listnav
+  &__item
+    float: left
+    margin-right: 40px
+.element
+  &__img
+    float: left
+  &__text
+    float: right
+    font-size: 16px
+    font-weight: 400
+    line-height: 12px
+    padding: 4px
+    text-transform: uppercase
+.element:hover
+  cursor: pointer
+
 
