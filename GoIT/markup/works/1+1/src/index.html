@@ -81,7 +81,26 @@
 		    	</ul>
 			</script> 
 	    </div>
-	    <div class="item"><h4 class = "text">3</h4></div>
+	    <div class="item item--third">
+	    	<script type="text/template" id = "page_3">
+		    	<ul class = "list list--third">
+		    		<%for(var index in firsts){%>
+		    			<li class = "list--third__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=third[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=third[index].index%></a>
+			    					<h2 class = "content__title title text"><%=third[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=third[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script> 
+	    </div>
 	    <div class="item"><h4 class = "text">5</h4></div>
 	    <div class="item"><h4 class = "text">4</h4></div>
 	    <div class="item"><h4 class = "text">6</h4></div>

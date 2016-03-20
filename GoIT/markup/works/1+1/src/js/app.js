@@ -38,8 +38,10 @@ require(
 
 	var wrapper = tmpl($('#page_1').html(), {data: firsts});
 	$('.item--first').append(wrapper);
-	var wrap = tmpl($('#page_2').html(), {data: second});
-	$('.item--second').append(wrap)
+	wrapper = tmpl($('#page_2').html(), {data: second});
+	$('.item--second').append(wrapper)
+	wrapper = tmpl($('#page_3').html(), {data: third});
+	$('.item--third').append(wrapper)
 
 
 	}
