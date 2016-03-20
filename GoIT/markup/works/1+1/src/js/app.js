@@ -39,10 +39,15 @@ require(
 	var wrapper = tmpl($('#page_1').html(), {data: firsts});
 	$('.item--first').append(wrapper);
 	wrapper = tmpl($('#page_2').html(), {data: second});
-	$('.item--second').append(wrapper)
+	$('.item--second').append(wrapper);
 	wrapper = tmpl($('#page_3').html(), {data: third});
-	$('.item--third').append(wrapper)
-
+	$('.item--third').append(wrapper);
+	wrapper = tmpl($('#page_4').html(), {data: fourth});
+	$('.item--fourth').append(wrapper);
+	wrapper = tmpl($('#page_5').html(), {data: fifth});
+	$('.item--fifth').append(wrapper);
+	wrapper = tmpl($('#page_6').html(), {data: sixth});
+	$('.item--sixth').append(wrapper);
 
 	}
 );

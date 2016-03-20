@@ -33,11 +33,11 @@
 	</nav>
 <!--slider-->
 	<div class="owl-carousel owl-theme">
-	    <div class="item first">
-			<script type="text/template" id = "template">
-		    	<ul class = "list">
+	    <div class="item item--first">
+			<script type="text/template" id = "page_1">
+		    	<ul class = "list list--first">
 		    		<%for(var index in firsts){%>
-		    			<li class = "list__item">
+		    			<li class = "list--first__item">
 		    				<figure class = "figure">
 		    					<div class = "figure__bg">
 			    					<img src="<%=firsts[index].imageurl%>" alt="" class = "image">
@@ -53,11 +53,105 @@
 		    	</ul>
 			</script> 
 	    </div>
-	    <div class="item"><h4 class = "text">2</h4></div>
-	    <div class="item"><h4 class = "text">3</h4></div>
-	    <div class="item"><h4 class = "text">5</h4></div>
-	    <div class="item"><h4 class = "text">4</h4></div>
-	    <div class="item"><h4 class = "text">6</h4></div>
+	    <div class="item item--second">
+			<script type="text/template" id = "page_2">
+		    	<ul class = "list list--second">
+		    		<%for(var index in second){%>
+		    			<li class = "list--second__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=second[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=second[index].index%></a>
+			    					<h2 class = "content__title title text"><%=second[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=second[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+	    </div>
+	    <div class="item item--third">
+	    	<script type="text/template" id = "page_3">
+		    	<ul class = "list list--third">
+		    		<%for(var index in third){%>
+		    			<li class = "list--third__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=third[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=third[index].index%></a>
+			    					<h2 class = "content__title title text"><%=third[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=third[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script> 
+	    </div>
+	    <div class="item item--fourth">
+	    	<script type="text/template" id = "page_4">
+		    	<ul class = "list list--fourth">
+		    		<%for(var index in fourth){%>
+		    			<li class = "list--fourth__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=fourth[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=fourth[index].index%></a>
+			    					<h2 class = "content__title title text"><%=fourth[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=fourth[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script>
+	    </div>
+	    <div class="item item--fifth">	
+			<script type="text/template" id = "page_5">
+		    	<ul class = "list list--fifth">
+		    		<%for(var index in fifth){%>
+		    			<li class = "list--fifth__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=fifth[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=fifth[index].index%></a>
+			    					<h2 class = "content__title title text"><%=fifth[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=fifth[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script>
+	    </div>
+	    <div class="item item--sixth">
+	    	<script type="text/template" id = "page_6">
+		    	<ul class = "list list--sixth">
+		    		<%for(var index in sixth){%>
+		    			<li class = "list--sixth__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=sixth[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=sixth[index].index%></a>
+			    					<h2 class = "content__title title text"><%=sixth[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=sixth[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script>
+	    </div>
 	</div>
 <!--bottom navigation-->	
 	<nav class = "navigation">
