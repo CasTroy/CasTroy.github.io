@@ -3,7 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>	
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/style.min.css">-->
+	
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.green.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
 	<script data-main = "js/app" src = "js/require.js"></script>
 </head>
 <body>
@@ -33,11 +41,11 @@
 	</nav>
 <!--slider-->
 	<div class="owl-carousel owl-theme">
-	    <div class="item first">
-			<script type="text/template" id = "template">
-		    	<ul class = "list">
+	    <div class="item item--first">
+			<script type="text/template" id = "page_1">
+		    	<ul class = "list list--first">
 		    		<%for(var index in firsts){%>
-		    			<li class = "list__item">
+		    			<li class = "list--first__item">
 		    				<figure class = "figure">
 		    					<div class = "figure__bg">
 			    					<img src="<%=firsts[index].imageurl%>" alt="" class = "image">
@@ -53,7 +61,26 @@
 		    	</ul>
 			</script> 
 	    </div>
-	    <div class="item"><h4 class = "text">2</h4></div>
+	    <div class="item item--second">
+			<script type="text/template" id = "page_2">
+		    	<ul class = "list list--second">
+		    		<%for(var index in firsts){%>
+		    			<li class = "list--second__item">
+		    				<figure class = "figure">
+		    					<div class = "figure__bg">
+			    					<img src="<%=second[index].imageurl%>" alt="" class = "image">
+			    				</div>
+			    				<figcaption class = "figure__content content">
+			    					<a href = "" class = "text index"><%=second[index].index%></a>
+			    					<h2 class = "content__title title text"><%=second[index].title%></h2>
+			    					<h3 class = "content__subtitle subtitle text"><%=second[index].subtitle%></h3>
+			    				</figcaption>
+		    				</figure>
+		    			</li>
+		    		<%}%>
+		    	</ul>
+			</script> 
+	    </div>
 	    <div class="item"><h4 class = "text">3</h4></div>
 	    <div class="item"><h4 class = "text">5</h4></div>
 	    <div class="item"><h4 class = "text">4</h4></div>

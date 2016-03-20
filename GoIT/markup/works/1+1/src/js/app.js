@@ -35,7 +35,12 @@ require(
 		    autoWidth:true,
 		    items:1
 		})
-		var wrapper = tmpl($('#template').html(), {data: firsts});
-		$('.first').append(wrapper)
+
+	var wrapper = tmpl($('#page_1').html(), {data: firsts});
+	$('.item--first').append(wrapper);
+	var wrap = tmpl($('#page_2').html(), {data: second});
+	$('.item--second').append(wrap)
+
+
 	}
 );
