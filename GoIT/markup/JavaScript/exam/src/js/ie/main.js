@@ -27,7 +27,7 @@ $(function(){
     }*/
 
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'https://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
+    xmlhttp.open('GET', 'http://github.com/proxy/api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {
@@ -103,7 +103,7 @@ function Controller(model, view){
         
 
         var xmlhttp = getXmlHttp()
-        xmlhttp.open('GET', 'https://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', true);
+        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', true);
         xmlhttp.onreadystatechange = function() {
           if (xmlhttp.readyState == 4) {
              if(xmlhttp.status == 200) {
