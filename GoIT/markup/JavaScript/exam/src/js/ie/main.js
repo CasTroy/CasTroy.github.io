@@ -27,7 +27,7 @@ $(function(){
     }*/
 
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://github.com/proxy/api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
+    xmlhttp.open('GET', 'https://github.com/proxy/api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {
