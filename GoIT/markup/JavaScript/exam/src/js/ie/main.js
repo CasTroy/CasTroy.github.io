@@ -17,39 +17,30 @@ $(function(){
     
     //ajax
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
+   /* xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
     xmlhttp.send(null);
     var obj = eval('('+xmlhttp.responseText+')')
     if(xmlhttp.status == 200) {
       var model = new Model(obj);
       var view = new View(model);
       var controller = new Controller(model, view);
-    }
+    }*/
 
-    /*$.ajax({
-        type: "GET",
-        dataType: "json",
-        cache: false,
-        url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
-        success: function(data) {
-            
-        
-
-        var wrapper = tmpl($('#template').html(), data);
-        $('.ideas').append(wrapper)
-    
-        
-        $('#gallery').imagesLoaded(function (){
-            $('.grid').masonry({
-              itemSelector: '.grid--item',
-              columnWidth: '.grid--item',
-              gutter: 10
-            });
-        })
+    var xmlhttp = getXmlHttp()
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4) {
+         if(xmlhttp.status == 200) {
+          var obj = eval('('+xmlhttp.responseText+')')
+          var model = new Model(obj);
+          var view = new View(model);
+          var controller = new Controller(model, view);
+             }
+      }
+    };
+    xmlhttp.send(null);
 
 
-        }
-    });*/
 });
 
 
@@ -99,7 +90,7 @@ function Controller(model, view){
         var text = $('#edit').val();
         $('.grid').remove();
 
-        var xmlhttp = getXmlHttp()
+        /*var xmlhttp = getXmlHttp()
         xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', false);
         xmlhttp.send(null);
         var obj = eval('('+xmlhttp.responseText+')')
@@ -108,7 +99,33 @@ function Controller(model, view){
                 var view = new View(model);
                 var controller = new Controller(model, view);
             }
-        })
+        */
+        
+
+        var xmlhttp = getXmlHttp()
+        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', true);
+        xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == 4) {
+             if(xmlhttp.status == 200) {
+              var obj = eval('('+xmlhttp.responseText+')')
+              var model = new Model(obj);
+              var view = new View(model);
+              var controller = new Controller(model, view);
+                 }
+          }
+        };
+        xmlhttp.send(null);
+     
+
+
+
+
+
+
+
+
+
+})
 }
 
 function getXmlHttp(){
