@@ -24,17 +24,13 @@ define(
 		        event.preventDefault();
 		        var text = $('#edit').val();
 		        $('.grid').remove();
-
-		        var xmlhttp = getXmlHttp()
-		        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', false);
-		        xmlhttp.send(null);
-		        var obj = eval('('+xmlhttp.responseText+')')
-		        if(xmlhttp.status == 200) {
-		        		var Model = new model(obj);
-		        		var View = view(Model);
-		        		var controller = new Controller(Model, View);
-		            }
-		        })
+		        
+		        $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data) {
+		            var m = new model(data);
+		            var v = new view(m);
+		            var c = new controller(m, v);
+			    })
+		    })
 		}
 		return Controller;
 	}	

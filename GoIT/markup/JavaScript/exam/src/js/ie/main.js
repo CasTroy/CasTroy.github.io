@@ -76,8 +76,7 @@ function Controller(model, view){
         event.preventDefault();
         var text = $('#edit').val();
         $('.grid').remove();
-
-
+        
         var xmlhttp = getXmlHttp()
         xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', true);
         xmlhttp.onreadystatechange = function() {
