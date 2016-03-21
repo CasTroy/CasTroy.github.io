@@ -26,7 +26,7 @@ $(function(){
       var controller = new Controller(model, view);
     }*/
 
-    /*var xmlhttp = getXmlHttp()
+    var xmlhttp = getXmlHttp()
     xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
@@ -38,11 +38,14 @@ $(function(){
              }
       }
     };
-    xmlhttp.send(null);*/
-    var xdr = new XDomainRequest(); 
+    xmlhttp.send(null);
+
+
+
+   /* var xdr = new XDomainRequest(); 
     if(window.XDomainRequest){
         var xdr = new XDomainRequest();
-        xdr.open("get", 'https://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m');
+        xdr.open("get", 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m');
         xdr.onprogress = function () {
         //Progress
         };
@@ -66,7 +69,7 @@ $(function(){
         setTimeout(function () {
         xdr.send();
         }, 0);
-}
+}*/
 
 
 
