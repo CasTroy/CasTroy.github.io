@@ -18,6 +18,17 @@
 		<link rel="stylesheet" type="text/css" href="css/all.css">
 		<script data-main = "js/all/app" src = "js/all/require.js"></script>
 	<!--<![endif]-->
+
+<?php
+	header('Access-Control-Allow-Origin: http://test.ru');
+	header('Expires: Mon, 26 Jul 1997 05:00:00 GMT' ); 
+	header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . 'GMT'); 
+	header('Cache-Control: no-cache, must-revalidate'); 
+	header('Pragma: no-cache');
+	header('Content-Type: text/html; charset=utf-8;');
+	echo 'hello world';
+?>
+
 </head>
 <body>
 <!--container-->
