@@ -25,6 +25,31 @@ $(function(){
       var view = new View(model);
       var controller = new Controller(model, view);
     }
+
+    /*$.ajax({
+        type: "GET",
+        dataType: "json",
+        cache: false,
+        url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
+        success: function(data) {
+            
+        
+
+        var wrapper = tmpl($('#template').html(), data);
+        $('.ideas').append(wrapper)
+    
+        
+        $('#gallery').imagesLoaded(function (){
+            $('.grid').masonry({
+              itemSelector: '.grid--item',
+              columnWidth: '.grid--item',
+              gutter: 10
+            });
+        })
+
+
+        }
+    });*/
 });
 
 
