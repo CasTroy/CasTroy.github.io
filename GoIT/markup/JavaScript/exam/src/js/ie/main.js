@@ -17,64 +17,19 @@ $(function(){
     
     //ajax
     var xmlhttp = getXmlHttp()
-   /* xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
-    xmlhttp.send(null);
-    var obj = eval('('+xmlhttp.responseText+')')
-    if(xmlhttp.status == 200) {
-      var model = new Model(obj);
-      var view = new View(model);
-      var controller = new Controller(model, view);
-    }*/
-
-    var xmlhttp = getXmlHttp()
     xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {
-          var obj = eval('('+xmlhttp.responseText+')')
-          var model = new Model(obj);
+          var data = eval('('+xmlhttp.responseText+')')
+          var model = new Model(data);
           var view = new View(model);
           var controller = new Controller(model, view);
-             }
+        }
       }
     };
     xmlhttp.send(null);
-
-
-
-   /* var xdr = new XDomainRequest(); 
-    if(window.XDomainRequest){
-        var xdr = new XDomainRequest();
-        xdr.open("get", 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m');
-        xdr.onprogress = function () {
-        //Progress
-        };
-
-        xdr.ontimeout = function () { 
-        //Timeout
-        };
-
-        xdr.onerror = function () { 
-        //Error Occured
-        };
-
-        xdr.onload = function() {
-        //success(xdr.responseText);
-            var obj = eval('('+xdr.responseText+')')
-            var model = new Model(obj);
-            var view = new View(model);
-            var controller = new Controller(model, view);
-        }
-
-        setTimeout(function () {
-        xdr.send();
-        }, 0);
-}*/
-
-
-
 });
-
 
 
 //m
@@ -122,17 +77,6 @@ function Controller(model, view){
         var text = $('#edit').val();
         $('.grid').remove();
 
-        /*var xmlhttp = getXmlHttp()
-        xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', false);
-        xmlhttp.send(null);
-        var obj = eval('('+xmlhttp.responseText+')')
-        if(xmlhttp.status == 200) {
-                var model = new Model(obj);
-                var view = new View(model);
-                var controller = new Controller(model, view);
-            }
-        */
-        
 
         var xmlhttp = getXmlHttp()
         xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', true);
@@ -147,19 +91,9 @@ function Controller(model, view){
           }
         };
         xmlhttp.send(null);
-     
-
-
-
-
-
-
-
-
-
-})
+    })
 }
-
+//
 function getXmlHttp(){
   var xmlhttp;
   try {
