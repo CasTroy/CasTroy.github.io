@@ -17,7 +17,7 @@ $(function(){
     
     //ajax
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
     xmlhttp.send(null);
     var obj = eval('('+xmlhttp.responseText+')')
     if(xmlhttp.status == 200) {
