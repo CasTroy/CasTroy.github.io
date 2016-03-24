@@ -263,7 +263,7 @@
     width: 300px;
     margin: 0 auto; }
     .search__title {
-      margin: 36px 0 0 -6px; }
+      margin: 25px 0 0 -6px; }
   .form__question {
     margin: 10px 0 0 -2px; }
   .form__edit {
@@ -508,7 +508,7 @@
   .search {
     width: 768px; }
     .search__title {
-      margin: 100px 0 0 -5px; }
+      margin: 75px 0 0 -7px; }
   .form__question {
     margin: 30px 0 0 -3px; }
   .form__edit {
@@ -629,7 +629,7 @@
   .search {
     width: 960px; }
     .search__title {
-      margin: 100px 0 0 -27px; }
+      margin: 77px 0 0 -27px; }
   .form__question {
     margin: 32px 0 0 -23px; }
   .form__edit {
