@@ -17,7 +17,7 @@ $(function(){
     
     //ajax
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=night&amount=7&size=m', true);
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {

@@ -299,6 +299,15 @@
 			left: 40%;
 			position: absolute;
 		}
+		.grid--item img{
+			 z-index: 2;
+		}
+		.grid--item img:hover{
+		  	position: absolute;
+		    width: 105%;
+		    height: 105%;
+		    cursor: pointer;
+		}
 	/*searche*/
 		.search{
 			width: 960px;

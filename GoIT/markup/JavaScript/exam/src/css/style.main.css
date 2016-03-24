@@ -507,6 +507,13 @@
     margin: 0 0 20px 10px; }
   .w2 {
     width: 492px; }
+  .grid--item img {
+    z-index: 2;
+    transition: 1s; }
+  .grid--item img:hover {
+    position: absolute;
+    width: 105%;
+    height: 105%; }
   .search {
     width: 768px; }
     .search__title {
