@@ -7,7 +7,7 @@ define(
             self.renderList = function () {
                 var wrapper = tmpl($('#template').html(), model);
                 $('.ideas').append(wrapper)
-                $('#gallery').imagesLoaded(function (){
+                $('#gallery').imagesLoaded({background: '.grid--item'}, function (){
                     var msnry = new masonry( '.grid', {
                       itemSelector: '.grid--item',
                       columnWidth: '.grid--item',
