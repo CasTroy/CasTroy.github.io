@@ -144,8 +144,10 @@
       opacity: 0.5;
       line-height: 17px; }
   .button--small {
+    display: inline-block;
+    text-decoration: none;
     width: 70px;
-    height: 20px;
+    padding: 5px 0;
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 400;
@@ -251,8 +253,8 @@
     border-radius: 5px;
     background: gray; }
   .item--text {
-    top: 40%;
-    left: 35%;
+    top: 45%;
+    left: 40%;
     position: absolute;
     z-index: 1;
     font-size: 22px; }

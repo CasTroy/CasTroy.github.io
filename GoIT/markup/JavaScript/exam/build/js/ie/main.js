@@ -17,7 +17,7 @@ $(function(){
     
     //ajax
     var xmlhttp = getXmlHttp()
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', true);
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=night&amount=7&size=m', true);
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {
@@ -85,8 +85,7 @@ function Controller(model, view){
               var obj = eval('('+xmlhttp.responseText+')')
               var model = new Model(obj);
               var view = new View(model);
-              var controller = new Controller(model, view);
-                 }
+            }
           }
         };
         xmlhttp.send(null);

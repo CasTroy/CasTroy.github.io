@@ -28,7 +28,6 @@ define(
 		        $.getJSON('http://api.pixplorer.co.uk/image?word='+text+'&amount=7&size=m', function(data) {
 		            var m = new model(data);
 		            var v = new view(m);
-		            var c = new controller(m, v);
 			    })
 		    })
 		}

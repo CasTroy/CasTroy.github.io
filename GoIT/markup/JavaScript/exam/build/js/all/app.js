@@ -66,13 +66,26 @@ require(
 		  return xmlhttp;
 		}
 		//ajax
-	    $.getJSON('http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', function(data) {
+	    $.getJSON('http://api.pixplorer.co.uk/image?word=night&amount=7&size=m', function(data) {
             var m = new model(data);
             var v = new view(m);
             var c = new controller(m, v);
 	    })
+
+	    
 	    //hide butoon of navigations
         $('.owl-prev').html(' ');
         $('.owl-next').html(' ');
-	}
-);
+
+
+   	
+});
+function error(){
+	this.onerror=null;
+	this.src='img/bg.jpg';
+}
+
+
+
+
+
