@@ -29,7 +29,14 @@ $(function(){
       }
     };
     xmlhttp.send(null);
+
+    $('body').on('click', '.item--picture', show);
+    $('body').on('click', '.center', remove);
 });
+
+
+
+
 
 
 //m
@@ -108,3 +115,35 @@ function getXmlHttp(){
   }
   return xmlhttp;
 }
+
+function show(){
+
+  $('body').append('<div class = "center"><img src = "#" class = "center__img"></div>')
+
+  $('html body').css('min-height', '100%')
+
+  $('.center').css({
+    'min-width': '100%',
+    'min-height': '100%',
+    background: 'rgba(0,0,0,0.8)',
+    'top': '0px',
+    'width': '100%', 
+    'position': 'fixed',
+    'z-index': '3'
+  })
+  $('.center__img').attr('src', $(this).attr('src'))
+  $('.center__img').css({
+    top: '50%', 
+    left: '50%',
+    width: '50%',
+    margin: '-25% 0 0 -25%',
+    'position': 'absolute',
+  })
+
+}
+
+function remove(){
+  $('.center').remove();
+}
+
+
