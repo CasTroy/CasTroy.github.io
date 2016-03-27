@@ -1,12 +1,22 @@
-@font-face{
-	font-family: 'Montserrat-Regular';
-	src: url('../fonts/Montserrat-Regular.ttf');
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
-@font-face{
-	font-family: 'Roboto-Light';
-	src: url('../fonts/Roboto-Light.woff');
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
 }
-  
+
+
+
+
+
 
 *{
 	margin: 0;
