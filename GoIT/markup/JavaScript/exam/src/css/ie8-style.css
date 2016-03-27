@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'Montserrat-Regular';
-	src: url('../fonts/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat-Regular.ttf');
 }
 @font-face{
 	font-family: 'Roboto-Light';
@@ -55,6 +55,9 @@
 		text-decoration: none;
 		display: inline-block;
 	}
+	.log__input:hover{
+		color: #FFA500;
+	}
 	.urlaub{
 		float: left;
 		margin-top: 55px;
@@ -87,6 +90,9 @@
 		padding: 10px 30px;
 		background-color: #ff4e50;
 		z-index: 1;
+	}
+	.button:hover{
+		color: #FFA500
 	}	
 /*main*/
 	.main{

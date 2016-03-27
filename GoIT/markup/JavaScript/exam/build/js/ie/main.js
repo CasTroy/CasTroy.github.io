@@ -132,11 +132,12 @@ function show(){
     'z-index': '3'
   })
   $('.center__img').attr('src', $(this).attr('src'))
+
   $('.center__img').css({
-    top: '50%', 
-    left: '50%',
+    top: '25%', 
+    left: '25%',
     width: '50%',
-    margin: '-25% 0 0 -25%',
+    height: '50%',
     'position': 'absolute',
   })
 

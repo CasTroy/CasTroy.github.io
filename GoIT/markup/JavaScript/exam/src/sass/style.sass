@@ -54,16 +54,11 @@
       margin-left: 15px
       text-decoration: none
       display: inline-block
-    &__input::-webkit-input-placeholder
-      color: white
-    &__input::-moz-placeholder
-      color: white
-    &__input:-moz-placeholder
-      color: white
-    &__input:-ms-input-placeholder      
-      color: white
-    &__input:focus
-      outline: none
+      transition: 1s
+    &__input:hover
+      color: #FFA500
+      box-shadow: 0px 0px 3px 1px rgba(255, 165, 0,0.75);
+  
   .dreams
     font-weight: 700
     &__holliday
@@ -88,6 +83,7 @@
     border-radius: 25px
     background-color: #ff4e50
     cursor: pointer
+    transition: 1s
   .button:focus
     outline: none
   .button--big
@@ -161,8 +157,11 @@
   .buground--third
     width: 150% !important
     margin: -36px 0 0 -77px
+  .button:hover
+    color: #FFA500
+    box-shadow: 0px 0px 3px 1px rgba(255, 165, 0,0.75);
   //partners
-  .partners
+  .partners 
     &__title
       width: 95%
       margin: 18px 0px 0px 0px
