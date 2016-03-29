@@ -10,10 +10,17 @@
 		var helloWorldApp = angular.module('helloWorldApp', []);
 		helloWorldApp.controller('helloWorldCtrl', function	($scope){
 			$scope.message = model;
+
+			$scope.clickHandler = function () {
+				$scope.message = $scope.text;
+			}
 		})
 	</script>
 </head>
 <body ng-controller="helloWorldCtrl">
 	<h1>{{message}}</h1>
+
+	<input ng-model="text">
+	<button ng-click="clickHandler()">Reset</button>
 </body>
 </html>
