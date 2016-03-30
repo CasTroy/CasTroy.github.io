@@ -20,6 +20,7 @@
     font-style: normal;
 
 }
+
 *{
 	margin: 0;
 	padding: 0;
@@ -27,11 +28,11 @@
 }
 
 .montserrat-regular{
-	font-family: 'Montserrat-Regular';
+	font-family: 'Montserrat-Regular', sans-serif;
 	color: white;
 }
 .roboto-light{
-	font-family: 'Roboto-Light';
+	font-family: 'Roboto-Light', sans-serif;
 	color: white;
 }
 
