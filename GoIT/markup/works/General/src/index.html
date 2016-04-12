@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script data-main = "js/app" src = "js/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script data-main = "js/main" src = "js/require.js"></script>
+	<!--<script src = "js/require.js"></script>-->
+	<!--<script src="js/angular.min.js"></script>
+	<script>
+		var model = "Front-End development";
+		var helloApp = angular.module('helloApp', []);
+
+		helloApp.controller('helloCtrl', function($scope){
+			$scope.message = model;
+		});
+	</script>-->
 </head>
 <body>
+	<h1 ng-controller="MainCtrl as main">{{main.message}}</h1>
+	<!--<script>
+	var app = angular.module("myApp", []);
+	app.controller("myCtrl", function($scope) {
+	    $scope.firstName = "John";
+	    $scope.lastName = "Doe";
+	});
+	</script>-->
+
+
+	<div class="grid">
+	  <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat. Quos harum delectus, tempora repellendus facere ullam.</div>
+	  <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur sunt minus aperiam iste praesentium consequatur, voluptatibus ea, facilis dignissimos quaerat, mollitia repellendus distinctio quas est cum sapiente, in! Repudiandae.</div>
+	</div>
 	
 </body>
 </html>
