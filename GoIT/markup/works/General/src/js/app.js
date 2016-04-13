@@ -1,3 +1,5 @@
-define(['angular'], function(angular){
-	return angular.module('MyApp', []);
+define(
+['angular'],
+function (){
+	angular.module('MyApp', []);
 })

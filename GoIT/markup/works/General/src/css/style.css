@@ -4,3 +4,7 @@
 
 body {
   font-family: share-techmono; }
+
+.grid-item {
+  width: 200px;
+  border: 1px solid black; }

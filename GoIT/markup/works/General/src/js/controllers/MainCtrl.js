@@ -1,5 +1,5 @@
-require(['app', 'objects/user'], function(app, user){
+require(['app'], function(app){
 	app.controller('MainCtrl', function(){
-		this.user = user;
+		this.user = 'hello world';
 	})
 })
