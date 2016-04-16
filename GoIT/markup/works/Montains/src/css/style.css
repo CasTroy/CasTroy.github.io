@@ -12,17 +12,30 @@ body {
   text-decoration: none; }
 
 .container {
-  background: green;
   min-height: calc(100vh - 1365px); }
 
 /*header*/
 .top {
   width: 100%;
-  height: 700px;
+  height: 698px;
   background-image: url(../img/man.jpg);
-  background-size: 101%;
+  background-position: -104px -2px;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+  .top__contant {
+    margin: 0 auto; }
+
+.contant {
+  width: 1140px;
+  padding: 0 15px; }
+
+/*panel*/
+.logo {
+  width: 115px; }
+
+.panel__logo {
+  float: left;
+  margin: 30px 0 0 28px; }
 
 .footer {
   background: grey;
