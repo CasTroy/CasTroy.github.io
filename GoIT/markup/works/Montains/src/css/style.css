@@ -1,9 +1,9 @@
 @font-face {
-  font-family: share-techmono;
-  src: url(../fonts/share-techmono.ttf); }
+  font-family: open-sasns;
+  src: url(../fonts/open-sasns-bold.ttf); }
 
 body {
-  font-family: share-techmono; }
+  font-family: open-sasns; }
 
 * {
   margin: 0;
@@ -16,27 +16,68 @@ body {
 
 /*header*/
 .top {
-  width: 100%;
   height: 698px;
   background-image: url(../img/man.jpg);
-  background-position: -104px -2px;
+  background-position: -117px -3px;
   background-repeat: no-repeat;
+  background-size: 110%;
   background-attachment: fixed; }
   .top__contant {
     margin: 0 auto; }
 
 .contant {
-  width: 1140px;
-  padding: 0 15px; }
+  width: 1155px;
+  padding: 0 0 0 15px; }
 
 /*panel*/
 .logo {
   width: 115px; }
 
+.bg {
+  background: rgba(255, 255, 255, 0.3);
+  height: 88px; }
+
 .panel__logo {
   float: left;
   margin: 30px 0 0 28px; }
 
+.panel__nav {
+  display: inline-block;
+  margin-left: 30px; }
+
+.panel__button {
+  float: right;
+  margin: 23px 8px 0 0; }
+
+.item {
+  float: left; }
+
+.link {
+  color: black;
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.link:hover {
+  border-bottom: 2px solid #36aeea; }
+
+.nav__item {
+  margin: 30px 0 0 21px; }
+
+.nav__item:nth-child(1) {
+  margin: 30px 0 0 31px; }
+
+.nav__item:nth-child(2) {
+  margin: 30px 0 0 20px; }
+
+.button {
+  border: 3px solid #36aeea;
+  border-radius: 3px;
+  padding: 11px 43px;
+  color: #36aeea;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 .footer {
-  background: grey;
   height: 1365px; }
