@@ -13,15 +13,26 @@
 		<header class="top">
 			<div class = "bg">
 				<section class="content top__content">
-						<nav class = "panel">
-							<img ng-src="{{data.top.panel.logo.imgUrl}}" alt="{{data.top.panel.logo.content}}" class = "logo panel__logo">
-							<ul class="nav panel__nav">
-								<li class="item nav__item" ng-repeat = "item in data.top.panel.navigation">
-									<a href="{{item.link}}" class = "link">{{item.content}}</a>
-								</li>
-							</ul>
-							<a href="{{data.top.panel.button.link}}" class="button panel__button">{{data.top.panel.button.content}}</a>
-						</nav>
+					<nav class = "panel">
+						<img ng-src="{{data.top.panel.logo.imgUrl}}" alt="{{data.top.panel.logo.content}}" class = "logo panel__logo">
+						<ul class="nav panel__nav">
+							<li class="item nav__item" ng-repeat = "item in data.top.panel.navigation">
+								<a href="{{item.link}}" class="link">{{item.content}}</a>
+							</li>
+						</ul>
+						<a href="{{data.top.panel.button.link}}" class="button panel__button">{{data.top.panel.button.content}}</a>
+					</nav>
+					<div class="box">
+						<div class='left box__left'>
+							<figure>
+								<h1>travel with us</h1>
+								<img src="" alt="">
+							</figure>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, praesentium blanditiis quam voluptate ipsum quibusdam. Maiores tempora voluptatum quibusdam, aperiam.</p>
+							<a href="">ordered now</a>
+						</div>
+						<div class="right box__right"></div>
+					</div>
 				</section>	
 			</div>
 		</header>
