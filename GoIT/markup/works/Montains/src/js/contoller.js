@@ -1,7 +1,8 @@
 define(
-['angular'],
-function (){
+['angular', 'model'],
+function (angular, model){
+	console.log(model.top.panel.logo.imgUrl);
 	angular.module('MyApp').controller('MyController', function($scope) {
-		$scope.message = 'Hello WORLD';
+		$scope.data = model;
 	})
 });

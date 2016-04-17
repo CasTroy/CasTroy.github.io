@@ -1,6 +1,7 @@
 requirejs.config({
 	paths: {
 		'angular': 'angular.min',
+		'model': 'model',
 		'app': 'app',
 		'contoller': 'contoller',
 		'jquery': 'jquery-1.12.2.min',
@@ -25,19 +26,19 @@ requirejs.config({
 });
 require([
 	'angular',
+	'model',
 	'app',
 	'contoller',
 	'jquery',
 	'imagesloaded',
 	'masonry',
 ],
-	function(angular, app, controller, $, imagesloaded, masonry){
-		$('#gallery').imagesLoaded({background: '.grid-item'}, function (){
+	function(angular, model, app, controller, $, imagesloaded, masonry){
+		/*$('#gallery').imagesLoaded({background: '.grid-item'}, function (){
 			var msnry = new masonry( '.grid', {
 				itemSelector: '.grid-item',
 		 		columnWidth: '.grid-item'
 			})
-		})
-
+		})*/
 
 });

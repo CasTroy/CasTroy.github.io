@@ -12,21 +12,15 @@
 	<!--head-->
 		<header class="top">
 			<div class = "bg">
-				<section class="contant top__contant">
+				<section class="content top__content">
 						<nav class = "panel">
-							<object type="image/svg+xml" data="img/logo.svg" class = "logo panel__logo">
-			   					Ваш браузер не поддерживает формат SVG
-							</object>
+							<img ng-src="{{data.top.panel.logo.imgUrl}}" alt="{{data.top.panel.logo.content}}" class = "logo panel__logo">
 							<ul class="nav panel__nav">
-								<li class="item nav__item"><a href="" class = "link">our story</a></li>
-								<li class="item nav__item"><a href="" class = "link">services</a></li>
-								<li class="item nav__item"><a href="" class = "link">work</a></li>
-								<li class="item nav__item"><a href="" class = "link">journal</a></li>
-								<li class="item nav__item"><a href="" class = "link">contact</a></li>
-								<li class="item nav__item"><a href="" class = "link">work</a></li>
-								<li class="item nav__item"><a href="" class = "link">journal</a></li>
+								<li class="item nav__item" ng-repeat = "item in data.top.panel.navigation">
+									<a href="{{item.link}}" class = "link">{{item.content}}</a>
+								</li>
 							</ul>
-							<a href="" class="button panel__button">call us</a>
+							<a href="{{data.top.panel.button.link}}" class="button panel__button">{{data.top.panel.button.content}}</a>
 						</nav>
 				</section>	
 			</div>
