@@ -13,6 +13,7 @@
 		<header class="top">
 			<div class = "bg">
 				<section class="content top__content">
+				<!--navigation-->
 					<nav class = "panel">
 						<img ng-src="{{data.top.panel.logo.imgUrl}}" alt="{{data.top.panel.logo.content}}" class = "logo panel__logo">
 						<ul class="nav panel__nav">
@@ -22,14 +23,15 @@
 						</ul>
 						<a href="{{data.top.panel.button.link}}" class="button panel__button">{{data.top.panel.button.content}}</a>
 					</nav>
+				<!--box-->
 					<div class="box">
 						<div class='left box__left'>
-							<figure>
-								<h1>travel with us</h1>
-								<img src="" alt="">
-							</figure>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, praesentium blanditiis quam voluptate ipsum quibusdam. Maiores tempora voluptatum quibusdam, aperiam.</p>
-							<a href="">ordered now</a>
+							<h1 class="title">
+								<span class="title__text title__text--first">travel with us</span>
+								<span class = "title__text title__text--second">to the Monntains</span>
+							</h1>
+							<p class="left__description description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, praesentium</p>
+							<a href="" class="left__button">order now</a>
 						</div>
 						<div class="right box__right"></div>
 					</div>

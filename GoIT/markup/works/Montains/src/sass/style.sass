@@ -1,7 +1,12 @@
 @font-face
   font-family: open-sasns
   src: url(../fonts/open-sasns-bold.ttf)
-
+@font-face
+  font-family: open-sasns-regular
+  src: url(../fonts/open-sans-regular.ttf)
+@font-face
+  font-family: brin-gin
+  src: url(../fonts/BrinGin.ttf)
 body
   font-family: open-sasns
 
@@ -74,23 +79,72 @@ body
   color: gray
 /*box*/
 .box
-  margin: 163px 0 0 14px
+  margin: 163px 5px 0 14px
   border-bottom: 3px solid white
   border-left: 3px solid white
-  height: 320px
+  height: 321px
   &__left
-    padding: 40px
+    padding: 38px 34px
     width: 650px
     border-top: 3px solid white
   &__right
-    width: 206px
+    width: 200px
     height: 320px
     border-top: 3px solid white
     border-right: 3px solid white
-.left
-  float: left
+
 .right
   float: right
+.left
+  float: left
+  &__description
+    margin: 17px 0 0 4px
+  &__button
+    display: block
+    width: 255px
+    border-radius: 4px
+    background-color: #36aeea
+    text-align: center
+    padding: 7px 0
+    margin: 24px 0 0 3px
+    text-transform: uppercase
+    color: white
+    font-size: 14px
+    font-weight: 700
+    line-height: 44px
+    letter-spacing: 2px
+    transition: 1s
+.left__button:hover
+  background-color: gray
+
+
+.title
+  &__text
+    display: block
+.title__text--first
+  color: white
+  font-size: 50px
+  font-weight: 700
+  text-transform: uppercase
+  line-height: 42px
+  letter-spacing: 6px
+.title__text--second
+  color: #56c7ff
+  font-family: brin-gin
+  font-size: 66px
+  font-weight: 400
+  line-height: 40px
+  letter-spacing: 1.5px
+
+.description
+  width: 434px
+  color: white
+  font-size: 18px
+  line-height: 29px
+  font-family: open-sasns-regular
+
+
+
 
 .footer
   height: 1365px
